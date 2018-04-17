@@ -3,15 +3,15 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  example.com:
+  buzzeasy:
     site_hosts:
-      - canonical: staging.example.com
+      - canonical: buzzeasy.mrbandfriends-staging.co.uk
         # redirects:
         #   - otherdomain.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:example/example.com.git # replace with your Git repo URL
+    repo: git@mrbandfriends.git.beanstalkapp.com:/mrbandfriends/buzzeasy.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
-    branch: master
+    branch: develop
     multisite:
       enabled: false
     ssl:
@@ -19,3 +19,6 @@ wordpress_sites:
       provider: letsencrypt
     cache:
       enabled: false
+    htpasswd:
+      - name: buzzeasy
+        password: pass4buzzeasy
