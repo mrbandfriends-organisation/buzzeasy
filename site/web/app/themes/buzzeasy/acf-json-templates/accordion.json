@@ -1,0 +1,86 @@
+[
+    {
+        "key": "group_58ca7d8c11460",
+        "title": "Accordion [ Source ]",
+        "fields": [
+            {
+                "key": "field_58ca7d9bba536",
+                "label": "Accordion",
+                "name": "accordion_fields",
+                "type": "repeater",
+                "instructions": "If you want to add a heading inside one of the columns it should be a \"Heading 4\".",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_58ca7de1ffe59",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add new accordion panel",
+                "sub_fields": [
+                    {
+                        "key": "field_58ca7de1ffe59",
+                        "label": "Accordion Panel Heading",
+                        "name": "accordion_panel_heading",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_596ca1aa4b9b6",
+                        "label": "Accordion Panel Content",
+                        "name": "accordion_panel_content",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content"
+        ],
+        "active": 0,
+        "description": ""
+    }
+]

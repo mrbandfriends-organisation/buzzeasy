@@ -1,0 +1,17 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# dist
+bower_components
+node_modules
+npm-debug.log
+vendor
+Gemfile.lock
+.DS_Store
+/assets
+/composer.lock
+/yarn.lock
+/template-playground.php
+/templates/components/test
+
+# Ignore this guy as should only exist locally...
+paths.js

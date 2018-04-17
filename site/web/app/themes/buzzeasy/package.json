@@ -1,0 +1,48 @@
+{
+  "name": "mrb-wordpress-theme",
+  "version": "0.0.1",
+  "description": " ",
+  "main": "gulpfile.js",
+  "private": "true",
+  "scripts": {
+    "build": "NODE_ENV=production gulp build",
+    "postinstall": [
+      "composer update && bundle install"
+    ],
+    "prettifyjs": "prettier --tab-width=4 --single-quote --write ./assets/js/src/**/*js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --tab-width=4 --single-quote --write",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=5.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@mrbandfriends.git.beanstalkapp.com:/mrbandfriends/mrb-wordpress-theme.git"
+  },
+  "author": "Mr B & Friends",
+  "homepage": "",
+  "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "del": "^2.2.2",
+    "frontend-boilerplate-assets": "file:assets",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-rimraf": "^0.2.1",
+    "run-sequence": "^1.2.2",
+    "tablesaw": "^3.0.1",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "husky": "^0.13.4",
+    "karma": "^1.7.0",
+    "lint-staged": "^4.0.0"
+  }
+}
