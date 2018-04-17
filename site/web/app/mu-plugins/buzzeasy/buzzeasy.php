@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name:  (PLACEHOLDER) Mr B Functionality Plugin
+Plugin Name:  Buzzeasy Functionality Plugin
 Plugin URI:
-Description:  Custom functionality Plugin for this project's website. Deactivating this Plugin will break the website.
+Description:  Custom functionality Plugin for the Buzzeasy website. Deactivating this Plugin will break the website.
 Version:      1.0.0
 Author:       Mr B and Friends
 Author URI:   http://www.mrbandfriends.co.uk
