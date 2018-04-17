@@ -1,0 +1,7 @@
+## Ignore all git directories anywhere in /vendor to avoid git turning the packages into submodules
+vendor/**/.git
+
+## Ignore all vendor directories except jjgrainger's
+vendor/*
+!vendor/jjgrainger/wp-custom-post-type-class/examples/
+vendor/jjgrainger/wp-custom-post-type-class/examples/

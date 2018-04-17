@@ -1,0 +1,28 @@
+{
+    "name": "mrbandfriends/my-plugin",
+    "description": "Boilerplate Plugin for functionality Plugins in Mr B & Friends WordPress sites",
+    "license": "Restricted",
+    "authors": [
+        {
+            "name": "Mr B and Friends Developers",
+            "email": "developers@mrbandfriends.co.uk"
+        }
+    ],
+    "require": {
+        "jjgrainger/wp-custom-post-type-class": "dev-master"
+    },
+    "require-dev": {
+        "phpspec/prophecy": "~1.0",
+        "codeception/codeception": "^2.3",
+        "lucatume/wp-browser": "^1.21"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Buzzeasy\\": "",
+            "Tests\\Unit\\": "tests/unit/"
+        }
+    }
+}
