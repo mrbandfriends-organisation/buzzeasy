@@ -928,15 +928,15 @@
         },
         {
             "name": "wpackagist-plugin/post-smtp",
-            "version": "1.8.3",
+            "version": "1.8.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/post-smtp/",
-                "reference": "tags/1.8.3"
+                "reference": "tags/1.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-smtp.1.8.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/post-smtp.1.8.5.zip",
                 "reference": null,
                 "shasum": null
             },
