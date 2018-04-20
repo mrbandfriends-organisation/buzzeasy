@@ -48,4 +48,4 @@ unset($file, $filepath, $iterator);
 // For our boilerplate theme to work you need to set the WP_ENV.
 // This is normally done via Roots.io Bedrock but if you are not using
 // a Bedrock setup then you need to hard code this value in.
-define('WP_ENV', 'development');
+// define('WP_ENV', 'development');
