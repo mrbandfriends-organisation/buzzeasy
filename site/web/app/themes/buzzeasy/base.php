@@ -4,7 +4,7 @@
     use Roots\Sage\Wrapper;
 
     $feature_flag_classes = "";
-    $active_ff = Utils\get_active_features();
+    // $active_ff = Utils\get_active_features();
 
     // Convert Feature Flag keys to CSS classes in form "ff-{{flag-name}}"
     if (!empty($active_ff)) {
