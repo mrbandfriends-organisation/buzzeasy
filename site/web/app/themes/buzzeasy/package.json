@@ -6,9 +6,6 @@
   "private": "true",
   "scripts": {
     "build": "NODE_ENV=production gulp build",
-    "postinstall": [
-      "composer update && bundle install"
-    ],
     "prettifyjs": "prettier --tab-width=4 --single-quote --write ./assets/js/src/**/*js"
   },
   "lint-staged": {
