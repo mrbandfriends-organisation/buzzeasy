@@ -462,6 +462,7 @@ function feature_active($feature) {
 
 
 function get_active_features() {
+	return [];
     // Filter through Feature Flags and return only true variables
     $filterd_flags = array_filter(FEATURE_FLAGS, function($feature){
         return feature_active($feature);
