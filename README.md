@@ -25,6 +25,7 @@ The following items represent quirks of this particular project.
 
 * This project has been set up with Ansible v2.5.0.0, though it may work with older versions.
     * If you encounter an error regarding the SSL certificate for Github, try using Ansible 2.5.0.0 (or MAMP!)
+* Currently you need to build CSS & JS before deploying. Run `npm run build` in the theme root and commit/push the minified files.
 
 ## Installation
 
