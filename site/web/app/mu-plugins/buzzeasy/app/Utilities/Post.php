@@ -1,6 +1,6 @@
 <?php
 
-namespace Buzzeasy\App\Utilities\Posts;
+namespace Buzzeasy\App\Utilities;
 
 use WP_Post;
 use Roots\Sage\Utils;
