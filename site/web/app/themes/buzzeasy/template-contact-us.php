@@ -22,42 +22,28 @@
 	</div>
 </section>
 
-<section class="customer-journey band">
+<section class="contact-us band">
 	<div class="container">
-		<h2>Vision/brand</h2>
-	</div>
-</section>
+		<form action="action_page.php">
 
-<section class="benefits band band--off-white"><div class="container">
-    <div class="grid">
-		<div class="gc s1-1 l1-2">
-			<h2>Team</h2>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-			</ul>
-		</div>
-	</div>
-</section>
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-<section class="benefits band"><div class="container">
-    <div class="grid">
-		<div class="gc s1-1 l1-2">
-		</div>
-		<div class="gc s1-1 l1-2">
-			<h2>Group Co.</h2>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-			</ul>
-		</div>
-	</div>
-</section>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-<section class="cta-banner band band--off-white">
-	<div class="container text-center">
-		<a href="/contact-us/" class="btn btn-primary">Call us</a>
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			<option value="australia">Australia</option>
+			<option value="canada">Canada</option>
+			<option value="usa">USA</option>
+			</select>
+
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+			<input type="submit" value="Submit">
+
+		</form>
 	</div>
 </section>

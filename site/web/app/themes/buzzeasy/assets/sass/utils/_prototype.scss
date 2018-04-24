@@ -9,15 +9,15 @@
 .page-hero {
     background-color: color-get(primary);
 
-    .about-us & {
+    .page-template-template-about-us & {
         background-color: color-get(secondary);
     }
 
-    .services & {
+    .page-template-template-services & {
         background-color: color-get(blue);
     }
 
-    .contact-us & {
+    .page-template-template-contact-us & {
         background-color: color-get(green);
     }
 
