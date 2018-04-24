@@ -25,7 +25,6 @@
 <section class="customer-journey band">
 	<div class="container">
 		<h2 class="text-center">Customer journey</h2>
-		<img src="<?=get_template_directory_uri() ?>/assets/images/journey.png" alt="">
 	</div>
 </section>
 
