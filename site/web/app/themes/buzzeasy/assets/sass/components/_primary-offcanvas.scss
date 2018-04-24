@@ -1,0 +1,92 @@
+// ============================================================
+
+// PRIMARY OFFCANVAS
+
+// Description: styles for OffCanvas Panels
+
+// ============================================================
+
+
+// ==========================================================================
+// BASE
+// ==========================================================================
+
+.offcanvas__wrapper {
+    @include ui-offcanvas();
+    background-color: color-get(grey, dark);
+}
+
+
+// Show offcanvas navigation on all viewports
+.primary-offcanvas {
+    background-color: color-get(grey, dark);
+    box-shadow: inset 7px 0 15px -5px rgba(#000, 0.4);
+    color: #fff;
+    z-index: 10;
+}
+
+.primary-offcanvas__section {
+    padding: rem(15px) rem(25px);
+
+
+    @include mq($from: medium) {
+        padding: rem(25px) rem(60px) rem(25px) rem(30px);
+    }
+}
+
+
+// ==========================================================================
+// TOGGLE
+// ==========================================================================
+
+.offcanvas-toggle {
+    // scss-lint:disable ImportantRule
+    @include mq($from: nav-break-2) {
+        // important required to ensure that any site specific styling
+        // applied to the toggle does not overide the visibility
+        display: none !important;
+    }
+
+    .no-js & {
+        display: none;
+    }
+
+
+    &:hover,
+    &:focus {
+        span {
+            color: color-get(grey, dark);
+        }
+    }
+}
+
+.offcanvas-toggle__text {
+    color: #000;
+    padding-right: $quarter-spacing-unit;
+}
+
+.offcanvas-toggle--open {
+    float: flip(right, left);
+    text-decoration: none;
+}
+
+.offcanvas-toggle--close {
+    position: relative;
+    z-index: 2;
+
+    &.offcanvas-toggle--close {
+        display: block;
+        height: 70px;
+        padding: 0;
+        #{$padding-right}: rem(30px);
+        text-align: flip(right, left);
+        width: 100%;
+    }
+
+    .tcon-menu__lines {
+        &:before,
+        &:after {
+            background: #fff;
+        }
+    }
+}

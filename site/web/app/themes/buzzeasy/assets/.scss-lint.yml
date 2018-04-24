@@ -1,0 +1,68 @@
+exclude:
+  - sass/base/_normalize.scss
+  - sass/vendors/*
+
+linters:
+  ColorVariable:
+    enabled: false
+  LeadingZero:
+    enabled: true
+    style: include_zero
+  HexLength:
+    enable: false
+  Indentation:
+    enabled: true
+    character: space
+    width: 4
+  NestingDepth:
+    enabled: true
+    max_depth: 3
+  PropertyCount:
+    enabled: false
+
+
+# Adding custom sort order for border, margin & padding.
+# Its more logical to me to keep them in the clockwise order
+# instead of alphabetical
+  # PropertySortOrder:
+  #   order:
+  #     - border-top
+  #     - border-right
+  #     - border-bottom
+  #     - border-left
+
+
+
+# Stuart's disabels
+  ColorKeyword:
+    enabled: false      # Needed for color map
+  Comment:              # I like use /*{element}*/
+    enabled: false
+
+  # turn this off, because semantics > any kind of blanket logic
+  # (eg: @include responsive-type() is text, thus belongs with text)
+  DeclarationOrder:
+    enabled: false
+  ImportPath:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+  TrailingWhitespace:
+    enabled: false
+  SpaceAfterVariableName:
+    enabled: false
+  SpaceAroundOperator:
+    enabled: false
+  PseudoElement:
+    enabled: false
+  SpaceAfterPropertyColon:
+    style: at_least_one_space
+  SpaceBeforeBrace:
+    allow_single_line_padding: true

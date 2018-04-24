@@ -7,7 +7,6 @@ npm-debug.log
 vendor
 Gemfile.lock
 .DS_Store
-/assets
 /composer.lock
 /yarn.lock
 /template-playground.php

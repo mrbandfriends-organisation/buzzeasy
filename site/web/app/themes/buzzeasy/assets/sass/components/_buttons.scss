@@ -1,0 +1,91 @@
+// ==========================================================================
+//
+// BUTTONS
+//
+// Description: UI styles to create button-like elements
+//
+// ==========================================================================
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+@mixin btn {
+    @include inline-block;
+    position: relative;
+    z-index: 1;
+    padding: rem(10px) rem(20px);
+    border: 0;
+    color: #fff;
+    background-color: color-get(primary);
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn {
+    @include btn;
+}
+
+
+
+// MODIFIER: DISABLED
+// ==========================================================================
+
+@mixin btn-disabled {
+    // scss-lint:disable ImportantRule
+    background-image: none !important;
+    // scss-lint:disable ImportantRule
+    cursor: default !important;
+    opacity: 0.65;
+
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.btn[disabled],
+.btn-disabled,
+.btn--disabled {
+    @include btn-disabled;
+}
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: BUTTON COLOR
+// ==========================================================================
+
+@mixin btn-color($color: false, $color-shade: default) {
+    @if($color != false) {
+        $color-shade-modifier: "";
+
+        @if( $color-shade != default ) {
+            $color-shade-modifier: $color-shade + "-";
+        }
+
+        .btn--#{$color-shade-modifier}#{$color} {
+            background-color: color-get($color, $color-shade);
+
+            &:hover,
+            &:focus {
+                background-color: #fff;
+                color: color-get($color, $color-shade);
+            }
+        }
+    }
+}
+
+@each $color, $default-shade in $brand-colors {
+    @include btn-color($color);
+
+    @if( map-has-nested-keys($brand-colors, $color, light) == true) {
+        @include btn-color($color, light);
+    }
+
+    @if( map-has-nested-keys($brand-colors, $color, dark) == true) {
+        @include btn-color($color, dark);
+    }
+}
