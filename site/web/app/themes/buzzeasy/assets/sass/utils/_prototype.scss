@@ -7,10 +7,22 @@
 // ==========================================================================
 
 .page-hero {
-    background-color: #888;
+    background-color: color-get(primary);
+
+    .about-us & {
+        background-color: color-get(secondary);
+    }
+
+    .services & {
+        background-color: color-get(blue);
+    }
+
+    .contact-us & {
+        background-color: color-get(green);
+    }
+
     h1, h2 {
         color: white;
-        text-shadow: 0 2.5px 5px rgba(0,0,0,0.2);
     }
 }
 

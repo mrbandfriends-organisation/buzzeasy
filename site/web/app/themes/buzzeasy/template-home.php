@@ -11,12 +11,12 @@
 		<div class="page-hero__inner">
 			<header>
 				<h1 class="page-hero__heading heading--alpha">
-					Homepage Heading
+					Buzzeasy
 				</h1>
 			</header>
 			
 			<h2 class="heading--charlie">
-				Subheading
+				Cross-channel, not crossed wires.
 			</h2>
 		</div>
 	</div>
