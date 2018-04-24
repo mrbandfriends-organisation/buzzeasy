@@ -12,7 +12,7 @@
 // ==========================================================================
 
 .page-hero {
-    @include billboard(100%);
+    @include billboard(80vh);
     @include flex-col(flex-start, center);
 }
 

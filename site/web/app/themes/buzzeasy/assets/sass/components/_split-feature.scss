@@ -14,35 +14,49 @@
 // ==========================================================================
 
 @mixin split-feature-color($color: false, $color-shade: default) {
-    @if($color != false) {
+    @if ($color != false) {
         $color-shade-modifier: "";
 
-        @if( $color-shade != default ) {
+        @if ($color-shade != default) {
             $color-shade-modifier: $color-shade + "-";
         }
 
         .split-feature--#{$color-shade-modifier}#{$color} {
-
-            &:before { background-color: color-get($color, $color-shade); }
+            &:before {
+                background-color: color-get($color, $color-shade);
+            }
         }
     }
 }
-
-
-
-
 
 // ==========================================================================
 // # BASE
 // ==========================================================================
 
-// .split-feature-container {}
-
-
-.split-feature__column {
-    .flexbox & { @include flex-col(strech, center);  }
+.split-feature__copy {
+    p {
+        margin-bottom: $quarter-spacing-unit;
+        margin-top: $half-spacing-unit;
+    }
 }
 
+.split-feature__image {
+    @include billboard(100%, 50% 50%);
+    @include flex-col(flex-start, center);
+    background-color: color-get(primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq($until: medium) {
+        display: none;
+    }
+}
+
+.split-feature__column {
+    .flexbox & {
+        @include flex-col(stretch, center);
+    }
+}
 
 .split-feature {
     @include base-background();
@@ -60,12 +74,31 @@
         z-index: -1;
     }
 
-    .flexbox & { @include flex-col(center, center); }
+    .flexbox & {
+        @include flex-col(center, center);
+    }
 }
 
+.split-feature__inner {
+    height: 100%;
+    padding: 0 $spacing-unit;
 
+    .text--large {
+        @include mq($until: medium) {
+            font-size: 16px;
+        }
+    }
 
+    .flexbox & {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
+    @include mq(medium) {
+        padding: 0 $double-spacing-unit;
+    }
+}
 
 // ==========================================================================
 // # MODIFIER: COLORS
@@ -80,7 +113,6 @@
 
 @include split-feature-color(primary);
 @include split-feature-color(off-white);
-
 
 // @each $color, $default-shade in $brand-colors {
 //     @include split-feature-color($color);

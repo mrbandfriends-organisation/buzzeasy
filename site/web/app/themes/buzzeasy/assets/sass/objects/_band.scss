@@ -92,14 +92,14 @@
 // Don't use this by default. Totally fine to use if needed on the project
 
 
-// @each $color, $default-shade in $brand-colors {
-//     @include band-color($color);
-//
-//     @if( map-has-nested-keys($brand-colors, $color, light) == true) {
-//         @include band-color($color, light);
-//     }
-//
-//     @if( map-has-nested-keys($brand-colors, $color, dark) == true) {
-//         @include band-color($color, dark);
-//     }
-// }
+@each $color, $default-shade in $brand-colors {
+    @include band-color($color);
+
+    @if( map-has-nested-keys($brand-colors, $color, light) == true) {
+        @include band-color($color, light);
+    }
+
+    @if( map-has-nested-keys($brand-colors, $color, dark) == true) {
+        @include band-color($color, dark);
+    }
+}
