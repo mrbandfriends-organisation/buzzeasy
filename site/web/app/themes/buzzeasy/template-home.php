@@ -6,7 +6,7 @@
 
 ?>
 
-<section class="page-hero lazyload text-center">
+<section class="page-hero lazyload">
 	<div class="container">
 		<div class="page-hero__inner">
 			<header>

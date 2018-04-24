@@ -6,7 +6,7 @@
 
 ?>
 
-<section class="page-hero lazyload text-center">
+<section class="page-hero lazyload">
 	<div class="container">
 		<div class="page-hero__inner">
 			<header>
@@ -37,6 +37,8 @@
 				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
 			</ul>
+		</div>
+		<div class="gc s1-1 l1-2">
 		</div>
 	</div>
 </section>
