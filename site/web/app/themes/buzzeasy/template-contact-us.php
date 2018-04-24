@@ -23,24 +23,22 @@
 </section>
 
 <section class="contact-us band">
-	<div class="container">
+	<div class="container container--reduced">
+		<h2>Get in touch</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<form action="action_page.php">
 
 			<label for="fname">First Name</label>
-			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<input type="text" id="fname" name="firstname" required>
 
 			<label for="lname">Last Name</label>
-			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-			<label for="country">Country</label>
-			<select id="country" name="country">
-			<option value="australia">Australia</option>
-			<option value="canada">Canada</option>
-			<option value="usa">USA</option>
-			</select>
+			<input type="text" id="lname" name="lastname" required>
 
 			<label for="subject">Subject</label>
-			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+			<textarea id="subject" name="subject" style="height:200px"></textarea>
+
+			<input id="GDPR" type="checkbox" value="GDPR">
+			<label for="GDPR">GDPR Compliant Opt-in</label>
 
 			<input type="submit" value="Submit">
 
