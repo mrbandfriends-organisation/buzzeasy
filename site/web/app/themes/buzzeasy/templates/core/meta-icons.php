@@ -5,6 +5,6 @@
 <link rel="manifest" href="<?php echo ($stylesheet_path); ?>/assets/images/favicons/site.webmanifest">
 <link rel="mask-icon" href="<?php echo ($stylesheet_path); ?>/assets/images/favicons/safari-pinned-tab.svg" color="#2f7de1">
 <link rel="shortcut icon" href="<?php echo ($stylesheet_path); ?>/assets/images/favicons/favicon.ico">
-<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-config" content="<?php echo ($stylesheet_path); ?>/assets/images/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
