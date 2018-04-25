@@ -32,7 +32,7 @@
 
 <section class="services band band--yellow">
 	<div class="container">
-		<h2 class="text-center heading--primary">Services</h2>
+		<h2 class="text-center heading--red">Services</h2>
 
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/buzzeasy-services.png" style="display: block; margin: auto;">
 	</div>

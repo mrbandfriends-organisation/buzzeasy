@@ -22,7 +22,7 @@
 	</div>
 </section>
 
-<section class="customer-journey band band--red">
+<section class="brand band band--red">
 	<div class="container">
 		<div class="gc s1-1 l1-2">
 			<h2 class="heading--white">Vision/brand</h2>
@@ -49,7 +49,7 @@
 	</div>
 </section>
 
-<section class="benefits band band--green"><div class="container">
+<section class="geomant band band--green"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 			<h2 class="heading--white">Group Co.</h2>
