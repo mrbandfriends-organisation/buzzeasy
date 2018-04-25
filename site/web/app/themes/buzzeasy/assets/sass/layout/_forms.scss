@@ -55,13 +55,16 @@ textarea {
     border-radius: 0;
     box-shadow: $form-box-shadow;
     box-sizing: border-box;
+    color: map-deep-get($brand-colors, red, default);
     display: block;
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: $base-font-size * 1.25;
     margin-bottom: $spacing-unit / 2;
-    padding: $half-spacing-unit;
+    padding: $quarter-spacing-unit * 1.5;
     transition: border-color;
     width: 100%;
+
+    @include placeholder( map-deep-get($brand-colors, red, default) );
 
     &:hover {
         border-color: darken($base-border-color, 10%);
@@ -391,7 +394,7 @@ input[type="checkbox"] + label {
     &:hover,
     &:focus {
         &:before {
-            background-color: $base-grey;
+            background-color: map-deep-get($brand-colors, grey, light);
             border-color: map-deep-get($brand-colors, primary, default);
         }
     }
@@ -447,5 +450,17 @@ input[type="button"] {
     &:focus {
         @include tab-focus();
         box-shadow: none; // override for file inputs
+    }
+}
+
+
+// # BOLD TEXT / PLACEHOLDER
+// ==========================================================================
+
+#{$all-text-inputs},
+select,
+textarea {
+    &.input--bold, &.input--bold::placeholder {
+        font-weight: bold;
     }
 }

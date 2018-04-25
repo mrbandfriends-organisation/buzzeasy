@@ -28,14 +28,14 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<form action="action_page.php">
 
-			<label for="fname">First Name</label>
-			<input type="text" id="fname" name="firstname" required>
+			<label for="fname" class="vh">First name</label>
+			<input type="text" id="fname" name="firstname" placeholder="First name" required class="input--bold">
 
-			<label for="lname">Last Name</label>
-			<input type="text" id="lname" name="lastname" required>
+			<label for="lname" class="vh">Last name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Last name" required class="input--bold">
 
-			<label for="subject">Subject</label>
-			<textarea id="subject" name="subject" style="height:200px"></textarea>
+			<label for="subject" class="vh">Your message</label>
+			<textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
 
 			<input id="GDPR" type="checkbox" value="GDPR">
 			<label for="GDPR">GDPR Compliant Opt-in</label>
