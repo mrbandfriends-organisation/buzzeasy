@@ -43,17 +43,15 @@
 	</div>
 </section>
 
-<section class="benefits band"><div class="container">
+<section class="benefits band band--green"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
+			<h2 class="heading--white">Group Co.</h2>
+			<p class="text--white">Developed in the UK, Buzzeasy is part of a suite of cloud services offered by Geomant-On-Demand, which delivers individual, pay-as-you-use contact centre services that expand, enhance and improve customer interaction - effortlessly.</p>
+			<p class="text--white">Expert in Unified Communications and certified by leading technology providers, Geomant is a highly innovative software developer and systems integrator who has provided successful communication solutions to organizations of every type and size across the world for nearly two decades. Specializing in Microsoft and Avaya technologies, Geomant covers Europe, USA and Australia and boasts an extensive and successful international reseller network.</p>
 		</div>
-		<div class="gc s1-1 l1-2">
-			<h2>Group Co.</h2>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-			</ul>
+		<div class="gc s1-1 l1-2 gc--vmiddle">
+			<img src="http://www.geomant.com/wp-content/uploads/2016/01/geo-elements-logo-small-white-011.png" alt="Geomant">
 		</div>
 	</div>
 </section>
