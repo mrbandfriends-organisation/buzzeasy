@@ -31,10 +31,10 @@
 </section>
 
 <section class="services band band--yellow">
-	<div class="container">
-		<h2 class="text-center heading--red">Services</h2>
-
+	<div class="container text-center">
+		<h2 class="heading--red">Services</h2>
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/buzzeasy-services.png" style="display: block; margin: auto;">
+		<a href="/services/" class="btn btn--red">See more</a>
 	</div>
 </section>
 

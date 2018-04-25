@@ -37,6 +37,7 @@ label {
     @include wf-primary;
     color: map-deep-get($brand-colors, red, default);
     display: block;
+    font-size: $base-font-size * 1.25;
     font-weight: 600;
     margin-bottom: $quarter-spacing-unit;
 
@@ -161,6 +162,7 @@ input[type="button"] {
     // Remove native appearance
     appearance: none;
     cursor: pointer;
+    font-size: $base-font-size * 1.25;
     margin: 0;
     outline: 0;
     overflow: visible;
