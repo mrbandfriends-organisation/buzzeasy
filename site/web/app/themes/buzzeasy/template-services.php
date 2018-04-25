@@ -114,14 +114,16 @@
 </section>
 
 <section class="case-studies band">
-	<div class="grid">
-		<div class="gc s1-1 m1-2 gc--vmiddle">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/geomant.png" alt="Geomant">
-		</div>
-		<div class="gc s1-1 m1-2">
-			<h3 class="heading--charlie">Company Name</h3>
-			<h4 class="heading--alpha">+50%</h4>
-			<h3 class="heading--delta">conversions</h3>
+	<div class="container">
+		<div class="grid">
+			<div class="gc s1-1 m1-2 gc--vmiddle text-center">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/geomant.png" alt="Geomant">
+			</div>
+			<div class="gc s1-1 m1-2">
+				<h3 class="heading--charlie">Company Name</h3>
+				<h4 class="heading--alpha">+50%</h4>
+				<h3 class="heading--delta">conversions</h3>
+			</div>
 		</div>
 	</div>
 </section>
