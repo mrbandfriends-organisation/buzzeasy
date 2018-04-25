@@ -100,7 +100,7 @@ function site_by_mrb($nav, $args)
 {
     // Currently footer utils menu doesnt have a string name just it's ID
     if ($args->menu === "footer_navigation") {
-       return $nav . '<li class="menu-item"><a ' . link_open_new_tab_attrs(true) . ' href="https://www.mrbandfriends.co.uk">Site by Mr B & Friends</a></li>';
+       // return $nav . '<li class="menu-item"><a ' . link_open_new_tab_attrs(true) . ' href="https://www.mrbandfriends.co.uk">Site by Mr B & Friends</a></li>';
     }
 
     return $nav;
