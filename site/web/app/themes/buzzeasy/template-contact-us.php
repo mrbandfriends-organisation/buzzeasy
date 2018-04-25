@@ -40,7 +40,7 @@
 			<input id="GDPR" type="checkbox" value="GDPR">
 			<label for="GDPR">GDPR Compliant Opt-in</label>
 
-			<input type="submit" value="Submit">
+			<button type="submit" value="Submit" class="btn btn--red">Submit</button>
 
 		</form>
 	</div>

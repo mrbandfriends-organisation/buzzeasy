@@ -158,8 +158,6 @@ button[type="submit"], // you cannot apply this as a global style
 input[type="reset"],
 input[type="submit"],
 input[type="button"] {
-    @include btn;
-    @extend %btn--primary !optional;
     // Remove native appearance
     appearance: none;
     cursor: pointer;
