@@ -21,8 +21,12 @@
         background-color: color-get(green);
     }
 
-    h1, h2 {
-        color: white;
+    h1, h2, h3 {
+        color: color-get(white);
+    }
+
+    .blurb {
+        max-width: 600px;
     }
 }
 
@@ -33,4 +37,22 @@
 
 .endorsement-icon {
     margin-bottom: $quarter-spacing-unit;
+}
+
+section.team {
+    background: color-get(grey) url("../images/team.jpg") center center / cover no-repeat;
+
+    height: 70vh;
+    
+        display: flex;
+        align-items: flex-end;
+
+    .gc:last-of-type {
+        background-color: color-get(blue);
+        padding: $half-spacing-unit $spacing-unit;
+
+        h2, p, ul {
+            color: color-get(white);
+        }
+    }
 }

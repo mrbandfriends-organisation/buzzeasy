@@ -28,8 +28,10 @@
 	</div>
 </section>
 
-<section class="benefits band band--off-white"><div class="container">
+<section class="team band band--off-white"><div class="container">
     <div class="grid">
+		<div class="gc s1-1 l1-2">
+		</div>
 		<div class="gc s1-1 l1-2">
 			<h2>Team</h2>
 			<ul>
@@ -37,8 +39,6 @@
 				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
 			</ul>
-		</div>
-		<div class="gc s1-1 l1-2">
 		</div>
 	</div>
 </section>
