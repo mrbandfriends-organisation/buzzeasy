@@ -128,7 +128,7 @@
 
 <section class="cta-banner band band--light-grey">
 	<div class="container text-center">
-		<a href="/contact-us/" class="btn btn-primary">Free trial</a>
-		<a href="/contact-us/" class="btn btn-primary">Get in touch</a>
+		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
+		<a href="/contact-us/" class="btn btn--primary">Get in touch</a>
 	</div>
 </section>

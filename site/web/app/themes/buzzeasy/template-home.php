@@ -40,7 +40,7 @@
 
 <section class="cta-banner band">
 	<div class="container text-center">
-		<a href="/contact-us/" class="btn btn-primary">Free trial</a>
+		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
 	</div>
 </section>
 
@@ -83,6 +83,6 @@
 
 <section class="cta-banner band band--light-grey">
 	<div class="container text-center">
-		<a href="/contact-us/" class="btn btn-primary">Call us</a>
+		<a href="/contact-us/" class="btn btn--primary">Call us</a>
 	</div>
 </section>

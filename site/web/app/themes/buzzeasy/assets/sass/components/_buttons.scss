@@ -15,9 +15,10 @@
     position: relative;
     z-index: 1;
     padding: rem(10px) rem(20px);
-    border: 0;
-    color: #fff;
-    background-color: color-get(primary);
+    border: 4px solid color-get(primary);
+    background-color: transparent;
+    color: color-get(primary);
+    font-weight: bold;
     font-size: 100%;
     text-align: center;
     text-decoration: none;
@@ -67,12 +68,14 @@
         }
 
         .btn--#{$color-shade-modifier}#{$color} {
-            background-color: color-get($color, $color-shade);
+            background-color: transparent;
+            color: color-get($color, $color-shade);
+            transition: all 0.2s ease;
 
             &:hover,
             &:focus {
-                background-color: #fff;
-                color: color-get($color, $color-shade);
+                background-color: color-get($color, $color-shade);
+                color: color-get(white);
             }
         }
     }
