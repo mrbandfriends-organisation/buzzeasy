@@ -11,7 +11,7 @@
 // ==========================================================================
 
 .banner {
-    background-color: color-get(grey, light);
+    background-color: color-get(white, default);
     padding: 0;
     position: relative;
     width: 100%;
@@ -26,6 +26,12 @@
     padding-bottom: $half-spacing-unit;
     padding-top: $half-spacing-unit;
     position: relative;
+
+    .site-logo {
+        picture, picture > img {
+            height: 40px;
+        }
+    }
 
     .flexbox & {
         align-items: center;
