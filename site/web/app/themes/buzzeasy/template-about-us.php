@@ -22,9 +22,15 @@
 	</div>
 </section>
 
-<section class="customer-journey band">
+<section class="customer-journey band band--red">
 	<div class="container">
-		<h2>Vision/brand</h2>
+		<div class="gc s1-1 l1-2">
+			<h2 class="heading--white">Vision/brand</h2>
+			<p class="text--white">Here at Buzzeasy, we’re passionate about customer engagement. More precisely, we’re passionate about helping you to do things a little differently - so you stand out from the crowd in the way you interact with your customers.</p>
+			<p class="text--white">Harnessing the power of Microsoft’s state-of-the-art bot technology and the Azure Cloud, Buzzeasy ensures that you and your customers engage more positively, more personally, and much more cost-effectively – yet with minimal effort on both sides. Customers can move effortlessly from any digital channel to live voice - simply at the touch of a button, and without ever having to wait in a queue.</p>
+		</div>
+		<div class="gc s1-1 l1-2 gc--vmiddle">
+		</div>
 	</div>
 </section>
 
