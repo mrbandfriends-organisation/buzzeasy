@@ -57,7 +57,7 @@
 			<p class="text--white">Expert in Unified Communications and certified by leading technology providers, Geomant is a highly innovative software developer and systems integrator who has provided successful communication solutions to organizations of every type and size across the world for nearly two decades. Specializing in Microsoft and Avaya technologies, Geomant covers Europe, USA and Australia and boasts an extensive and successful international reseller network.</p>
 		</div>
 		<div class="gc s1-1 l1-2 gc--vmiddle">
-			<img src="http://www.geomant.com/wp-content/uploads/2016/01/geo-elements-logo-small-white-011.png" alt="Geomant">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/geomant.png" alt="Geomant">
 		</div>
 	</div>
 </section>
