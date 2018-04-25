@@ -8,5 +8,6 @@
 	<?php get_template_part('templates/core/fastboot-html-classes'); ?>
 	<?php get_template_part('templates/core/core-css'); ?>
 	<?php get_template_part('templates/core/polyfills'); ?>
+	<?php get_template_part('templates/core/bugherd'); ?>
 	<?php wp_head(); ?>
 </head>
