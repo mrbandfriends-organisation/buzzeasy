@@ -28,17 +28,11 @@
 	</div>
 </section>
 
-<section class="services band band--off-white">
+<section class="services band band--yellow">
 	<div class="container">
-		<h2 class="text-center">Services</h2>
+		<h2 class="text-center heading--primary">Services</h2>
 
-		<div class="grid">
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x150" alt="" class="service-icon"><h3>Service</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x150" alt="" class="service-icon"><h3>Service</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x150" alt="" class="service-icon"><h3>Service</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x150" alt="" class="service-icon"><h3>Service</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x150" alt="" class="service-icon"><h3>Service</h3></div>
-		</div>
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/buzzeasy-services.png" style="display: block; margin: auto;">
 	</div>
 </section>
 
