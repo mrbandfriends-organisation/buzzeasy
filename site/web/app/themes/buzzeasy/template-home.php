@@ -44,7 +44,7 @@
 	</div>
 </section>
 
-<section class="benefits band band--off-white"><div class="container">
+<section class="benefits band band--light-grey"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 			<h2>Contact Centre Benefits</h2>
@@ -81,7 +81,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--off-white">
+<section class="cta-banner band band--light-grey">
 	<div class="container text-center">
 		<a href="/contact-us/" class="btn btn-primary">Call us</a>
 	</div>

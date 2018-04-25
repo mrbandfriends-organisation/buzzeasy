@@ -34,7 +34,7 @@
 	</div>
 </section>
 
-<section class="team band band--off-white"><div class="container">
+<section class="team band band--light-grey"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 		</div>
@@ -62,7 +62,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--off-white">
+<section class="cta-banner band band--light-grey">
 	<div class="container text-center">
 		<a href="/contact-us/" class="btn btn-primary">Call us</a>
 	</div>

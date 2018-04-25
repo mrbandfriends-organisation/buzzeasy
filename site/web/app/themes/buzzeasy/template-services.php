@@ -22,7 +22,7 @@
 	</div>
 </section>
 
-<section class="service band band--off-white">
+<section class="service band band--light-grey">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m2-3">
@@ -74,7 +74,7 @@
 	</div>
 </section>
 
-<section class="service band band--off-white">
+<section class="service band band--light-grey">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m2-3">
@@ -126,7 +126,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--off-white">
+<section class="cta-banner band band--light-grey">
 	<div class="container text-center">
 		<a href="/contact-us/" class="btn btn-primary">Free trial</a>
 		<a href="/contact-us/" class="btn btn-primary">Get in touch</a>
