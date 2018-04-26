@@ -18,7 +18,6 @@
         .offcanvas__offscreen--right {
             right: 0;
             top: 0;
-            transition: all ease 0.25s;
         }
 
         .offcanvas__offscreen--top,
@@ -38,7 +37,8 @@
 }
 
 .offcanvas__offscreen {
-    background-color: color-get(primary, dark);
+    background-color: color-get(white, default);
+    transition: all ease 0.25s;
 }
 
 .primary-offcanvas__section {

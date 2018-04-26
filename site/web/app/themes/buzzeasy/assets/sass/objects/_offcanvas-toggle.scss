@@ -55,7 +55,7 @@
     .tcon-menu__lines {
         &:before,
         &:after {
-            background: #fff;
+            background: color-get(primary, default);
         }
     }
 }

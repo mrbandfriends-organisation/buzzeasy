@@ -31,6 +31,7 @@ import EventBus from 'lib/eventbus';
 import 'behaviours/webfonts';
 import 'behaviours/svg-sprites';
 import 'behaviours/responsive-img-bgs';
+import 'behaviours/offcanvases';
 
 // OPTIONAL BEHAVIOURS
 // import 'behaviours/accordion';
@@ -42,11 +43,6 @@ import 'behaviours/responsive-img-bgs';
 
 // Conditional Behaviours
 // https://webpack.js.org/guides/code-splitting-async/
-if (bpm.matchSmaller('large')) {
-    import(
-        /* webpackChunkName: "offcanvas-toggles" */ 'behaviours/offcanvases'
-    );
-}
 
 if (document.querySelectorAll('.js-inline-video').length) {
     import(/* webpackChunkName: "inline-videos" */ 'behaviours/inline-video');
