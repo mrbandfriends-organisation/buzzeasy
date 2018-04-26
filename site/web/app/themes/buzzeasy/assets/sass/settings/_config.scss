@@ -45,7 +45,7 @@ $brand-colors: (
 );
 
 $base-background-color:			#fff;
-$base-border-color: 			#F42534;
+$base-border-color: 			#2F7DE1;
 $base-grey:                     #999;
 $base-border: 					4px solid $base-border-color;
 
@@ -376,7 +376,7 @@ $form-box-shadow-focus: 		0;
 // # ICONS
 // ==========================================================================
 
-$tcon-menu-color:				$base-grey;
+$tcon-menu-color:				$base-border-color;
 
 
 // STACKING
