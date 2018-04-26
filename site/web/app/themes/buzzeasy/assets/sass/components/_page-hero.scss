@@ -14,6 +14,14 @@
 .page-hero {
     @include billboard(80vh);
     @include flex-col(flex-start, center);
+
+    h1, h2, h3 {
+        color: color-get(white);
+    }
+
+    .blurb {
+        max-width: 600px;
+    }
 }
 
 

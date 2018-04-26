@@ -39,7 +39,7 @@ label {
     display: block;
     font-size: $base-font-size * 1.25;
     font-weight: 600;
-    margin-bottom: $quarter-spacing-unit;
+    margin-bottom: $spacing-unit / 2;
 
     &.required::after { content: "*"; }
 
