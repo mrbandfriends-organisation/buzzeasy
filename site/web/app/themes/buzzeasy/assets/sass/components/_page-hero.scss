@@ -12,7 +12,7 @@
 // ==========================================================================
 
 .page-hero {
-    @include billboard(80vh);
+    @include billboard(70vh);
     @include flex-col(flex-start, center);
 
     // Pad the top of the page hero to keep it below the fixed nav, on large+
