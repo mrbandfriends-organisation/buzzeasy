@@ -45,7 +45,7 @@
 	</div>
 </section>
 
-<section class="benefits band band--light-grey"><div class="container">
+<section class="benefits band band--double band--light-grey"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 			<h2>Contact Centre Benefits</h2>
