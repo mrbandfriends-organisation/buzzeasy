@@ -30,8 +30,8 @@
     .site-logo {
         picture, picture > img {
             height: 40px;
-            
-            @include mq($from: medium){
+
+            @include mq($from: nav-break-2){
                 height: 50px;
             }
         }
