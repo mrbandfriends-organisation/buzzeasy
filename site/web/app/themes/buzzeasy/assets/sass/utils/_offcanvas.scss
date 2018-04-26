@@ -13,8 +13,9 @@
 
 @mixin ui-offcanvas(
                         $el-body: ".offcanvas__body",
-                        $el-off-right: ".offcanvas__offscreen-right",
-                        $el-off-left: ".offcanvas__offscreen-left",
+                        $el-off-right: ".offcanvas__offscreen--right",
+                        $el-off-left: ".offcanvas__offscreen--left",
+                        $el-off-top: ".offcanvas__offscreen--top",
                         $off-width: 260px,
                         $positioning: "absolute"
                     ) {
@@ -41,7 +42,6 @@
 
     #{$el-body} {
         backface-visibility: hidden;
-        background-color: #fff; // required to ensure offscreen if competely covered by "body" element
         min-height: 900px; // otherwise the offcanvas shows through...
         overflow-x: hidden; // clip the overflow on older browsers as Android seems to have issues with overflow-x
         position: relative;
@@ -58,17 +58,17 @@
 
         // "Fade" effect/overlay
         // ==========================================================================
-        &:after {
-            background: rgba(0, 0, 0, 0.4);
-            content: "";
-            height: 0;
-            opacity: 0;
-            pointer-events: none;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 0;
-        }
+        // &:after {
+        //     background: rgba(0, 0, 0, 0.4);
+        //     content: "";
+        //     height: 0;
+        //     opacity: 0;
+        //     pointer-events: none;
+        //     position: absolute;
+        //     right: 0;
+        //     top: 0;
+        //     width: 0;
+        // }
     }
 
 
@@ -78,22 +78,22 @@
     // ==========================================================================
 
     #{$el-off-left},
-    #{$el-off-right} {
-        backface-visibility: hidden; // remove transition flicker
-        bottom: 0;
-        height: 100%;
-        opacity: 0; // hide when not active else it will show through if the body element isn't tall enough
-        overflow: hidden;
-        position: #{$positioning};
-        top: 0;
-        transform: translate3d(0, 0, 0); // make sure render layer is precomposed
-        transition: opacity 0.5s linear;
-        width: 98%;
-        z-index: 1;
+    #{$el-off-right},
+    #{$el-off-top} {
+        color: #fff;
+        min-height: 100vh;
+        overflow-y: auto;
+        padding: $spacing-unit $half-spacing-unit;
+        position: fixed;
+        transform: translate3d(0, 0, 0);
+        transition: all ease 0.25s;
+        width: 100%;
+        z-index: $zindex-tier-9;
 
         // On small screens sometimes the set pixel width is too wide
         // so we only kick this in at larger breakpoints
-        @media screen and (min-width: 320px){
+
+        @include mq(nav-break-2) {
             width: $off-width;
         }
     }
@@ -103,16 +103,25 @@
     // ==========================================================================
     #{$el-off-left} {
         #{$right}: auto;
-        #{$left}: 0;
+        #{$left}: -100%;
+        #{$top}: 0%;
     }
 
     // (Offscreen) RIGHT
     // =========================================================================
     #{$el-off-right} {
-        #{$right}: 0;
+        #{$right}: -100%;
         #{$left}: auto;
+        #{$top}: 0%;
     }
 
+    // (Offscreen) TOP
+    // =========================================================================
+    #{$el-off-top} {
+        #{$right}: 0%;
+        #{$top}: -100%;
+        #{$left}: auto;
+    }
 
     // ==========================================================================
     // STATE: ACTIVE

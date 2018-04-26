@@ -13,79 +13,62 @@
 
 .offcanvas__wrapper {
     @include ui-offcanvas();
-    background-color: color-get(grey, dark);
-}
 
+    &.is-active {
+        .offcanvas__offscreen--right {
+            right: 0;
+            top: 0;
+            transition: all ease 0.25s;
+        }
 
-// Show offcanvas navigation on all viewports
-.primary-offcanvas {
-    background-color: color-get(grey, light);
-    color: #fff;
-    z-index: 10;
-}
+        .offcanvas__offscreen--top,
+        .offcanvas__offscreen--left {
+            left: 0;
+            right: 0;
+            top: 0;
+            transition: all ease 0.25s;
+        }
 
-.primary-offcanvas__section {
-    padding: rem(15px) rem(25px);
-
-
-    @include mq($from: medium) {
-        padding: rem(25px) rem(60px) rem(25px) rem(30px);
-    }
-}
-
-
-// ==========================================================================
-// TOGGLE
-// ==========================================================================
-
-.offcanvas-toggle {
-    // scss-lint:disable ImportantRule
-    @include mq($from: nav-break-2) {
-        // important required to ensure that any site specific styling
-        // applied to the toggle does not overide the visibility
-        display: none !important;
-    }
-
-    .no-js & {
-        display: none;
-    }
-
-
-    &:hover,
-    &:focus {
-        span {
-            color: color-get(grey, dark);
+        @include mq(nav-break-2) {
+            .primary-offcanvas {
+                left: auto;
+            }
         }
     }
 }
 
-.offcanvas-toggle__text {
-    color: #000;
-    padding-right: $quarter-spacing-unit;
+.offcanvas__offscreen {
+    background-color: color-get(primary, dark);
 }
 
-.offcanvas-toggle--open {
-    float: flip(right, left);
-    text-decoration: none;
-}
+.primary-offcanvas__section {
+    padding: $half-spacing-unit rem(25px);
 
-.offcanvas-toggle--close {
-    position: relative;
-    z-index: 2;
 
-    &.offcanvas-toggle--close {
-        display: block;
-        height: 70px;
-        padding: 0;
-        #{$padding-right}: rem(30px);
-        text-align: flip(right, left);
-        width: 100%;
+    @include mq($from: medium) {
+        padding: 25px 60px;
     }
+}
 
-    .tcon-menu__lines {
-        &:before,
-        &:after {
-            background: color-get(primary, default);
+.nav-primary--offcanvas {
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            &:after {
+                text-decoration: underline;
+
+                // scss-lint:disable ImportantRule
+                width: 0 !important;
+            }
+        }
+    }
+    .current-menu-item {
+        a {
+            text-decoration: underline;
+
+            // scss-lint:disable ImportantRule
+            &:after { width: 0 !important; }
         }
     }
 }
