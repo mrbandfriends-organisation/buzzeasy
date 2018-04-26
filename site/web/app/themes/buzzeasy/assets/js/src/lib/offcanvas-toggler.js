@@ -13,8 +13,7 @@ class OffCanvasToggler {
             wrapper: '.js-offcanvas__wrapper',
             menu: '.js-primary-offcanvas',
             toggleElements: '.js-offcanvas-toggle',
-            activeLeftClass: 'is-active-left',
-            activeRightClass: 'is-active-right'
+            activeClass: 'is-active'
         };
 
         this.settings = Object.assign({}, defaults, options);
@@ -57,7 +56,7 @@ class OffCanvasToggler {
     }
 
     open() {
-        this.$wrapper.addClass(this.settings.activeRightClass);
+        this.$wrapper.addClass(this.settings.activeClass);
         this.$menu.attr('aria-hidden', 'false');
         this.$toggleElements.attr('aria-expanded', 'true');
         this.state = 'open';
@@ -66,7 +65,7 @@ class OffCanvasToggler {
     }
 
     close() {
-        this.$wrapper.removeClass(this.settings.activeRightClass);
+        this.$wrapper.removeClass(this.settings.activeClass);
         this.$menu.attr('aria-hidden', 'true');
         this.$toggleElements.attr('aria-expanded', 'false');
         this.state = 'closed';
