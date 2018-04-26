@@ -104,7 +104,7 @@
     #{$el-off-left} {
         #{$right}: auto;
         #{$left}: -100%;
-        #{$top}: 0%;
+        // #{$top}: 0%;
     }
 
     // (Offscreen) RIGHT
@@ -112,14 +112,14 @@
     #{$el-off-right} {
         #{$right}: -100%;
         #{$left}: auto;
-        #{$top}: 0%;
+        // #{$top}: 0%;
     }
 
     // (Offscreen) TOP
     // =========================================================================
     #{$el-off-top} {
         #{$right}: 0%;
-        #{$top}: -100%;
+        // #{$top}: -100%;
         #{$left}: auto;
     }
 
