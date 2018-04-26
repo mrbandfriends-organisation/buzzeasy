@@ -20,9 +20,31 @@
         }
     }
 
-    .site-logo {
-        picture, picture > img {
-            height: 80px;
+    .footer__site-logo {
+
+        @include mq($until: medium) {
+            margin-bottom: $half-spacing-unit;
+            text-align: center;
+        }
+
+        .site-logo {
+            picture, picture > img {
+                height: 80px;
+            }
+        }
+    }
+
+    .footer__site-info {
+        @include mq($until: medium) {
+            text-align: center;
+        }
+    }
+
+    .footer__address {
+        text-align: right;
+
+        @include mq($from: medium) {
+            text-align: left;
         }
     }
 }

@@ -10,10 +10,10 @@
   <h2 class="vh">Buzzeasy Footer Section</h2>
   <div class="container">
     <div class="grid">
-        <div class="gc t1-1 s1-4">
+        <div class="gc t1-1 m1-4 footer__site-logo">
             <?= Utils\ob_load_template_part('templates/partials/site-logo.php'); ?>
         </div>
-        <div class="gc t1-1 s1-4">
+        <div class="gc t1-2 m1-4">
             <div class="footer__left-column">
                 <div>
                     <?php
@@ -25,10 +25,10 @@
                 </div>
             </div>
         </div>
-        <div class="gc t1-1 s1-4">
+        <div class="gc t1-2 m1-4">
             <div class="footer__left-column">
                 <div>
-                    <p>
+                    <p class="footer__address">
                         Buzzeasy <br>
                         Address Line 1 <br>
                         Address Line 2 <br>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="gc t1-1 s1-4">
+        <div class="gc t1-1 m1-4 footer__site-info">
             &copy; Buzzeasy <?php echo date("Y"); ?><br /> Site by <a class="text--underlined" href="https://www.mrbandfriends.co.uk" <?= Extras\link_open_new_tab_attrs(); ?>>Mr B &amp; Friends</a></p>
         </div>
     </div>
