@@ -19,8 +19,7 @@
 
 // Show offcanvas navigation on all viewports
 .primary-offcanvas {
-    background-color: color-get(grey, dark);
-    box-shadow: inset 7px 0 15px -5px rgba(#000, 0.4);
+    background-color: color-get(grey, light);
     color: #fff;
     z-index: 10;
 }
@@ -86,7 +85,7 @@
     .tcon-menu__lines {
         &:before,
         &:after {
-            background: #fff;
+            background: color-get(primary, default);
         }
     }
 }
