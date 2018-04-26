@@ -45,6 +45,9 @@
 				</ul>
 			</div>
 		</div>
+		<button class="btn btn--primary">
+			Service link
+		</button>
 	</div>
 </section>
 
@@ -71,6 +74,9 @@
 				</ul>
 			</div>
 		</div>
+		<button class="btn btn--green">
+			Service link
+		</button>
 	</div>
 </section>
 
@@ -97,6 +103,9 @@
 				</ul>
 			</div>
 		</div>
+		<button class="btn btn--red">
+			Service link
+		</button>
 	</div>
 </section>
 

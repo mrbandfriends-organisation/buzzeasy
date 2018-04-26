@@ -65,8 +65,17 @@ section.team {
     }
 }
 
-.service ul {
-    padding-left: 1rem;
+.service {
+    button {
+        display: block;
+        margin: auto;
+        @include mq($from: medium){
+            margin: 0;
+        }
+    }
+    ul {
+        padding-left: 1rem;
+    }
 }
 
 .benefits ul {
