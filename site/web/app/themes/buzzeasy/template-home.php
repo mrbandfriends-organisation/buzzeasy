@@ -34,7 +34,7 @@
 	<div class="container text-center">
 		<h2 class="heading--red">Services</h2>
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/buzzeasy-services.png" style="display: block; margin: auto;">
-		<a href="/services/" class="btn btn--red">See more</a>
+		<a href="/services/" class="btn btn--red">See all services</a>
 	</div>
 </section>
 
@@ -68,16 +68,16 @@
 
 <section class="endorsements band">
 	<div class="container">
-		<h2 class="text-center">
-			Endorsements
+		<h2 class="heading--charlie text-center">
+			Who we've worked with
 		</h2>
 
 		<div class="grid">
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
 		</div>
 	</div>
 </section>
