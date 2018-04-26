@@ -61,14 +61,14 @@
 	</div>
 </section>
 
-<section class="cta-banner band">
+<section class="cta-banner band band--light-grey">
 	<div class="container text-center">
 		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
 	</div>
 </section>
 
-<section class="benefits band band--double band--light-grey"><div class="container">
+<section class="benefits band band--double"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 			<h2>Contact Centre Benefits</h2>
@@ -89,7 +89,7 @@
 	</div>
 </section>
 
-<section class="endorsements band">
+<section class="endorsements band band--light-grey">
 	<div class="container">
 		<h2 class="heading--charlie text-center">
 			Who we've worked with
@@ -105,7 +105,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--light-grey">
+<section class="cta-banner band">
 	<div class="container text-center">
 		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>

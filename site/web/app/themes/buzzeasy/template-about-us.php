@@ -70,7 +70,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--light-grey">
+<section class="cta-banner band">
 	<div class="container text-center">
 		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>
