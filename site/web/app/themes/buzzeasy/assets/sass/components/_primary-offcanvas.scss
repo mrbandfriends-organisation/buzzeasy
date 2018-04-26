@@ -39,10 +39,19 @@
 .offcanvas__offscreen {
     background-color: color-get(white, default);
     transition: all ease 0.25s;
+
+    .site-logo {
+        picture, img {
+            display: block;
+            height: auto;
+            width: 40px;
+            margin: 0 auto $half-spacing-unit;
+        }
+    }
 }
 
 .primary-offcanvas__section {
-    padding: $half-spacing-unit rem(25px);
+    padding: $double-spacing-unit rem(25px);
 
 
     @include mq($from: medium) {

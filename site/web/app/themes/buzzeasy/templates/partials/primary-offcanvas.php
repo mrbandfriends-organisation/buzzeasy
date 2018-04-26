@@ -9,6 +9,11 @@
     </button>
 
     <div class="primary-offcanvas__section">
+
+        <?php
+            echo Utils\ob_load_template_part('templates/partials/site-logo.php');
+        ?>
+        
         <?php
             $offcanvas_nav_args = array(
                 'modifier' => 'offcanvas'
