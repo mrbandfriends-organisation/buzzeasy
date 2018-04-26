@@ -102,13 +102,19 @@
 
 <section class="integration band">
 	<div class="container">
-		<h2 class="text-center">Integrations</h2>
 		<div class="grid">
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"><h3>Company</h3></div>
+			<div class="gc s1-1 l1-2">
+				<h2>Integrations</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="gc s1-1 l1-2"></div>
+		</div>
+		<div class="grid">
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
 		</div>
 	</div>
 </section>
