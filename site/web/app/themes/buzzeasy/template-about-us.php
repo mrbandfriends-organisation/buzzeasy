@@ -18,6 +18,10 @@
 			<h2 class="heading--charlie">
 				Subheading
 			</h2>
+
+			<button class="btn btn--white">
+				Get in touch
+			</button>
 		</div>
 	</div>
 </section>

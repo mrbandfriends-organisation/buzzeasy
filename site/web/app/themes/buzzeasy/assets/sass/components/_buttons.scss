@@ -77,7 +77,14 @@
             &:hover,
             &:focus {
                 background-color: color-get($color, $color-shade);
-                color: color-get(white);
+
+                // If the button colour is white, use the primary colour for the button text.
+                @if ($color == white) {
+                    color: color-get(primary, default);
+                } @else {
+                    // Otherwise, use white.
+                    color: color-get(white, default);
+                }
             }
         }
     }
