@@ -22,6 +22,17 @@
     }
 }
 
+.customer-journey h3 {
+    background-color: color-get(blue);
+    border-radius: 50%;
+    color: color-get(white);
+    display: block;
+    margin: 0 auto $quarter-spacing-unit;
+    height: 45px;
+    width: 45px;
+    padding: 4px;
+}
+
 .service-icon {
     border-radius: 50%;
     margin-bottom: $quarter-spacing-unit;
@@ -33,11 +44,13 @@
 
 section.team {
     background: color-get(grey) url("../images/team.jpg") center center / cover no-repeat;
+    height: 70vh;    
+    display: flex;
+    align-items: flex-end;
 
-    height: 70vh;
-    
-        display: flex;
-        align-items: flex-end;
+    .grid {
+        margin-left: 0;
+    }
 
     .gc:last-of-type {
         background-color: color-get(blue);
