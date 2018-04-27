@@ -24,8 +24,15 @@
 The following items represent quirks of this particular project. 
 
 * This project has been set up with Ansible v2.5.0.0, though it may work with older versions.
-    * If you encounter an error regarding the SSL certificate for Github, try using Ansible 2.5.0.0 (or MAMP!)
+  * If you encounter an error regarding the SSL certificate for Github, try using Ansible 2.5.0.0 (or MAMP!)
 * Currently you need to build CSS & JS before deploying. Run `npm run build` in the theme root and commit/push the minified files.
+
+* The client-side hosting of the site is handled via Axure. As such the server requires some additional configuration:-
+  * In the Apache config file - `/etc/apache2/apache2.conf` - AllowOverride has been set to 'all' to allow for .htaccess rewrites.
+  * Deployments are made to the home directory of the ssh user we use to deploy (details in LastPass) - which is symlinked to var/www/html.
+    * The command used to achieve this was `ln -s /home/SSH-USER/site/web /var/www/html`
+  * Some PHP extensions had to be installed - php-curl, php-simplexml and php-zip
+  * `chown www-data: .htaccess` was run in `~/site/web` to allow WordPress to modify the .htaccess file.
 
 ## Installation
 
