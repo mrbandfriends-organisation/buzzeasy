@@ -61,25 +61,25 @@
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/messages.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
-				<a href="/services/" class="btn btn--red">Read more</a>
+				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/call.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
-				<a href="/services/" class="btn btn--red">Read more</a>
+				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/queue.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
-				<a href="/services/" class="btn btn--red">Read more</a>
+				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/chat.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
-				<a href="/services/" class="btn btn--red">Read more</a>
+				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
 		</div>
 	</div>
