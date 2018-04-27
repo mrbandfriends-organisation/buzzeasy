@@ -35,7 +35,7 @@ fieldset {
 %form-label,
 label {
     @include wf-primary;
-    color: map-deep-get($brand-colors, red, default);
+    color: map-deep-get($brand-colors, blue, default);
     display: block;
     font-size: $base-font-size * 1.25;
     font-weight: 600;
@@ -57,7 +57,7 @@ textarea {
     border-radius: 0;
     box-shadow: $form-box-shadow;
     box-sizing: border-box;
-    color: map-deep-get($brand-colors, red, default);
+    color: map-deep-get($brand-colors, blue, default);
     display: block;
     font-family: $base-font-family;
     font-size: $base-font-size * 1.25;
@@ -66,7 +66,7 @@ textarea {
     transition: border-color;
     width: 100%;
 
-    @include placeholder( map-deep-get($brand-colors, red, default) );
+    @include placeholder( map-deep-get($brand-colors, blue, default) );
 
     &:hover {
         border-color: darken($base-border-color, 10%);
@@ -372,7 +372,7 @@ input[type="checkbox"] + label {
 
     &:before {
         @include inline-block;
-        border: 4px solid map-deep-get($brand-colors, red, default);
+        border: 4px solid map-deep-get($brand-colors, blue, default);
         color: #fff;
         content: "";
         font-size: rem(10px);
@@ -395,7 +395,7 @@ input[type="checkbox"] + label {
     &:hover,
     &:focus {
         &:before {
-            background-color: mix(map-deep-get($brand-colors, red, default), #fff, 50%);
+            background-color: mix(map-deep-get($brand-colors, blue, default), #fff, 50%);
         }
     }
 
@@ -409,8 +409,8 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"]:checked + label {
     &:before {
-        background-color: map-deep-get($brand-colors, red, default);
-        border-color: map-deep-get($brand-colors, red, default);
+        background-color: map-deep-get($brand-colors, blue, default);
+        border-color: map-deep-get($brand-colors, blue, default);
         content: "✔";
     }
 }
