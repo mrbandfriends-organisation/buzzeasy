@@ -77,7 +77,6 @@
 				<h3 class="heading--black">Service Name</h3>
 				<a href="/services/" class="btn btn--blue">Read more</a>
 			</div>
-			</div>
 		</div>
 	</div>
 </section>
