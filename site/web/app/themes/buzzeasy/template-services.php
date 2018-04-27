@@ -15,7 +15,7 @@
 				</h1>
 			</header>
 			
-			<h2 class="heading--charlie">
+			<h2 class="heading--bravo">
 				Subheading
 			</h2>
 		</div>
@@ -26,7 +26,7 @@
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m2-3">
-				<h2>Service Name</h2>
+				<h2 class="heading--bravo">Service Name</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
@@ -37,7 +37,7 @@
 				</ul>
 			</div>
 			<div class="gc s1-1 m1-3">
-				<h3>Pricing</h3>
+				<h3 class="heading--charlie">Pricing</h3>
 				<ul style="list-style: none">
 					<li>XX users - £YY/month</li>
 					<li>XX users - £YY/month</li>
@@ -55,7 +55,7 @@
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m2-3">
-				<h2>Service Name</h2>
+				<h2 class="heading--bravo">Service Name</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
@@ -66,7 +66,7 @@
 				</ul>
 			</div>
 			<div class="gc s1-1 m1-3">
-				<h3>Pricing</h3>
+				<h3 class="heading--charlie">Pricing</h3>
 				<ul style="list-style: none">
 					<li>XX users - £YY/month</li>
 					<li>XX users - £YY/month</li>
@@ -84,7 +84,7 @@
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m2-3">
-				<h2>Service Name</h2>
+				<h2 class="heading--bravo">Service Name</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
@@ -95,7 +95,7 @@
 				</ul>
 			</div>
 			<div class="gc s1-1 m1-3">
-				<h3>Pricing</h3>
+				<h3 class="heading--charlie">Pricing</h3>
 				<ul style="list-style: none">
 					<li>XX users - £YY/month</li>
 					<li>XX users - £YY/month</li>
@@ -113,7 +113,7 @@
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 l1-2">
-				<h2>Integrations</h2>
+				<h2 class="heading--bravo">Integrations</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 			<div class="gc s1-1 l1-2"></div>
@@ -145,7 +145,7 @@
 
 <section class="cta-banner band">
 	<div class="container text-center">
-		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
 		<a href="/contact-us/" class="btn btn--primary">Get in touch</a>
 	</div>

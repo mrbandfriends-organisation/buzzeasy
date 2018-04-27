@@ -83,6 +83,32 @@ h4 {
 
 
 // ==========================================================================
+// # MODIFIER: HIGHLIGHT
+// ==========================================================================
+
+@mixin heading-highlight($color: false, $color-shade: default) {
+    @if($color != false) {
+        $color-shade-modifier: "";
+
+        @if( $color-shade != default ) {
+            $color-shade-modifier: $color-shade + "-";
+        }
+
+        .heading--highlight--#{$color-shade-modifier}#{$color} {
+            background-color: color-get($color, $color-shade);
+            box-decoration-break: clone;
+            display: inline;
+            padding: 3px 9PX;
+            margin-left: -9PX;
+        }
+    }
+}
+
+
+
+
+
+// ==========================================================================
 // # MODIFIER: TITLE COLORS
 // ==========================================================================
 
@@ -102,12 +128,15 @@ h4 {
 
 @each $color, $default-shade in $brand-colors {
     @include heading-color($color);
+    @include heading-highlight($color);
 
     @if( map-has-nested-keys($brand-colors, $color, light) == true) {
         @include heading-color($color, light);
+        @include heading-highlight($color, light);
     }
 
     @if( map-has-nested-keys($brand-colors, $color, dark) == true) {
         @include heading-color($color, dark);
+        @include heading-highlight($color, dark);
     }
 }

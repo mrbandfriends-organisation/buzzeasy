@@ -15,7 +15,7 @@
 				</h1>
 			</header>
 			
-			<h2 class="heading--charlie">
+			<h2 class="heading--bravo">
 				Subheading
 			</h2>
 		</div>
@@ -24,7 +24,7 @@
 
 <section class="contact-us band">
 	<div class="container container--reduced">
-		<h2>Get in touch</h2>
+		<h2 class="heading--bravo">Get in touch</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<form action="action_page.php">
 

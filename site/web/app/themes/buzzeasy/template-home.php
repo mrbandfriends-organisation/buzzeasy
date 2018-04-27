@@ -26,7 +26,7 @@
 
 <section class="customer-journey band">
 	<div class="container">
-		<h2 class="text-center landmark">Customer journey</h2>
+		<h2 class="heading--bravo text-center landmark">Customer journey</h2>
 
 		<div class="grid">
 			<div class="gc m1-3 l1-5 text-center">
@@ -55,29 +55,29 @@
 
 <section class="services band band--yellow">
 	<div class="container text-center">
-		<h2 class="heading--red landmark">Services</h2>
+		<h2 class="heading--bravo heading--red landmark">Services</h2>
 		<div class="grid">
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/messages.svg' ?>" class="service-icon">
-				<h3 class="heading--red">Service Name</h3>
+				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Read more</a>
 			</div>
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/call.svg' ?>" class="service-icon">
-				<h3 class="heading--red">Service Name</h3>
+				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Read more</a>
 			</div>
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/queue.svg' ?>" class="service-icon">
-				<h3 class="heading--red">Service Name</h3>
+				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Read more</a>
 			</div>
 			<div class="gc m1-3 l1-4">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/chat.svg' ?>" class="service-icon">
-				<h3 class="heading--red">Service Name</h3>
+				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Read more</a>
 			</div>
@@ -95,7 +95,7 @@
 <section class="benefits band band--double"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
-			<h2>Contact Centre Benefits</h2>
+			<h2 class="heading--charlie">Contact Centre Benefits</h2>
 			<ul>
 				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -103,7 +103,7 @@
 			</ul>
 		</div>
 		<div class="gc s1-1 l1-2">
-			<h2>Marketing Benefits</h2>
+			<h2 class="heading--charlie">Marketing Benefits</h2>
 			<ul>
 				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -115,7 +115,7 @@
 
 <section class="endorsements band band--light-grey">
 	<div class="container">
-		<h2 class="heading--charlie text-center">
+		<h2 class="heading--bravo text-center">
 			Who we've worked with
 		</h2>
 
@@ -131,7 +131,7 @@
 
 <section class="cta-banner band">
 	<div class="container text-center">
-		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>
 	</div>
 </section>
