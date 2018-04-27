@@ -37,8 +37,12 @@
 }
 
 .service-icon {
-    border-radius: 50%;
-    margin-bottom: $quarter-spacing-unit;
+    display: block;
+    margin: auto;
+    height: 80px;
+    width: auto;
+    fill: color-get(blue);
+    margin-bottom: $half-spacing-unit;
 }
 
 .endorsement-icon {

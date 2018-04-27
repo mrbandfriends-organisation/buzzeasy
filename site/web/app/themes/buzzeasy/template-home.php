@@ -55,9 +55,30 @@
 
 <section class="services band band--yellow">
 	<div class="container text-center">
-		<h2 class="heading--red">Services</h2>
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/buzzeasy-services.png" style="display: block; margin: auto;">
-		<a href="/services/" class="btn btn--red">See all services</a>
+		<h2 class="heading--blue landmark">Services</h2>
+		<div class="grid">
+			<div class="gc m1-3 l1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/messages.svg' ?>" class="service-icon">
+				<h3 class="heading--black">Service Name</h3>
+				<a href="/services/" class="btn btn--blue">Read more</a>
+			</div>
+			<div class="gc m1-3 l1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/call.svg' ?>" class="service-icon">
+				<h3 class="heading--black">Service Name</h3>
+				<a href="/services/" class="btn btn--blue">Read more</a>
+			</div>
+			<div class="gc m1-3 l1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/queue.svg' ?>" class="service-icon">
+				<h3 class="heading--black">Service Name</h3>
+				<a href="/services/" class="btn btn--blue">Read more</a>
+			</div>
+			<div class="gc m1-3 l1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/chat.svg' ?>" class="service-icon">
+				<h3 class="heading--black">Service Name</h3>
+				<a href="/services/" class="btn btn--blue">Read more</a>
+			</div>
+			</div>
+		</div>
 	</div>
 </section>
 
