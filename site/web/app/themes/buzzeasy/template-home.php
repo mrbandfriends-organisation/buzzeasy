@@ -31,23 +31,23 @@
 		<div class="grid">
 			<div class="gc m1-3 l1-5 text-center">
 				<h3 class="heading--bravo">1</h3>
-				<p>Lorem ipsum dolor sit amet</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-3 l1-5 text-center">
 				<h3 class="heading--bravo">2</h3>
-				<p>Lorem ipsum dolor sit amet</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-3 l1-5 text-center">
 				<h3 class="heading--bravo">3</h3>
-				<p>Lorem ipsum dolor sit amet</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-3 l1-5 text-center">
 				<h3 class="heading--bravo">4</h3>
-				<p>Lorem ipsum dolor sit amet</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-3 l1-5 text-center">
 				<h3 class="heading--bravo">5</h3>
-				<p>Lorem ipsum dolor sit amet</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 		</div>
 	</div>
