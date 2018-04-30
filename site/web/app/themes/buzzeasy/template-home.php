@@ -90,7 +90,7 @@
 
 <section class="cta-banner band band--100">
 	<div class="container text-center">
-		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+		<h2 class="heading--delta landmark--half">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
 	</div>
 </section>
@@ -117,7 +117,7 @@
 </section>
 
 <section class="endorsements band band--100">
-	<div class="container">
+	<div class="container landmark">
 		<h2 class="heading--bravo landmark text-center">
 			Who we've worked with
 		</h2>
@@ -130,11 +130,9 @@
 			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
 		</div>
 	</div>
-</section>
-
-<section class="cta-banner band band--100 band--light-grey">
+	
 	<div class="container text-center">
-		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+		<h2 class="heading--charlie landmark--half">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>
 	</div>
 </section>
