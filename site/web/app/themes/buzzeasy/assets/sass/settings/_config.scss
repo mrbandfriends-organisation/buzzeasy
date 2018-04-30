@@ -218,7 +218,7 @@ $alt-body-type: (
     font-style: normal;
 
     .wf-active-1 & {
-        font-family: FFNettoWebPro, $base-font-family;
+        font-family: 'Montserrat', $base-font-family;
         // -moz-osx-font-smoothing: grayscale;
         // -webkit-font-smoothing: antialiased;
         // font-smoothing: antialiased;
@@ -236,16 +236,16 @@ $alt-body-type: (
     // This is here incase `wf-active-2` isnt around
     // to fake the bold font weight
     .wf-active-1 & {
-        font-family: FFNettoWebPro, $base-font-family;
-        font-weight: bold;
+        font-family: 'Montserrat', $base-font-family;
+        font-weight: 600;
     }
 
     .wf-active-2 & {
-        font-family: FFNettoWebPro, $base-font-family;
+        font-family: 'Montserrat', $base-font-family;
         // -moz-osx-font-smoothing: grayscale;
         // -webkit-font-smoothing: antialiased;
         // font-smoothing: antialiased;
-        font-weight: normal;    // Overriding fallback faux-bold
+        font-weight: 600;    // Overriding fallback faux-bold
     }
 }
 

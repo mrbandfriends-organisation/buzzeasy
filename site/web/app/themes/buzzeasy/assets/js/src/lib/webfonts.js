@@ -7,7 +7,7 @@
  *
  * Essentially, we load the critical fontfirst and then progressively load in other less critical
  * weights after the first load has completed. Note that until the @fontface is actually used in
- * the CSS then it will not be "loaded". As a result if we conditionally apply the fontface using
+ * the CSS then it will not be 'loaded'. As a result if we conditionally apply the fontface using
  * the classes added to the <html> element then we can control when the fonts are requested via
  * JavaScript rather than allowing browser to handle. This provides full control over FOUT/FOIT!
  *
@@ -18,7 +18,7 @@
 import FontFaceObserver from 'fontfaceobserver';
 
 // Set this to true when using webfonts
-const WEB_FONTS = false;
+const WEB_FONTS = true;
 
 function webfonts() {
     // 1. Timeout helper
@@ -28,21 +28,29 @@ function webfonts() {
         });
     }
 
-    let timeout = WEB_FONTS ? 3000 : 1;
+    let timeout = WEB_FONTS ? 5000 : 1;
 
     // 2. Setup FontFaceObservers and pass in your fonts family name
     //    rather than the font files name. This can be anything you want. If
     //    you are loading 2 weight for the same font you *MUST* ensure that
     //    both font familes have very different names. Eg;
 
-    //    LatoRegular = Lato 400
-    //    LatoBold    = Lato 700
-    let webFont = new FontFaceObserver('ExampleFont');
+    let primaryFont = new FontFaceObserver('Montserrat', {
+        weight: 400
+    });
+
+    let secondaryFont = new FontFaceObserver('Montserrat', {
+        weight: 600
+    });
+
+    let tertiaryFont = new FontFaceObserver('Montserrat', {
+        weight: 300
+    });
 
     // 3. Race the Font load against the timeout
     Promise.race([
         timer(timeout), // if the fonts aint loaded fast enough then kick off big time!
-        webFont.load()
+        primaryFont.load()
     ])
         .then(function() {
             if (!document.documentElement.classList.contains('wf-active-1')) {
@@ -60,21 +68,26 @@ function webfonts() {
              *  when you call `FontFaceObserver`.
              */
 
-            // let secondaryFont = new FontFaceObserver('ExampleFontBold', {});
+            Promise.all([
+                secondaryFont.load(),
+                tertiaryFont.load()
+            ]).then(function() {
+                document.documentElement.className +=
+                    ' wf-active-2 wf-active-3';
 
-            // let tertiaryFont = new FontFaceObserver('ExampleFontLight', {});
-
-            // Promise.all([secondaryFont.load(), tertiaryFont.load()]).then(function () {
-            //     document.documentElement.className += " wf-active-2";
-
-            //     // Optimization for Repeat Views
-            //     sessionStorage.foutFontsLoaded2 = true;
-            // });
+                // Optimization for Repeat Views
+                sessionStorage.foutFontsLoaded2 = true;
+                sessionStorage.foutFontsLoaded3 = true;
+            });
 
             // Optimise for repeat view - https://www.zachleat.com/web-fonts/demos/fout-with-class.html
         })
         .catch(function() {
             document.documentElement.className += ' wf-inactive';
+
+            sessionStorage.foutFontsLoaded1 = false;
+            sessionStorage.foutFontsLoaded2 = false;
+            sessionStorage.foutFontsLoaded3 = false;
         });
 }
 
