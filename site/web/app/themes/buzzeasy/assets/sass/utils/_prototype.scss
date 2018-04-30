@@ -94,8 +94,8 @@ section.team {
         margin-bottom: $half-spacing-unit;
 
         @include mq($from: large){
-            margin-left: 0;
-            margin-right: auto;
+            margin-left: auto;
+            margin-right: 0;
         }
     }
 
