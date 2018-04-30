@@ -9,6 +9,10 @@
 .page-hero {
     background-color: color-get(primary);
 
+    .page-template-template-home & {
+        background: color-get(blue) url("../images/homepage-hero.jpg") center center / cover no-repeat;
+    }
+
     .page-template-template-about-us & {
         background-color: color-get(yellow);
     }
