@@ -46,4 +46,10 @@
     @if ($is-oldie == true) {
         @include ui-nav-menu--inline();
     }
+
+    .current-menu-item {
+        a {
+            text-decoration: underline;
+        }
+    }
 }
