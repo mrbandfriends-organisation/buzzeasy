@@ -88,26 +88,26 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--light-grey">
+<section class="cta-banner band">
 	<div class="container text-center">
 		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
 	</div>
 </section>
 
-<section class="benefits band band--double"><div class="container">
+<section class="benefits band band--double band--green"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
-			<h2 class="heading--charlie">Contact Centre Benefits</h2>
-			<ul>
+			<h2 class="heading--charlie heading--white">Contact Centre Benefits</h2>
+			<ul class="text--white">
 				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
 			</ul>
 		</div>
 		<div class="gc s1-1 l1-2">
-			<h2 class="heading--charlie">Marketing Benefits</h2>
-			<ul>
+			<h2 class="heading--charlie heading--white">Marketing Benefits</h2>
+			<ul class="text--white">
 				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
@@ -116,7 +116,7 @@
 	</div>
 </section>
 
-<section class="endorsements band band--light-grey">
+<section class="endorsements band">
 	<div class="container">
 		<h2 class="heading--bravo text-center">
 			Who we've worked with
@@ -132,7 +132,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band">
+<section class="cta-banner band band--light-grey">
 	<div class="container text-center">
 		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>
