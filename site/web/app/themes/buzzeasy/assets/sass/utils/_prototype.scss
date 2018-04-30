@@ -51,8 +51,8 @@
             margin-bottom: $half-spacing-unit;
         }
 
-        @include mq($until: xlarge){
-            margin-bottom: $half-spacing-unit;
+        @include mq($until: large){
+            margin-bottom: $double-spacing-unit;
         }
     }
 }
@@ -128,8 +128,12 @@ section.team {
     }
 }
 
-.cta-banner .btn {
+.cta-banner--double .btn {
     margin-bottom: $quarter-spacing-unit;
+
+    @include mq($from: small){
+        margin-bottom: 0;
+    }
 }
 
 .service-carousel p {
