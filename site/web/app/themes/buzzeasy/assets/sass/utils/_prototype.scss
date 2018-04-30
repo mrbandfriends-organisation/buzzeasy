@@ -94,12 +94,36 @@ section.team {
     }
 }
 
-.benefits ul {
-    padding-left: 1rem;
-    li {
-        margin-bottom: $quarter-spacing-unit;
-        &:last-of-type {
-            margin-bottom: 0;
+.benefits {
+
+    h2 {
+        padding-left: 2 * $base-font-size;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 2em;
+        text-indent: -2em;
+
+        li {
+            font-weight: bold;
+            margin-bottom: $quarter-spacing-unit;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                content:''; 
+                display:inline-block; 
+                height:1em; 
+                width:1em; 
+                background-image: url("../svg/standalone/output/tick--white.svg");
+                background-size:contain; 
+                background-repeat:no-repeat; 
+                padding-left: 2em;
+                vertical-align: text-top;
+            }
         }
     }
 }
