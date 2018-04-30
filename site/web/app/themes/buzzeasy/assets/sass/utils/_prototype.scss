@@ -36,13 +36,21 @@
     }
 }
 
-.service-icon {
-    display: block;
-    margin: auto;
-    height: 80px;
-    width: auto;
-    fill: color-get(blue);
-    margin-bottom: $half-spacing-unit;
+.services {
+    .gc {
+        .service-icon {
+            display: block;
+            margin: auto;
+            height: 80px;
+            width: auto;
+            fill: color-get(blue);
+            margin-bottom: $half-spacing-unit;
+        }
+
+        @include mq($until: xlarge){
+            margin-bottom: $half-spacing-unit;
+        }
+    }
 }
 
 .endorsement-icon {
