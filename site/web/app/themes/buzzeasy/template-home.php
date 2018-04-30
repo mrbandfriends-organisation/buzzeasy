@@ -25,26 +25,26 @@
 	</div>
 </section>
 
-<section class="customer-journey band">
+<section class="customer-journey band band--blue">
 	<div class="container">
-		<h2 class="heading--bravo text-center landmark">Customer journey</h2>
+		<h2 class="heading--bravo heading--white text-center landmark">Customer journey</h2>
 
 		<div class="grid">
 			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">3</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">4</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 		</div>
 	</div>
