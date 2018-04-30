@@ -25,7 +25,10 @@
 <section class="service band band--light-grey">
 	<div class="container">
 		<div class="grid">
-			<div class="gc s1-1 m2-3">
+			<div class="gc s1-1 m1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/message--blue.svg' ?>" class="service-icon">
+			</div>
+			<div class="gc s1-1 m3-4">
 				<h2 class="heading--bravo">Service Name</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -35,26 +38,21 @@
 					<li>Detail about the product</li>
 					<li>Detail about the product</li>
 				</ul>
-			</div>
-			<div class="gc s1-1 m1-3">
-				<h3 class="heading--charlie">Pricing</h3>
-				<ul style="list-style: none">
-					<li>XX users - £YY/month</li>
-					<li>XX users - £YY/month</li>
-					<li>XX users - £YY/month</li>
-				</ul>
+				<button class="btn btn--primary">
+					Service link
+				</button>
 			</div>
 		</div>
-		<button class="btn btn--primary">
-			Service link
-		</button>
 	</div>
 </section>
 
 <section class="service band">
 	<div class="container">
 		<div class="grid">
-			<div class="gc s1-1 m2-3">
+			<div class="gc s1-1 m1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/call--blue.svg' ?>" class="service-icon">
+			</div>
+			<div class="gc s1-1 m3-4">
 				<h2 class="heading--bravo">Service Name</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -64,26 +62,21 @@
 					<li>Detail about the product</li>
 					<li>Detail about the product</li>
 				</ul>
-			</div>
-			<div class="gc s1-1 m1-3">
-				<h3 class="heading--charlie">Pricing</h3>
-				<ul style="list-style: none">
-					<li>XX users - £YY/month</li>
-					<li>XX users - £YY/month</li>
-					<li>XX users - £YY/month</li>
-				</ul>
+				<button class="btn btn--primary">
+					Service link
+				</button>
 			</div>
 		</div>
-		<button class="btn btn--green">
-			Service link
-		</button>
 	</div>
 </section>
 
 <section class="service band band--light-grey">
 	<div class="container">
 		<div class="grid">
-			<div class="gc s1-1 m2-3">
+			<div class="gc s1-1 m1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/queue--blue.svg' ?>" class="service-icon">
+			</div>
+			<div class="gc s1-1 m3-4">
 				<h2 class="heading--bravo">Service Name</h2>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -93,19 +86,59 @@
 					<li>Detail about the product</li>
 					<li>Detail about the product</li>
 				</ul>
-			</div>
-			<div class="gc s1-1 m1-3">
-				<h3 class="heading--charlie">Pricing</h3>
-				<ul style="list-style: none">
-					<li>XX users - £YY/month</li>
-					<li>XX users - £YY/month</li>
-					<li>XX users - £YY/month</li>
-				</ul>
+				<button class="btn btn--primary">
+					Service link
+				</button>
 			</div>
 		</div>
-		<button class="btn btn--red">
-			Service link
-		</button>
+	</div>
+</section>
+
+<section class="service band">
+	<div class="container">
+		<div class="grid">
+			<div class="gc s1-1 m1-4 text-center">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/chat--blue.svg' ?>" class="service-icon">
+			</div>
+			<div class="gc s1-1 m3-4">
+				<h2 class="heading--bravo">Service Name</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<ul>
+					<li>Detail about the product</li>
+					<li>Detail about the product</li>
+					<li>Detail about the product</li>
+				</ul>
+				<button class="btn btn--primary">
+					Service link
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service band band--light-grey">
+	<div class="container">
+		<div class="grid">
+			<div class="gc s1-1 m1-4">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/list--blue.svg' ?>" class="service-icon">
+			</div>
+			<div class="gc s1-1 m3-4">
+				<h2 class="heading--bravo">Service Name</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<ul>
+					<li>Detail about the product</li>
+					<li>Detail about the product</li>
+					<li>Detail about the product</li>
+				</ul>
+				<button class="btn btn--primary">
+					Service link
+				</button>
+			</div>
+		</div>
 	</div>
 </section>
 

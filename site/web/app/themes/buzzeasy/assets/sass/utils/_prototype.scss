@@ -40,12 +40,12 @@
     }
 }
 
-.services {
+section.services {
     .gc {
         .service-icon {
             display: block;
             margin: auto;
-            height: 80px;
+            height: 70px;
             width: auto;
             fill: color-get(blue);
             margin-bottom: $half-spacing-unit;
@@ -82,6 +82,23 @@ section.team {
 }
 
 .service {
+    .service-icon {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+        height: auto;
+        width: auto;
+        max-height: 100px;
+        max-width: 100px;
+        fill: color-get(blue);
+        margin-bottom: $half-spacing-unit;
+
+        @include mq($from: large){
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+
     button {
         display: block;
         margin: auto;
