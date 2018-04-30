@@ -11,7 +11,7 @@
   <div class="container">
     <div class="grid">
         <div class="gc t1-1 m1-4 footer__site-logo">
-            <?= Utils\ob_load_template_part('templates/partials/site-logo.php'); ?>
+            <?= Utils\ob_load_template_part('templates/partials/site-logo--white.php'); ?>
         </div>
         <div class="gc t1-2 m1-4">
             <div class="footer__left-column">
