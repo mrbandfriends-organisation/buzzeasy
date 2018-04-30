@@ -10,9 +10,10 @@
 	<div class="container">
 		<div class="page-hero__inner">
 			<header>
-				<h1 class="page-hero__heading heading--alpha">
+				<h1 class="vh">
 					Buzzeasy
 				</h1>
+				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/logo-primary.svg'); ?>" alt="<?php echo esc_attr(bloginfo('name'));?>">
 			</header>
 			
 			<h2 class="heading--bravo">
