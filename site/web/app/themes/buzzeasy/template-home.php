@@ -118,7 +118,7 @@
 
 <section class="endorsements band band--100">
 	<div class="container">
-		<h2 class="heading--bravo text-center">
+		<h2 class="heading--bravo landmark text-center">
 			Who we've worked with
 		</h2>
 
