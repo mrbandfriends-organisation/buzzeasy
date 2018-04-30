@@ -11,7 +11,12 @@
 // ==========================================================================
 
 .footer {
-    background-color: color-get(grey, light);
+    background-color: color-get(grey, dark);
+    color: white;
+
+    a {
+        color: white;
+    }
 
     .menu-footer {
         ul {
