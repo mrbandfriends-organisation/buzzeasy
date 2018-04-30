@@ -129,9 +129,9 @@ $cursive: 						"Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive;
 // Typographic Constants
 // ==========================================================================
 
-$base-font-size:          		16px;
+$base-font-size:          		18px;
 $base-font-family:        		$arial; // or write your own custom font-stack
-$base-line-height:        		1.4;
+$base-line-height:        		23px;
 $base-font-color:               #706f6f;
 $em-base: 				        $base-font-size;
 $slick-font-family:             $base-font-family;
@@ -219,9 +219,9 @@ $alt-body-type: (
 
     .wf-active-1 & {
         font-family: 'Montserrat', $base-font-family;
-        // -moz-osx-font-smoothing: grayscale;
-        // -webkit-font-smoothing: antialiased;
-        // font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
     }
 }
 
@@ -242,9 +242,9 @@ $alt-body-type: (
 
     .wf-active-2 & {
         font-family: 'Montserrat', $base-font-family;
-        // -moz-osx-font-smoothing: grayscale;
-        // -webkit-font-smoothing: antialiased;
-        // font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
         font-weight: 600;    // Overriding fallback faux-bold
     }
 }

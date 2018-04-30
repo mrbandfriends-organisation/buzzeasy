@@ -95,23 +95,25 @@
 	</div>
 </section>
 
-<section class="benefits band band--100 band--green"><div class="container">
-    <div class="grid">
-		<div class="gc s1-1 l1-2">
-			<h2 class="heading--bravo heading--white">Contact Centre Benefits</h2>
-			<ul class="text--white">
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-			</ul>
-		</div>
-		<div class="gc s1-1 l1-2">
-			<h2 class="heading--bravo heading--white">Marketing Benefits</h2>
-			<ul class="text--white">
-				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-				<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-			</ul>
+<section class="benefits band band--100 band--green">
+	<div class="container">
+		<div class="grid">
+			<div class="gc s1-1 l1-2">
+				<h2 class="heading--bravo heading--white">Contact Centre Benefits</h2>
+				<ul class="text--white">
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+					<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+				</ul>
+			</div>
+			<div class="gc s1-1 l1-2">
+				<h2 class="heading--bravo heading--white">Marketing Benefits</h2>
+				<ul class="text--white">
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+					<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
