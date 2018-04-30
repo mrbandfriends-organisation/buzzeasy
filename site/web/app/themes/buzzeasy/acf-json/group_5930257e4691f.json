@@ -1,24 +1,6 @@
 {
     "key": "group_5930257e4691f",
     "title": "Global Site Settings",
-    "location": [
-        [
-            {
-                "param": "options_page",
-                "operator": "==",
-                "value": "site-options"
-            }
-        ]
-    ],
-    "menu_order": -1,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 0,
-    "description": "",
-    "modified": 1524819780,
     "fields": [
         {
             "key": "field_593128602b6ab",
@@ -141,22 +123,6 @@
             "placeholder": ""
         },
         {
-            "key": "field_59302f317fa03",
-            "label": "Instagram",
-            "name": "instagram",
-            "type": "url",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": ""
-        },
-        {
             "key": "field_59302f397fa04",
             "label": "Linked In",
             "name": "linked_in",
@@ -172,5 +138,23 @@
             "default_value": "",
             "placeholder": ""
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-options"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1525092642
 }

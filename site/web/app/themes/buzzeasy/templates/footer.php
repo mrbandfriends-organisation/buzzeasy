@@ -22,6 +22,7 @@
                             'menu_class'      => 'nav-footer',
                         ]);
                     ?>
+                    <?= Utils\ob_load_template_part('templates/partials/shared/social-menu.php'); ?>
                 </div>
             </div>
         </div>
