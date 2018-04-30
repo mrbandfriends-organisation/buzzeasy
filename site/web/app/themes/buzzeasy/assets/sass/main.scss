@@ -87,7 +87,7 @@ $is-oldie: false !default;
 @import "components/primary-offcanvas";
 @import "components/transformicons";
 @import "components/skip-link";
-// @import "components/carousel";
+@import "components/carousel";
 // @import "components/pagination";
 // @import "components/article-bookmark";
 @import "components/split-feature";
@@ -117,8 +117,8 @@ $is-oldie: false !default;
 // # CSS files from external libraries and frameworks
 // ==========================================================================
 // @import "vendors/EXAMPLE";
-// @import "vendors/slick";
-// @import "vendors/slick-theme";
+@import "vendors/slick";
+@import "vendors/slick-theme";
 // @import "node_modules/plyr/src/scss/plyr";
 
 
@@ -126,7 +126,7 @@ $is-oldie: false !default;
 // # contains any overides to vendor extensions (see above)
 // ==========================================================================
 //@import "vendors-extensions/EXAMPLE";
-// @import "vendors-extensions/slick";
+@import "vendors-extensions/slick";
 
 
 // # SHAME FILE

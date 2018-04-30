@@ -35,7 +35,7 @@ import 'behaviours/offcanvases';
 
 // OPTIONAL BEHAVIOURS
 // import 'behaviours/accordion';
-// import 'behaviours/carousels';
+import 'behaviours/carousels';
 // import 'behaviours/default-tabs';
 // import 'behaviours/inview';
 // import 'behaviours/smooth-scroll';
