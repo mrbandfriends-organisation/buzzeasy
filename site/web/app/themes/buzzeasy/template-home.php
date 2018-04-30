@@ -29,24 +29,20 @@
 		<h2 class="heading--bravo text-center landmark">Customer journey</h2>
 
 		<div class="grid">
-			<div class="gc m1-3 l1-5 text-center">
+			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">1</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
-			<div class="gc m1-3 l1-5 text-center">
+			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">2</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
-			<div class="gc m1-3 l1-5 text-center">
+			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">3</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
-			<div class="gc m1-3 l1-5 text-center">
+			<div class="gc m1-2 l1-4 text-center">
 				<h3 class="heading--bravo">4</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-			</div>
-			<div class="gc m1-3 l1-5 text-center">
-				<h3 class="heading--bravo">5</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 		</div>
@@ -57,26 +53,32 @@
 	<div class="container text-center">
 		<h2 class="heading--bravo heading--red landmark">Services</h2>
 		<div class="grid">
-			<div class="gc m1-3 l1-4">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/messages.svg' ?>" class="service-icon">
+			<div class="gc m1-3 l1-5">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/message.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
-			<div class="gc m1-3 l1-4">
+			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/call.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
-			<div class="gc m1-3 l1-4">
+			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/queue.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Learn more</a>
 			</div>
-			<div class="gc m1-3 l1-4">
+			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/chat.svg' ?>" class="service-icon">
+				<h3 class="heading--charlie heading--red">Service Name</h3>
+				<p class="text--black">Lorem ipsum dolor sit amet.</p>
+				<a href="/services/" class="btn btn--red">Learn more</a>
+			</div>
+			<div class="gc m1-3 l1-5">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/list.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--red">Service Name</h3>
 				<p class="text--black">Lorem ipsum dolor sit amet.</p>
 				<a href="/services/" class="btn btn--red">Learn more</a>
