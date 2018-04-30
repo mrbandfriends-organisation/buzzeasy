@@ -103,3 +103,29 @@
         @include band-color($color, dark);
     }
 }
+
+
+
+
+
+//   #MODIFERS: BAND 100 PX
+// ==========================================================================
+
+// Used for inter-band spacing, as the spacing unit, 40px, is not a factor of the
+// requested spacing between bands, 100px.
+
+.band--100 {
+    @include clearfix;
+    padding-bottom: (100px / 2);
+    padding-top: (100px / 2);
+
+    @include mq(medium) {
+        padding-bottom: (100px / 1.5);
+        padding-top: (100px / 1.5);
+    }
+
+    @include mq(large) {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}

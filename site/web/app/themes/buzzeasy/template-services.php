@@ -175,7 +175,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band">
+<section class="cta-banner cta-banner--double band">
 	<div class="container text-center">
 		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Free trial</a>

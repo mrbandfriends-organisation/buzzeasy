@@ -25,7 +25,7 @@
 	</div>
 </section>
 
-<section class="customer-journey band band--blue">
+<section class="customer-journey band band--100 band--blue">
 	<div class="container">
 		<h2 class="heading--bravo heading--white text-center landmark">Customer journey</h2>
 
@@ -50,7 +50,7 @@
 	</div>
 </section>
 
-<section class="services band band--yellow">
+<section class="services band band--100 band--yellow">
 	<div class="container text-center">
 		<h2 class="heading--bravo heading--red landmark">Services</h2>
 		<div class="grid">
@@ -88,14 +88,14 @@
 	</div>
 </section>
 
-<section class="cta-banner band">
+<section class="cta-banner band band--100">
 	<div class="container text-center">
 		<h2 class="heading--delta">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
 	</div>
 </section>
 
-<section class="benefits band band--double band--green"><div class="container">
+<section class="benefits band band--100 band--green"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 			<h2 class="heading--bravo heading--white">Contact Centre Benefits</h2>
@@ -116,7 +116,7 @@
 	</div>
 </section>
 
-<section class="endorsements band">
+<section class="endorsements band band--100">
 	<div class="container">
 		<h2 class="heading--bravo text-center">
 			Who we've worked with
@@ -132,7 +132,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band band--light-grey">
+<section class="cta-banner band band--100 band--light-grey">
 	<div class="container text-center">
 		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>

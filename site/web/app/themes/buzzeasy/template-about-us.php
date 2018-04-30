@@ -26,7 +26,7 @@
 	</div>
 </section>
 
-<section class="brand band band--red">
+<section class="brand band band--100 band--red">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 l1-2">
@@ -40,7 +40,7 @@
 	</div>
 </section>
 
-<section class="team band band--light-grey"><div class="container">
+<section class="team band band--100 band--light-grey"><div class="container">
     <div class="grid">
 		<div class="gc s1-1 l1-2">
 		</div>
@@ -55,7 +55,7 @@
 	</div>
 </section>
 
-<section class="geomant band band--green">
+<section class="geomant band band--100 band--green">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 l1-2">
@@ -70,7 +70,7 @@
 	</div>
 </section>
 
-<section class="cta-banner band">
+<section class="cta-banner band band-100">
 	<div class="container text-center">
 		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 		<a href="/contact-us/" class="btn btn--primary">Call us</a>
