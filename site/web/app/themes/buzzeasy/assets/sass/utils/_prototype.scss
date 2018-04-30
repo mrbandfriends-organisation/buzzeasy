@@ -96,6 +96,12 @@ section.team {
 
 .benefits ul {
     padding-left: 1rem;
+    li {
+        margin-bottom: $quarter-spacing-unit;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .cta-banner .btn {
