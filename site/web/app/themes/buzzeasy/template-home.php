@@ -81,7 +81,7 @@
 <section class="services band band--100 band--white">
 	<div class="container text-center">
 		<h2 class="heading--bravo heading--green landmark">Services</h2>
-		<div class="grid">
+		<div class="grid grid--landmark-double">
 			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/message.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--green">Service Name</h3>

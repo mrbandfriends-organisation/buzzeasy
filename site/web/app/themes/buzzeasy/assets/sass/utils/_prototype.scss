@@ -83,13 +83,6 @@
 
 section.services {
     .gc {
-        @include mq($until: large){
-            margin-bottom: $double-spacing-unit;
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
 
         p {
             margin-bottom: (3 * $quarter-spacing-unit);
