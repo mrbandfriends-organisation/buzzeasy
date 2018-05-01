@@ -364,15 +364,18 @@ input[type="checkbox"] {
     }
 }
 
+$checkbox-color: map-deep-get($brand-colors, green, default);
+
 // scss-lint:disable MergeableSelector
 input[type="checkbox"] + label {
+    color: $checkbox-color;
     cursor: pointer;
     font-weight: normal;
     position: relative;
 
     &:before {
         @include inline-block;
-        border: 4px solid map-deep-get($brand-colors, blue, default);
+        border: 4px solid $checkbox-color;
         color: #fff;
         content: "";
         font-size: rem(10px);
@@ -395,7 +398,7 @@ input[type="checkbox"] + label {
     &:hover,
     &:focus {
         &:before {
-            background-color: mix(map-deep-get($brand-colors, blue, default), #fff, 50%);
+            background-color: mix($checkbox-color, #fff, 50%);
         }
     }
 
@@ -409,8 +412,8 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"]:checked + label {
     &:before {
-        background-color: map-deep-get($brand-colors, blue, default);
-        border-color: map-deep-get($brand-colors, blue, default);
+        background-color: $checkbox-color;
+        border-color: $checkbox-color;
         content: "✔";
     }
 }
