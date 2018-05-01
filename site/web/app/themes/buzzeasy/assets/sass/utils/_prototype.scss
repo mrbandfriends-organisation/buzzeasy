@@ -29,7 +29,7 @@
 .customer-journey {
     .grid--flourishes {
         display: none;
-        @include mq($from: large){
+        @include mq($from: 1150px){
             display: flex;
         }
 
@@ -38,18 +38,18 @@
             position: relative;
 
             &#flourish-1 {
-                right: -52.5%;
-                top: -70%;
+                right: -160px;
+                top: -45px;
             }
 
             &#flourish-2 {
                 height: 85px;
-                bottom: -30%;
+                bottom: -27px;
             }
 
             &#flourish-3 {
-                left: -35%;
-                top: -20%;
+                left: -108px;
+                top: -13px;
             }
         }
     }

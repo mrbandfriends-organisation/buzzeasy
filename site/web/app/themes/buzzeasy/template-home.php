@@ -33,7 +33,9 @@
 			<div class="gc m1-2 l1-3">
 			</div>
 			<div class="gc m1-2 l1-3 text-center">
-				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-2.svg'); ?>" alt="" class="flourish" id="flourish-2">
+				<div class="flourish-container">
+					<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-2.svg'); ?>" alt="" class="flourish" id="flourish-2">
+				</div>
 			</div>
 			<div class="gc m1-2 l1-3">
 			</div>
@@ -60,11 +62,15 @@
 
 		<div class="grid grid--flourishes grid--flourishes--top">
 			<div class="gc m1-2 l1-3 text-left">
-				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-1.svg'); ?>" alt="" class="flourish" id="flourish-1">
+				<div class="flourish-container">
+					<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-1.svg'); ?>" alt="" class="flourish" id="flourish-1">
+				</div>
 			</div>
 			<div class="gc m1-2 l1-3"></div>
 			<div class="gc m1-2 l1-3 text-right">
-				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-3.svg'); ?>" alt="" class="flourish" id="flourish-3">
+				<div class="flourish-container">
+					<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-3.svg'); ?>" alt="" class="flourish" id="flourish-3">
+				</div>
 			</div>
 		</div>
 	</div>
