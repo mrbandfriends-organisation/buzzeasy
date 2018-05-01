@@ -93,7 +93,7 @@
         {
             "key": "field_59302f197fa01",
             "label": "Twitter",
-            "name": "twitter",
+            "name": "twitter_url",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -109,7 +109,7 @@
         {
             "key": "field_59302f277fa02",
             "label": "Facebook",
-            "name": "facebook",
+            "name": "facebook_url",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -125,7 +125,7 @@
         {
             "key": "field_59302f397fa04",
             "label": "Linked In",
-            "name": "linked_in",
+            "name": "linkedin_url",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -156,5 +156,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525092642
+    "modified": 1525104207
 }

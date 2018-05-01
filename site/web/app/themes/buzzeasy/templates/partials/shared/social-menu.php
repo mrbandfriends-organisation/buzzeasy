@@ -6,7 +6,6 @@
     // CONTENT
     $twitter_url   = ( !empty(get_field("twitter_url", "option")) ) ? get_field("twitter_url", "option") : null;
     $facebook_url  = ( !empty(get_field("facebook_url", "option")) ) ? get_field("facebook_url", "option") : null;
-    $instagram_url = ( !empty(get_field("instagram_url", "option")) ) ? get_field("instagram_url", "option") : null;
     $linkedin_url  = ( !empty(get_field("linkedin_url", "option")) ) ? get_field("linkedin_url", "option") : null;
 
     $networks = [
@@ -17,10 +16,6 @@
         [
             "icon" => "facebook",
             "link" => $facebook_url
-        ],
-        [
-            "icon" => "instagram",
-            "link" => $instagram_url
         ],
         [
             "icon" => "linkedin",
@@ -39,7 +34,7 @@
 ?>
 
 <?php if ( !empty($networks_array)): ?>
-    <ul class="social-menu inline-list inline-list--ib <?= esc_attr($modifier); ?>">
+    <ul class="social-menu <?= esc_attr($modifier); ?>">
         <?php foreach ($networks_array as $network): ?>
             <?php
                 // CONTENT
@@ -47,12 +42,12 @@
                 $link = ( !empty($network['link']) ) ? $network['link'] : null;
             ?>
             <?php if( !empty($icon) && !empty($link) ) : ?>
-                <li class="social-menu__item inline-list__item">
+                <li class="social-menu__item">
                     <a class="social-menu__link" href="<?= esc_url($link); ?>" <?= Extras\link_open_new_tab_attrs(); ?>>
                         <?php if( !empty($icon) ) : ?>
                             <?= Utils\ob_load_template_part("templates/partials/shared/icon", array(
                                 "icon"       => $icon,
-                                "classnames" => "social-menu__icon" . "social-menu__icon--" . $icon
+                                "classnames" => "social-menu__icon" . " " . "social-menu__icon--" . $icon
                             )); ?>
 
                             <span class="vh">

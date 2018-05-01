@@ -22,7 +22,6 @@
                             'menu_class'      => 'nav-footer',
                         ]);
                     ?>
-                    <?= Utils\ob_load_template_part('templates/partials/shared/social-menu.php'); ?>
                 </div>
             </div>
         </div>
@@ -37,13 +36,13 @@
                         Postcode
                     </p>
                 </div>
-                <div class="social-menu">
-                    <h3 class="vh heading--white">Buzzeasy Social Menu</h3>
-                    <?= Utils\ob_load_template_part('templates/partials/shared/social-menu.php'); ?>
-                </div>
             </div>
         </div>
         <div class="gc t1-1 m1-4 footer__site-info">
+            <div class="social-menu">
+                <h3 class="vh heading--white">Buzzeasy Social Menu</h3>
+                <?= Utils\ob_load_template_part('templates/partials/shared/social-menu.php'); ?>
+            </div>
             &copy; Buzzeasy <?php echo date("Y"); ?><br /> Site by <a class="text--underlined" href="https://www.mrbandfriends.co.uk" <?= Extras\link_open_new_tab_attrs(); ?>>Mr B &amp; Friends</a></p>
         </div>
     </div>
