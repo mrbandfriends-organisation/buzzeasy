@@ -104,7 +104,7 @@ section.services {
 }
 
 section.team {
-    background: color-get(grey) url("../images/team.jpg") center center / cover no-repeat;
+    background: color-get(blue) url("../images/team.jpg") center center / cover no-repeat;
     height: 70vh;    
     display: flex;
     align-items: flex-end;
@@ -194,6 +194,10 @@ section.benefits {
             margin-bottom: 0;
         }
     }
+}
+
+section.cta-banner {
+    background: color-get(yellow) url("../images/call-out-2.jpg") center right / cover no-repeat;
 }
 
 .cta-banner--double .btn {

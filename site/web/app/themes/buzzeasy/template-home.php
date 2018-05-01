@@ -115,9 +115,15 @@
 </section>
 
 <section class="cta-banner band band--100">
-	<div class="container text-center">
-		<h2 class="heading--delta landmark--half">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-		<a href="/contact-us/" class="btn btn--primary">Free trial</a>
+	<div class="container band band--100">
+		<div class="grid">
+			<div class="gc s1-1 l3-4">
+				<h2 class="heading--alpha heading--highlight--white heading--red landmark--half">Catch your customers before the school&nbsp;run?</h2> <br> <br>
+				<a href="/contact-us/" class="btn btn--red">Free trial</a>
+			</div>
+			<div class="gc s1-1 l1-4">
+			</div>
+		</div>
 	</div>
 </section>
 
