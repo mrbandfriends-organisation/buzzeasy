@@ -4,6 +4,8 @@
  * Template Name: About Us Template
  */
 
+use Roots\Sage\Utils;
+
 ?>
 
 <section class="page-hero lazyload">
@@ -69,9 +71,4 @@
 	</div>
 </section>
 
-<section class="cta-banner band band-100">
-	<div class="container text-center">
-		<h2 class="heading--charlie">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-		<a href="/contact-us/" class="btn btn--primary">Call us</a>
-	</div>
-</section>
+<?= Utils\ob_load_template_part('templates/components/cta-banner'); ?>
