@@ -26,17 +26,51 @@
     }
 }
 
-.customer-journey h3 {
-    background-color: color-get(blue);
-    border-radius: 50%;
-    color: color-get(white);
-    display: block;
-    margin: 0 auto $quarter-spacing-unit;
-    height: 45px;
-    width: 45px;
-    padding: 4px;
-    @include mq($from: medium){
-        padding: 0;
+.customer-journey {
+    .grid--flourishes {
+        display: none;
+        @include mq($from: large){
+            display: flex;
+        }
+
+        .flourish {
+            height: 60px;
+            position: relative;
+
+            &#flourish-1 {
+                right: -52.5%;
+                top: -70%;
+            }
+
+            &#flourish-2 {
+                height: 85px;
+                bottom: -30%;
+            }
+
+            &#flourish-3 {
+                left: -35%;
+                top: -20%;
+            }
+        }
+    }
+
+    .l1-5 {
+        color: color-get(yellow);
+        font-weight: bold;
+    }
+
+    h3 {
+        background-color: color-get(blue);
+        border-radius: 50%;
+        color: color-get(white);
+        display: block;
+        margin: 0 auto $quarter-spacing-unit;
+        height: 45px;
+        width: 45px;
+        padding: 4px;
+        @include mq($from: medium){
+            padding: 0;
+        }
     }
 }
 
