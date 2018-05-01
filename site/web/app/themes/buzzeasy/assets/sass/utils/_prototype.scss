@@ -188,12 +188,12 @@ section.benefits {
 
     .benefits__contact-centre {
         @include side-extension( color-get(red), 'before' );
-        padding-right: 0.75em;
+        padding-right: 1.5em;
     }
 
     .benefits__marketing {
         @include side-extension( color-get(yellow), 'after' );
-        padding-right: 0.75em;
+        padding-right: 1.5em;
 
         li:before {
             background-image: url("../svg/standalone/output/tick--black.svg");

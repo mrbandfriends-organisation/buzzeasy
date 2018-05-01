@@ -122,7 +122,7 @@ use Roots\Sage\Utils;
 
 <section class="benefits">
 	<div class="container container--extend">
-		<div class="grid grid--quarter-gutter">
+		<div class="grid grid--half-gutter">
 			<div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--red">
 				<h2 class="heading--bravo heading--white">Contact Centre Benefits</h2>
 				<ul class="text--white">
