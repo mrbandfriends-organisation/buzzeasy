@@ -88,31 +88,31 @@ use Roots\Sage\Utils;
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/message.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--green">Service Name</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-				<a href="/services/" class="btn btn--blue">Learn more</a>
+				<a href="/services/#message" class="btn btn--blue">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/call.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--green">Service Name</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-				<a href="/services/" class="btn btn--blue">Learn more</a>
+				<a href="/services/#call" class="btn btn--blue">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/queue.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--green">Service Name</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-				<a href="/services/" class="btn btn--blue">Learn more</a>
+				<a href="/services/#queue" class="btn btn--blue">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/chat.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--green">Service Name</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-				<a href="/services/" class="btn btn--blue">Learn more</a>
+				<a href="/services/#chat" class="btn btn--blue">Learn more</a>
 			</div>
 			<div class="gc m1-3 l1-5">
 				<img src="<?= get_stylesheet_directory_uri() . '/assets/svg/standalone/output/list.svg' ?>" class="service-icon">
 				<h3 class="heading--charlie heading--green">Service Name</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-				<a href="/services/" class="btn btn--blue">Learn more</a>
+				<a href="/services/#list" class="btn btn--blue">Learn more</a>
 			</div>
 		</div>
 	</div>

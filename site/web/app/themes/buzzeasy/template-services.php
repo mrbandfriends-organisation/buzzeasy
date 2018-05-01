@@ -24,7 +24,7 @@ use Roots\Sage\Utils;
 	</div>
 </section>
 
-<section class="service band band--light-grey">
+<section class="service band band--light-grey" id="message">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m1-4">
@@ -48,7 +48,7 @@ use Roots\Sage\Utils;
 	</div>
 </section>
 
-<section class="service band">
+<section class="service band" id="call">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m1-4">
@@ -72,7 +72,7 @@ use Roots\Sage\Utils;
 	</div>
 </section>
 
-<section class="service band band--light-grey">
+<section class="service band band--light-grey" id="queue">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m1-4">
@@ -96,7 +96,7 @@ use Roots\Sage\Utils;
 	</div>
 </section>
 
-<section class="service band">
+<section class="service band" id="chat">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m1-4 text-center">
@@ -120,7 +120,7 @@ use Roots\Sage\Utils;
 	</div>
 </section>
 
-<section class="service band band--light-grey">
+<section class="service band band--light-grey" id="list">
 	<div class="container">
 		<div class="grid">
 			<div class="gc s1-1 m1-4">
