@@ -14,7 +14,7 @@
     }
 
     .page-template-template-about-us & {
-        background-color: color-get(yellow);
+        background: color-get(yellow) url("../images/about-hero.jpg") center center / cover no-repeat;
     }
 
     .page-template-template-services & {

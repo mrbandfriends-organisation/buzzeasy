@@ -10,8 +10,8 @@
 	<div class="container">
 		<div class="page-hero__inner">
 			<header>
-				<h1 class="page-hero__heading heading--alpha">
-					Contact Us
+				<h1 class="page-hero__heading heading--alpha heading--white heading--highlight--blue">
+					Lorem ipsum dolor sit amet, consectetur adipiscing.
 				</h1>
 			</header>
 			

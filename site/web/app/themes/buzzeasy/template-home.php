@@ -47,19 +47,19 @@ use Roots\Sage\Utils;
 
 		<div class="grid grid--double-gutter grid--customer-journey">
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">1.</h3>
+				<h3 class="heading--alpha">1</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">2.</h3>
+				<h3 class="heading--alpha">2</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">3.</h3>
+				<h3 class="heading--alpha">3</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">4.</h3>
+				<h3 class="heading--alpha">4</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 		</div>
@@ -123,17 +123,17 @@ use Roots\Sage\Utils;
 <section class="benefits">
 	<div class="container container--extend">
 		<div class="grid grid--half-gutter">
-			<div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--red">
-				<h2 class="heading--bravo heading--white">Contact Centre Benefits</h2>
-				<ul class="text--white">
+			<div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--blue">
+				<h2 class="heading--bravo heading--green">Contact Centre Benefits</h2>
+				<ul class="text--green">
 					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 					<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
 				</ul>
 			</div>
-			<div class="gc s1-1 l1-2 benefits__marketing band band--100 band--yellow">
-				<h2 class="heading--bravo heading--black">Marketing Benefits</h2>
-				<ul class="text--black">
+			<div class="gc s1-1 l1-2 benefits__marketing band band--100 band--green">
+				<h2 class="heading--bravo heading--blue">Marketing Benefits</h2>
+				<ul class="text--blue">
 					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 					<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>

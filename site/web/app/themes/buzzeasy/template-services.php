@@ -12,8 +12,8 @@ use Roots\Sage\Utils;
 	<div class="container">
 		<div class="page-hero__inner">
 			<header>
-				<h1 class="page-hero__heading heading--alpha">
-					Services
+				<h1 class="page-hero__heading heading--alpha heading--white heading--highlight--blue">
+					Lorem ipsum dolor sit amet, consectetur adipiscing.
 				</h1>
 			</header>
 			

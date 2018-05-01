@@ -15,10 +15,6 @@
     @include billboard(70vh);
     @include flex-col(flex-start, center);
 
-    h1, h2, h3 {
-        color: color-get(white);
-    }
-
     .page-hero__inner {
         max-width: 600px;
     }

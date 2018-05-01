@@ -12,13 +12,13 @@ use Roots\Sage\Utils;
 	<div class="container">
 		<div class="page-hero__inner">
 			<header>
-				<h1 class="page-hero__heading heading--alpha">
-					About Us
+				<h1 class="page-hero__heading heading--alpha heading--white heading--highlight--blue">
+					Lorem ipsum dolor sit amet, consectetur adipiscing.
 				</h1>
 			</header>
 			
 			<p class="text--large text--white">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit mi orci, vitae scelerisque velit sollicitudin ut.
 			</p>
 
 			<button class="btn btn--white">
