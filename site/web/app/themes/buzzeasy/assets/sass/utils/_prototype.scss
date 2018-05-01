@@ -76,6 +76,18 @@
 
 section.services {
     .gc {
+        @include mq($until: large){
+            margin-bottom: $double-spacing-unit;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            margin-bottom: (3 * $quarter-spacing-unit);
+        }
+
         .service-icon {
             display: block;
             margin: auto;
@@ -83,14 +95,6 @@ section.services {
             width: auto;
             fill: color-get(blue);
             margin-bottom: $half-spacing-unit;
-        }
-
-        @include mq($until: large){
-            margin-bottom: $double-spacing-unit;
-        }
-
-        p {
-            margin-bottom: (3 * $quarter-spacing-unit);
         }
     }
 }
