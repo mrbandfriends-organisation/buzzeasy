@@ -511,3 +511,51 @@
 @mixin respond-to() {
     @error "The respond-to mixins has be deprecated in favour of https://github.com/sass-mq/sass-mq";
 }
+
+
+
+
+
+// ==========================================================================
+// # SIDE EXTENSION
+//
+//   @param {String}  $color       - Colour of before and After elements
+//   @param {String}  $apply-until - Breakpoint width to apply mixin to
+//
+// # Adds before and after elements on target div/element to fill in space
+//   on either side of a coloured column.
+//
+// ==========================================================================
+
+@mixin side-extension($color: currentColor, $side: 'both') {
+    position: relative;
+
+
+    @if($side == 'both' or $side == 'before') {
+        &:before {
+            background-color: $color;
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translateX(-99%);
+            width: 100%;
+        }
+    }
+
+    @if($side == 'both' or $side == 'after') {
+        &:after {
+            background-color: $color;
+            content: "";
+            display: block;
+            height: 100%;
+            right: 0;
+            position: absolute;
+            top: 0;
+            transform: translateX(99%);
+            width: 100%;
+        }
+    }
+}

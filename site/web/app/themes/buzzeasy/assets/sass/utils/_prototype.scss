@@ -186,11 +186,17 @@ section.benefits {
         }
     }
 
-    .gc:first-of-type {
-        margin-bottom: $spacing-unit;
+    .benefits__contact-centre {
+        @include side-extension( color-get(red), 'before' );
+        padding-right: 0.75em;
+    }
 
-        @include mq($from: large){
-            margin-bottom: 0;
+    .benefits__marketing {
+        @include side-extension( color-get(yellow), 'after' );
+        padding-right: 0.75em;
+
+        li:before {
+            background-image: url("../svg/standalone/output/tick--black.svg");
         }
     }
 }
@@ -209,4 +215,7 @@ section.cta-banner {
 
 .service-carousel p {
     margin-bottom: 0;
+}
+
+.benefits__contact-centre, .benefits__marketing {
 }
