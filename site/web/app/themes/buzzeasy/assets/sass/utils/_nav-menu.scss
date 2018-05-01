@@ -27,7 +27,6 @@
     a {
         display: block;
         font-weight: bold;
-        padding: rem(15px) rem(20px);
         text-decoration: none;
     }
 
@@ -35,6 +34,7 @@
     // ==========================================================================
     > li {
         position: relative;
+        margin: rem(15px) rem(20px);
     }
 }
 
