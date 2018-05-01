@@ -50,12 +50,12 @@ $is-oldie: false !default;
 // # ELEMENTS
 // ==========================================================================
 @import "elements/headings";
-@import "elements/tables";
+// @import "elements/tables";
 
 
 // # OBJECTS
 // ==========================================================================
-@import "objects/alerts";
+// @import "objects/alerts";
 @import "objects/svg-icons";
 @import "objects/offcanvas-toggle";
 // @import "objects/island";
@@ -71,14 +71,14 @@ $is-oldie: false !default;
 @import "objects/section-full-height";
 // @import "objects/stat";
 
-@import "objects/play-pause";
+// @import "objects/play-pause";
 
 
 
 // # MRB - Base styles for custom Mr B JS components
 // ==========================================================================
-@import "mrb/mrb-accordion";
-@import "mrb/mrb-toggler";
+// @import "mrb/mrb-accordion";
+// @import "mrb/mrb-toggler";
 
 
 // # COMPONENTS - http://sass-guidelin.es/#components-folder
@@ -90,13 +90,13 @@ $is-oldie: false !default;
 @import "components/carousel";
 // @import "components/pagination";
 // @import "components/article-bookmark";
-@import "components/split-feature";
+// @import "components/split-feature";
 @import "components/billboard";
 @import "components/page-hero";
 // @import "components/video-feature";
-@import "components/split-leader";
-@import "components/text-module";
-@import "components/background-video";
+// @import "components/split-leader";
+// @import "components/text-module";
+// @import "components/background-video";
 
 // # SITE LAYOUT STRUCTURE
 // ==========================================================================
@@ -109,7 +109,7 @@ $is-oldie: false !default;
 
 // # SITE PAGES
 // ==========================================================================
-@import "pages/home";
+// @import "pages/home";
 
 
 
