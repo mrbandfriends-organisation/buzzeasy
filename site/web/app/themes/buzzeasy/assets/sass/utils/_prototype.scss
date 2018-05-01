@@ -36,6 +36,13 @@
         .flourish {
             height: 60px;
             position: relative;
+            user-drag: none; 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
 
             &#flourish-1 {
                 right: -160px;
