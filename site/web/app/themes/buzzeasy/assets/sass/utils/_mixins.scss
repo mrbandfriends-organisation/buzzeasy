@@ -424,12 +424,12 @@
 // ==========================================================================
 // # Animatable underline for content
 // ==========================================================================
-@mixin link-hover($bottom: -4px) {
+@mixin link-hover($bottom: -4PX) {
     &:after {
         background-color: $link-color;
-        bottom: rem($bottom);
+        bottom: $bottom;
         content: "";
-        height: rem(3px);
+        height: 3PX;
         left: 0;
         position: absolute;
         transition: width ease-in-out 0.5s;
