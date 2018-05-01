@@ -54,6 +54,10 @@ section.services {
         @include mq($until: large){
             margin-bottom: $double-spacing-unit;
         }
+
+        p {
+            margin-bottom: (3 * $quarter-spacing-unit);
+        }
     }
 }
 
@@ -119,6 +123,7 @@ section.team {
 
     ul {
         list-style: none;
+        margin-bottom: 0;
         padding-left: 1em;
         text-indent: -2em;
 
