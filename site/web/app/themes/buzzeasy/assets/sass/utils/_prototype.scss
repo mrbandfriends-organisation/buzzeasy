@@ -149,7 +149,7 @@ section.team {
     }
 }
 
-.benefits {
+section.benefits {
 
     h2 {
         padding-left: 2 * $base-font-size;
@@ -180,6 +180,14 @@ section.team {
                 padding-left: 2em;
                 vertical-align: text-top;
             }
+        }
+    }
+
+    .gc:first-of-type {
+        margin-bottom: $spacing-unit;
+
+        @include mq($from: large){
+            margin-bottom: 0;
         }
     }
 }
