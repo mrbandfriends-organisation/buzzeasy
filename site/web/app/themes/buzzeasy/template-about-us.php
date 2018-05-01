@@ -15,9 +15,9 @@
 				</h1>
 			</header>
 			
-			<h2 class="heading--charlie">
-				Subheading
-			</h2>
+			<p class="text--large text--white">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
 
 			<button class="btn btn--white">
 				Get in touch

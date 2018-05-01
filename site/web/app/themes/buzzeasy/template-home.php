@@ -20,7 +20,9 @@
 				Cross-channel, not crossed wires.
 			</h2>
 
-			<h3 class="heading--delta blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+			<p class="text--large text--white">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
 		</div>
 	</div>
 </section>
