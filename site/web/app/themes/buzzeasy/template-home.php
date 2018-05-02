@@ -72,7 +72,15 @@ $post = new Post;
 	</div>
 </section>
 
-<?= Utils\ob_load_template_part('templates/components/cta-banner'); ?>
+<?php if ($post->get('callout')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/partials/shared/callout', [
+        'fields'                        => $post->field('callout'),
+        'modifiers'                     => new ValueCollection([
+            'heading'                   => 'heading--red heading--highlight--white',
+            'buttons'               	=> 'btn--red',
+        ]),
+    ]); ?>
+<?php endif ?>
 
 <section class="benefits">
 	<div class="container container--extend">
