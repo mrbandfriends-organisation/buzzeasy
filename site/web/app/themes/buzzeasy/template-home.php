@@ -47,19 +47,19 @@ use Roots\Sage\Utils;
 
 		<div class="grid grid--double-gutter grid--customer-journey">
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">1</h3>
+				<h3 class="heading--alpha">1.</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">2</h3>
+				<h3 class="heading--alpha">2.</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">3</h3>
+				<h3 class="heading--alpha">3.</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">4</h3>
+				<h3 class="heading--alpha">4.</h3>
 				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 			</div>
 		</div>
