@@ -34,7 +34,6 @@
         }
 
         .flourish {
-            height: 60px;
             position: relative;
             user-drag: none; 
             user-select: none;
@@ -45,18 +44,20 @@
             pointer-events: none;
 
             &#flourish-1 {
-                right: -160px;
-                top: -45px;
+                height: 48PX;
+                right: -180PX;
+                top: -35PX;
             }
 
             &#flourish-2 {
-                height: 85px;
-                bottom: -20px;
+                height: 68PX;
+                bottom: -20PX;
             }
 
             &#flourish-3 {
-                left: -108px;
-                top: -13px;
+                height: 48PX;
+                left: -150PX;
+                top: -13PX;
             }
         }
     }
@@ -215,7 +216,4 @@ section.cta-banner {
 
 .service-carousel p {
     margin-bottom: 0;
-}
-
-.benefits__contact-centre, .benefits__marketing {
 }
