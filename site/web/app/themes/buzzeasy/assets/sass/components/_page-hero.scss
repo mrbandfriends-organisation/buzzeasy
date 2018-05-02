@@ -15,6 +15,10 @@
     @include billboard(70vh);
     @include flex-col(flex-start, center);
 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     .page-hero__inner {
         max-width: 600px;
     }
