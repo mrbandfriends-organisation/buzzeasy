@@ -159,7 +159,14 @@ use Roots\Sage\Utils;
 	</div>
 	
 	<div class="container text-center">
-		<p class="text--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-		<a href="/contact-us/" class="btn btn--primary">Call us</a>
+
+		<div class="grid">
+			<div class="gc m1-5 text-center"></div>
+			<div class="gc m3-5 text-center">
+				<p class="text--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				<a href="/contact-us/" class="btn btn--primary">Call us</a>
+			</div>
+			<div class="gc m1-5 text-center"></div>
+		</div>
 	</div>
 </section>
