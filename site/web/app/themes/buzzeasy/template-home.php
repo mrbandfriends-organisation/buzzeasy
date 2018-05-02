@@ -17,62 +17,22 @@ $post = new Post;
         'fields'                        => $post->field('page_hero'),
         'modifiers'                     => new ValueCollection([
             'heading'                   => 'heading--white',
-            'subheading'               => 'heading--white',
+            'subheading'                => 'heading--white',
             'copy'               		=> 'text--white',
         ]),
     ]); ?>
 <?php endif ?>
 
-<section class="customer-journey band band--100 band--blue">
-	<div class="container">
-		<h2 class="heading--bravo heading--white text-center landmark">4 steps to lorem ipsum.</h2>
-
-		<div class="grid grid--flourishes grid--flourishes--top">
-			<div class="gc m1-2 l1-3">
-			</div>
-			<div class="gc m1-2 l1-3 text-center">
-				<div class="flourish-container">
-					<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-2.svg'); ?>" alt="" class="flourish" id="flourish-2">
-				</div>
-			</div>
-			<div class="gc m1-2 l1-3">
-			</div>
-		</div>
-
-		<div class="grid grid--double-gutter grid--customer-journey">
-			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">1.</h3>
-				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-			</div>
-			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">2.</h3>
-				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-			</div>
-			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">3.</h3>
-				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-			</div>
-			<div class="gc m1-2 l1-4 text-center">
-				<h3 class="heading--alpha">4.</h3>
-				<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-			</div>
-		</div>
-
-		<div class="grid grid--flourishes grid--flourishes--top">
-			<div class="gc m1-2 l1-3 text-left">
-				<div class="flourish-container">
-					<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-1.svg'); ?>" alt="" class="flourish" id="flourish-1">
-				</div>
-			</div>
-			<div class="gc m1-2 l1-3"></div>
-			<div class="gc m1-2 l1-3 text-right">
-				<div class="flourish-container">
-					<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-3.svg'); ?>" alt="" class="flourish" id="flourish-3">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<?php if ($post->get('journey')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/partials/journey', [
+        'fields'                        => $post->field('journey'),
+        'modifiers'                     => new ValueCollection([
+            'heading'                   => 'heading--white',
+            'step_number'               => 'heading--white',
+            'step_text'               		=> 'text--white',
+        ]),
+    ]); ?>
+<?php endif ?>
 
 <section class="services band band--100 band--white">
 	<div class="container text-center">
