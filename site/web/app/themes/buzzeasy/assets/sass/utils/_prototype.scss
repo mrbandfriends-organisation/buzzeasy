@@ -22,43 +22,6 @@
     }
 }
 
-.customer-journey {
-    .grid--flourishes {
-        display: none;
-        @include mq($from: 1150px){
-            display: flex;
-        }
-
-        .flourish {
-            position: relative;
-            user-drag: none; 
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-drag: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            pointer-events: none;
-
-            &#flourish-1 {
-                height: 48PX;
-                right: -180PX;
-                top: -35PX;
-            }
-
-            &#flourish-2 {
-                height: 68PX;
-                bottom: -20PX;
-            }
-
-            &#flourish-3 {
-                height: 48PX;
-                left: -150PX;
-                top: -13PX;
-            }
-        }
-    }
-}
-
 section.services {
     .gc {
 
