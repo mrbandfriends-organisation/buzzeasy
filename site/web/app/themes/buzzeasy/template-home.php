@@ -144,17 +144,27 @@ use Roots\Sage\Utils;
 </section>
 
 <section class="endorsements band band--100">
-	<div class="container landmark">
+	<div class="container container--reduced landmark">
 		<h2 class="heading--bravo landmark text-center">
 			Who we've worked with
 		</h2>
 
-		<div class="grid">
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
+		<div class="grid grid--landmark-double">
+			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/zen.png' ?>" class="client-logo">
+			</div>
+			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/mrb.jpg' ?>" class="client-logo">
+			</div>
+			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/zen.png' ?>" class="client-logo">
+			</div>
+			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/mrb.jpg' ?>" class="client-logo">
+			</div>
+			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/zen.png' ?>" class="client-logo">
+			</div>
 		</div>
 	</div>
 	
