@@ -2,15 +2,14 @@
 
 namespace Buzzeasy\App\Utilities;
 
-use StdClass;
 use Countable;
 use ArrayIterator;
 use IteratorAggregate;
 
 use Roots\Sage\Utils;
-use Buzzeasy\App\Interfaces\Collectable;
+use Buzzeasy\App\Interfaces\Hasable;
 
-class ValueCollection implements Collectable, IteratorAggregate, Countable
+class ValueCollection implements Hasable, IteratorAggregate, Countable
 {
     /**
      * An array of Buzzeasy\App\Utilities\Value instances
@@ -29,23 +28,20 @@ class ValueCollection implements Collectable, IteratorAggregate, Countable
 
         if ($data) {
             foreach ($data as $key => $value) {
-                if ($value instanceof StdClass) {
-                    $value = json_decode(json_encode($value), true);
-                }
-
                 if (is_array($value)) {
                     $values[$key] = new ValueCollection($value);
-                } elseif ($value instanceof WP_Post) {
-                    $values[$key] = new Post($value->ID);
-                } elseif (is_object($value)) {
+                } else if (!$value instanceof ValueCollection) {
+                    if (!$value instanceof Value) {
+                        $value = Value::set($value);
+                    }
+
                     $values[$key] = $value;
                 } else {
-                    $values[$key] = Value::set($value);
+                    $values[$key] = $value;
                 }
             }
 
             $this->values = $values;
-
         }
     }
 
@@ -54,29 +50,28 @@ class ValueCollection implements Collectable, IteratorAggregate, Countable
      */
     public function has() : bool
     {
-        return true;
+        $values = array_filter($this->values, function ($item) {
+            return $item->has();
+        });
+
+        return !empty($values);
     }
 
     /**
-     * Allows items to be added to the value collection
-     *
-     * @param  string $key
-     * @param  any $value
-     * @return ValueCollection
+     * @return int
      */
-    public function add(string $key, $value)
+    public function count()
     {
-        if (is_array($value)) {
-            $value = new ValueCollection($value);
-        } else if (!is_object($value)) {
-            $value = new Value($value);
-        }
-
-        $this->values[$key] = $value;
-
-        return $this;
+        return count($this->values);
     }
 
+    /**
+     * Removes the first item from the values array (using array_unshift, which
+     * will get the first item regardless of key). Adds it back to the beginning
+     * of the array again and returns the first item.
+     *
+     * @return object Field
+     */
     public function first()
     {
         $first = array_shift($this->values);
@@ -91,39 +86,25 @@ class ValueCollection implements Collectable, IteratorAggregate, Countable
     }
 
     /**
-     * @param  string $key
-     * @return object Value
+     * @param  string $field
+     * @return object Field
      */
-    public function get($key)
+    public function get(string $field)
     {
-        return $this->values[$key] ?? new Value;
+        return $this->values[$field] ?? new Value;
     }
 
     /**
      * Returns the value in its raw type
      * @return any
      */
-    public function raw() : array
+    public function raw()
     {
-        return array_map(function ($row) {
-            if ($row instanceof Value || $row instanceof ValueCollection) {
-                $row = $row->raw();
-            }
-
-            return $row;
-        }, $this->values);
+        return $this->values;
     }
 
     /**
-     * @return int
-     */
-    public function count()
-    {
-        return count($this->values);
-    }
-
-    /**
-     * Allows additional items to be added to the value collection.
+     * Allows items to be added to the value collection.
      *
      * @return valueCollection
      */
@@ -138,6 +119,26 @@ class ValueCollection implements Collectable, IteratorAggregate, Countable
         $this->values[$key] = $value;
 
         return $this;
+    }
+
+    /**
+     * @param string $index
+     *
+     * @return object Field
+     */
+    public function nth(string $index)
+    {
+        $counter = 1;
+
+        foreach ($this->values as $value) {
+            if ($counter == $index) {
+                return $value;
+            }
+
+            ++$counter;
+        }
+
+        return new Value();
     }
 
     /**

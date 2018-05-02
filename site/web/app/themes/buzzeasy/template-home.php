@@ -4,30 +4,24 @@
  * Template Name: Homepage Template
  */
 
+use Buzzeasy\App\Utilities\Post;
+use Buzzeasy\App\Utilities\ValueCollection;
+
 use Roots\Sage\Utils;
 
+$post = new Post;
 ?>
 
-<section class="page-hero lazyload">
-	<div class="container">
-		<div class="page-hero__inner">
-			<header>
-				<h1 class="vh">
-					Buzzeasy
-				</h1>
-				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/logo-primary.svg'); ?>" alt="<?php echo esc_attr(bloginfo('name'));?>">
-			</header>
-			
-			<h2 class="heading--bravo heading--white">
-				Cross-channel, not crossed wires.
-			</h2>
-
-			<p class="text--large text--white">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			</p>
-		</div>
-	</div>
-</section>
+<?php if ($post->get('page_hero')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/components/page-hero/page-hero', [
+        'fields'                        => $post->field('page_hero'),
+        'modifiers'                     => new ValueCollection([
+            'heading'                   => 'heading--white',
+            'subheading'               => 'heading--white',
+            'copy'               		=> 'text--white',
+        ]),
+    ]); ?>
+<?php endif ?>
 
 <section class="customer-journey band band--100 band--blue">
 	<div class="container">

@@ -5,11 +5,8 @@ namespace Buzzeasy\App\Utilities;
 use WP_Post;
 use Roots\Sage\Utils;
 use Buzzeasy\App\Interfaces\Hasable;
+use Buzzeasy\App\Services\PostCollection;
 use Buzzeasy\App\Exceptions\PostNotFoundException;
-
-use Buzzeasy\App\Utilities\Value;
-use Buzzeasy\App\Utilities\PostCollection;
-use Buzzeasy\App\Utilities\ValueCollection;
 
 class Post implements Hasable
 {
@@ -43,18 +40,22 @@ class Post implements Hasable
      */
     public function __get(string $name)
     {
-        if (!$this->post && !$this->post = get_post($this->id)) {
-            throw new PostNotFoundException('Your post could not be found');
-        }
-
         $method = 'get' . ucfirst($name);
 
-        if (!isset($this->$name)) {
-            if (method_exists(static::class, $method)) {
-                $this->$name = $this->convertRawValue($this->$method());
-            } else {
-                $this->$name = new Value;
+        if (!$this->post) {
+            $this->post = get_post($this->id);
+
+            if (!$this->post) {
+                throw new PostNotFoundException("Your post could not be found");
             }
+        }
+
+        if ($name === 'id') {
+            $this->$name = $this->getId();
+        } else if (method_exists(static::class, $method)) {
+            $this->$name = $this->convertRawValue($this->$method());
+        } else {
+            $this->$name = new Value;
         }
 
         return $this->$name;
@@ -73,30 +74,39 @@ class Post implements Hasable
      * if the field exists and it is a Post instance, convert it to out Post
      * object. If not, convert to Value.
      *
-     * @param string $name
-     *
+     * @param  string $name
      * @return array|int|string
      */
     public function field(string $name)
     {
-        $value = get_field($name, $this->id);
+        $value = \get_field($name, $this->id);
 
-        if (!isset($this->$name)) {
-            if (is_array($value)) {
-                $this->$name = new ValueCollection($value);
-            } elseif ($value !== null) {
-                $this->$name = $this->convertRawValue($value);
-            } else {
-                $this->$name = new Value();
-            }
+        if (is_array($value)) {
+            $this->$name = new ValueCollection($value);
+        } else if ($value !== null) {
+            $this->$name = $this->convertRawValue($value);
+        } else {
+            $this->$name = new Value;
         }
 
         return $this->$name;
     }
 
+    /**
+     * Alias for fields that allows ValueCollections and PostCollections to be
+     * used in the same partials interchangeably
+     *
+     * @param  string $name
+     * @return any
+     */
+    public function get(string $name)
+    {
+        return $this->field($name);
+    }
+
 
     /**
-     * Gets the page title
+     * Gets the page id
      *
      * @return void
      */
@@ -124,6 +134,27 @@ class Post implements Hasable
     }
 
     /**
+     * Gets the page slug
+     *
+     * @return void
+     */
+    protected function getSlug() : string
+    {
+        return $this->post->post_name;
+    }
+
+
+    /**
+     * Gets the page content
+     *
+     * @return void
+     */
+    protected function getContent() : string
+    {
+        return $this->post->post_content;
+    }
+
+    /**
      * Gets the page permalink
      *
      * @return void
@@ -148,25 +179,35 @@ class Post implements Hasable
      *
      * @return void
      */
-    protected function getImage($size = '') : string
+    protected function getImage($size = '') : array
     {
-        return get_the_post_thumbnail($size, $this->id);
+        return wp_get_attachment_image_src($this->imageId);
     }
 
     /**
-     * Gets the page taxonomies.
+     * Gets the page image
+     *
+     * @return void
      */
-    public function getTaxonomies($type) : ? array
+    protected function getImageId($size = '')
     {
-        $taxonomies = wp_get_post_terms($this->id, $type);
+        return get_post_thumbnail_id($this->id);
+    }
+
+    /**
+     * Gets the page taxonomies
+     *
+     * @return void
+     */
+    public function getTaxonomies($type) : ?array
+    {
+        $taxonomies = wp_get_post_terms($this->id, [$type]);
 
         if (!is_array($taxonomies)) {
             return null;
         }
 
-        return array_map(function ($term) {
-            return $term->name;
-        }, $taxonomies);
+        return $taxonomies;
     }
 
     /**
@@ -179,6 +220,8 @@ class Post implements Hasable
         $pages = get_pages([
             'child_of' => $this->id,
             'parent' => $this->id,
+            'sort_order' => 'asc',
+            'sort_column' => 'menu_order',
         ]);
 
         return array_map(function ($page) {
@@ -189,8 +232,13 @@ class Post implements Hasable
     private function convertRawValue($value)
     {
         if ($value instanceof WP_Post) {
-            $value = new Post($value->ID);
-        } else if (!is_object($value)) {
+            $value = Post($value->ID);
+        } else if (is_array($value)) {
+            $value = new ValueCollection($value);
+        } else if (!is_subclass_of($value, Post::class)
+            && !$value instanceof Post
+            && !$value instanceof PostCollection
+        ) {
             $value = Value::set($value);
         }
 

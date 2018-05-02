@@ -180,11 +180,6 @@ class Value implements Hasable, ArrayAccess
      */
     public function offsetGet($key)
     {
-
-        if( !isset($key) ) {
-            return;
-        }
-        
         return $this->value[$key];
     }
 
