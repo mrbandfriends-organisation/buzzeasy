@@ -61,25 +61,6 @@
             }
         }
     }
-
-    .l1-5 {
-        color: color-get(yellow);
-        font-weight: bold;
-    }
-
-    h3 {
-        background-color: color-get(blue);
-        border-radius: 50%;
-        color: color-get(white);
-        display: block;
-        margin: 0 auto $quarter-spacing-unit;
-        height: 45px;
-        width: 45px;
-        padding: 4px;
-        @include mq($from: medium){
-            padding: 0;
-        }
-    }
 }
 
 section.services {
