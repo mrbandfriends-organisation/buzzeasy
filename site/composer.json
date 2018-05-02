@@ -55,7 +55,7 @@
         "version": "1.8.1",
         "dist": {
             "type": "zip",
-            "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-1.8.1.zip?licence_key=41a27671-816b-4600-b80d-782969ef106b&site_url=gradpad.dev"
+            "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-1.8.1.zip?licence_key=41a27671-816b-4600-b80d-782969ef106b&site_url=buzzeasy.test"
         }
       }
     },
@@ -67,7 +67,7 @@
         "version": "1.4.9",
         "dist": {
             "type": "zip",
-            "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=41a27671-816b-4600-b80d-782969ef106b&site_url=gradpad.dev"
+            "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=41a27671-816b-4600-b80d-782969ef106b&site_url=buzzeasy.test"
         }
       }
     }
