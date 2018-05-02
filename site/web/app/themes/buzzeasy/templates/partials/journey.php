@@ -1,6 +1,8 @@
 <?php
 /**
  * PARTIAL: Journey
+ * The user journey slice. Makes use of some carefully-positioned 'flourish' SVGs.
+ * See flourishes.scss for more information.
  *
  * FIELDS:
  *     heading
