@@ -188,12 +188,12 @@ section.benefits {
     }
 
     .benefits__contact-centre {
-        @include side-extension( color-get(red), 'before' );
+        @include side-extension( color-get(blue), 'before' );
         padding-right: 1.5em;
     }
 
     .benefits__marketing {
-        @include side-extension( color-get(yellow), 'after' );
+        @include side-extension( color-get(green), 'after' );
         padding-right: 1.5em;
 
         li:before {
