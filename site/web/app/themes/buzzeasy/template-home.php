@@ -18,7 +18,7 @@ use Roots\Sage\Utils;
 				<img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/logo-primary.svg'); ?>" alt="<?php echo esc_attr(bloginfo('name'));?>">
 			</header>
 			
-			<h2 class="heading--bravo">
+			<h2 class="heading--bravo heading--white">
 				Cross-channel, not crossed wires.
 			</h2>
 
