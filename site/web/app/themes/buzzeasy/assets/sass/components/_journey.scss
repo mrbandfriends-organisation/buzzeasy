@@ -4,8 +4,8 @@
 //
 // ==========================================================================
 
-section.customer-journey {
-    p {
+.customer-journey {
+    .journey__step__copy {
         @include mq($until: medium){
             max-width: 80%;
             margin: auto;
