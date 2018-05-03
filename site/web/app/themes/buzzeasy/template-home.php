@@ -90,40 +90,12 @@ $post = new Post;
     ]); ?>
 <?php endif ?>
 
-<section class="endorsements band band--100">
-	<div class="container container--reduced landmark">
-		<h2 class="heading--bravo landmark text-center">
-			Who we've worked with
-		</h2>
-
-		<div class="grid grid--landmark-double">
-			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/zen.png' ?>" class="client-logo">
-			</div>
-			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/mrb.jpg' ?>" class="client-logo">
-			</div>
-			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/zen.png' ?>" class="client-logo">
-			</div>
-			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/mrb.jpg' ?>" class="client-logo">
-			</div>
-			<div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/logos/zen.png' ?>" class="client-logo">
-			</div>
-		</div>
-	</div>
-	
-	<div class="container text-center">
-
-		<div class="grid">
-			<div class="gc m1-5 text-center"></div>
-			<div class="gc m3-5 text-center">
-				<p class="text--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				<a href="/contact-us/" class="btn btn--primary">Call us</a>
-			</div>
-			<div class="gc m1-5 text-center"></div>
-		</div>
-	</div>
-</section>
+<?php if ($post->get('who_weve_worked_with')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/partials/shared/who-weve-worked-with', [
+        'fields'                        => $post->field('who_weve_worked_with'),
+        'modifiers'                     => new ValueCollection([
+			'subheading'                => 'text--large',
+			'button'					=> 'btn--primary',
+        ]),
+    ]); ?>
+<?php endif ?>
