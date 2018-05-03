@@ -210,4 +210,4 @@ use Roots\Sage\Utils;
 	</div>
 </section>
 
-<?= Utils\ob_load_template_part('templates/components/cta-banner'); ?>
+<?= Utils\ob_load_template_part('templates/partials/shared/callout'); ?>
