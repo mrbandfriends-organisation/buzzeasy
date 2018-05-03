@@ -30,7 +30,7 @@ $heading = $fields->get('services_heading');
 
 <?php if ($heading->has() ) : ?>
 
-    <section class="services band band--100 band--white">
+    <section class="services-overview band band--100 band--white">
         <div class="container text-center">
 
             <h2 class="heading--bravo heading--green landmark">
