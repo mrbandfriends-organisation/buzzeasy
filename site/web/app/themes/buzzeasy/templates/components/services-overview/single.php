@@ -30,9 +30,11 @@ $title   = $service->title;
                 </p>
             </div>
 
-            <a href="/services/#<?= sanitize_title($title->escape('html')); ?>" class="btn btn--blue">
-                <?= $content->get('service_cta_text')->escape('html'); ?>
-            </a>
+            <div>
+                <a href="/services/#<?= sanitize_title($title->escape('html')); ?>" class="btn btn--blue">
+                    <?= $content->get('service_cta_text')->escape('html'); ?>
+                </a>
+            </div>
 
         </div>
     </div>
