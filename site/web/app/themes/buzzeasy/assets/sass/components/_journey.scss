@@ -1,13 +1,20 @@
 // ==========================================================================
 //
-// FLOURISHES
-//
-// Description: Used to size and position flourishes for the Journey partial.
+// CUSTOMER JOURNEY
 //
 // ==========================================================================
 
+section.customer-journey {
+    p {
+        @include mq($until: medium){
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+}
+
 // ==========================================================================
-// # BASE
+// # FLOURISHES
 // ==========================================================================
 
 .grid--flourishes {

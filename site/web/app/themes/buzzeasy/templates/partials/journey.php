@@ -51,7 +51,7 @@ $steps = $fields->get('journey_steps');
                 </div>
             </div>
 
-            <div class="grid grid--double-gutter grid--customer-journey">
+            <div class="grid grid--double-gutter grid--landmark grid--customer-journey">
 
                 <?php foreach( $steps as $step ) : ?>
 
