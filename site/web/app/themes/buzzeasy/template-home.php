@@ -34,7 +34,7 @@ $services = $properties = Service::orderBy('post_title', 'ASC')->get();
         'modifiers'                     => new ValueCollection([
             'heading'                   => 'heading--white',
             'step_number'               => 'heading--white',
-            'step_text'               		=> 'text--white',
+            'step_text'                 => 'text--white',
         ]),
     ]); ?>
 <?php endif ?>
