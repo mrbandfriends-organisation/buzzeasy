@@ -72,7 +72,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 4,
-            "new_lines": "br"
+            "new_lines": ""
         },
         {
             "key": "field_5931289d68066",
@@ -156,5 +156,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525104207
+    "modified": 1525342316
 }

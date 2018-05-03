@@ -3,6 +3,10 @@
     use Roots\Sage\Utils;
     use Roots\Sage\Extras;
     use Roots\Sage\Services\Menu;
+    use Buzzeasy\App\Utilities\SiteOptions;
+
+    $options = new SiteOptions();
+    $address = $options->field('address')->escape('html');
 
 ?>
 
@@ -29,11 +33,7 @@
             <div class="footer__left-column">
                 <div>
                     <p class="footer__address">
-                        Buzzeasy <br>
-                        Address Line 1 <br>
-                        Address Line 2 <br>
-                        City <br>
-                        Postcode
+                        <?= nl2br( $address ); ?>
                     </p>
                 </div>
             </div>
