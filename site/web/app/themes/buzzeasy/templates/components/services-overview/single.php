@@ -16,16 +16,16 @@ $title   = $service->title;
 <?php if ( $title->has() && $content->get('service_cta_text')->has() && $content->get('service_icon')->has() ) : ?>
 
     <div class="gc m1-3 l1-5">
-        <div class="service-content">
+        <div class="service-overview__content">
 
             <div>
-                <?= wp_get_attachment_image($content->get('service_icon')->get('id')->raw(), null, null, ['class' => 'service-logo']); ?>
+                <?= wp_get_attachment_image($content->get('service_icon')->get('id')->raw(), null, null, ['class' => 'service-overview__logo']); ?>
 
                 <h3 class="heading--charlie heading--green">
                     <?= $title->escape('html'); ?>
                 </h3>
 
-                <p>
+                <p class="service-overview__copy">
                     <?= $content->get('service_excerpt_copy')->escape('html'); ?>
                 </p>
             </div>

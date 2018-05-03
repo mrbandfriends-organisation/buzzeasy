@@ -8,26 +8,21 @@
 // # BASE
 // ==========================================================================
 
-section.services-overview {
-    .gc {
+.service-overview__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
 
-        .service-content {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between
-        }
+.service-overview__copy {
+    margin-bottom: (3 * $quarter-spacing-unit);
+}
 
-        p {
-            margin-bottom: (3 * $quarter-spacing-unit);
-        }
-
-        .service-logo {
-            display: block;
-            margin: 0 auto;
-            height: 70px;
-            width: auto;
-            margin-bottom: $half-spacing-unit;
-        }
-    }
+.service-overview__logo {
+    display: block;
+    margin: 0 auto;
+    height: 70px;
+    width: auto;
+    margin-bottom: $half-spacing-unit;
 }
