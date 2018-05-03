@@ -35,7 +35,7 @@
 			<input type="text" id="lname" name="lastname" placeholder="Last name" required class="input--bold">
 
 			<label for="subject" class="vh">Your message</label>
-			<textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+			<textarea id="subject" name="subject" placeholder="Your message"></textarea>
 
 			<input id="GDPR" type="checkbox" value="GDPR">
 			<label for="GDPR">GDPR Compliant Opt-in</label>
