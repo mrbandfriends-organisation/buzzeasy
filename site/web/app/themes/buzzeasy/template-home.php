@@ -16,7 +16,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
 
 ?>
 
-<?php if ($post->get('page_hero')->has()) : ?>
+<?php if ($post->field('page_hero')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/components/page-hero/page-hero', [
         'fields'                        => $post->field('page_hero'),
         'modifiers'                     => new ValueCollection([
@@ -28,7 +28,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     ]); ?>
 <?php endif ?>
 
-<?php if ($post->get('journey')->has()) : ?>
+<?php if ($post->field('journey')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/partials/journey', [
         'fields'                        => $post->field('journey'),
         'modifiers'                     => new ValueCollection([
@@ -39,7 +39,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     ]); ?>
 <?php endif ?>
 
-<?php if ($post->get('services_overview')->has()) : ?>
+<?php if ($post->field('services_overview')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/components/services-overview/listing', [
 		'fields'                        => $post->field('services_overview'),
 		'services'						=> $services,
@@ -51,7 +51,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     ]); ?>
 <?php endif ?>
 
-<?php if ($post->get('callout')->has()) : ?>
+<?php if ($post->field('callout')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/partials/shared/callout', [
         'fields'                        => $post->field('callout'),
         'modifiers'                     => new ValueCollection([
@@ -62,13 +62,13 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     ]); ?>
 <?php endif ?>
 
-<?php if ($post->get('benefits')->has()) : ?>
+<?php if ($post->field('benefits')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/partials/shared/benefits', [
         'fields'                        => $post->field('benefits'),
     ]); ?>
 <?php endif ?>
 
-<?php if ($post->get('who_weve_worked_with')->has()) : ?>
+<?php if ($post->field('who_weve_worked_with')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/partials/shared/who-weve-worked-with', [
         'fields'                        => $post->field('who_weve_worked_with'),
         'modifiers'                     => new ValueCollection([
