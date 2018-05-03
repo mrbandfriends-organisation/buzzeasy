@@ -51,7 +51,7 @@ $modifiers = $modifiers ?? new ValueCollection();
                         <h1 class="vh">
                             Buzzeasy 
                         </h1>
-                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/logo-primary.svg'); ?>" alt="<?php echo esc_attr(bloginfo('name'));?>">
+                        <?= Utils\ob_load_template_part('templates/partials/site-logo-primary.php'); ?>
 
                     <?php else : ?>
 
