@@ -9,19 +9,19 @@
 // # BASE
 // ==========================================================================
 
-section.benefits {
+.benefits {
 
-    h2 {
-        padding-left: 2.5rem;
+    .benefits__heading {
+        padding-left: 40px;
     }
 
-    ul {
+    .benefits__list {
         list-style: none;
         margin-bottom: 0;
-        padding-left: 1em;
-        text-indent: -2em;
+        padding-left: 16px;
+        text-indent: -32px;
 
-        li {
+        .benefits__list-item {
             margin-bottom: $quarter-spacing-unit;
 
             &:last-of-type {
@@ -31,12 +31,12 @@ section.benefits {
             &:before {
                 content:''; 
                 display:inline-block; 
-                height:1em; 
-                width:1em; 
+                height: 16px; 
+                width: 16px; 
                 background-image: url("../svg/standalone/output/tick--white.svg");
                 background-size:contain; 
                 background-repeat:no-repeat; 
-                padding-left: 2em;
+                padding-left: 32px;
                 vertical-align: text-top;
             }
         }
@@ -44,15 +44,11 @@ section.benefits {
 
     .benefits__contact-centre {
         @include side-extension( color-get(blue), 'before' );
-        padding-right: 1.5em;
+        padding-right: 24px;
     }
 
     .benefits__marketing {
         @include side-extension( color-get(green), 'after' );
-        padding-right: 1.5em;
-
-        li:before {
-            background-image: url("../svg/standalone/output/tick--white.svg");
-        }
+        padding-right: 24px;
     }
 }

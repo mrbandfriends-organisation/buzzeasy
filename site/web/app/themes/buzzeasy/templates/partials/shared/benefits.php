@@ -37,14 +37,14 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
             <div class="grid grid--half-gutter">
 
                     <div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--blue">
-                        <h2 class="heading--bravo heading--white">
+                        <h2 class="benefits__heading heading--bravo heading--white">
                             <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
                         </h2>
 
                         <?php if( $contact_centre_benefits_list->has() ) : ?>
-                            <ul class="text--white">
+                            <ul class="benefits__list text--white">
                                 <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
-                                    <li><?= $benefit->get('benefit_item')->escape('html'); ?></li>
+                                    <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
@@ -52,14 +52,14 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
 
                     <div class="gc s1-1 l1-2 benefits__marketing band band--100 band--green">
-                        <h2 class="heading--bravo heading--white">
+                        <h2 class="benefits__heading heading--bravo heading--white">
                             <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
                         </h2>
 
                         <?php if( $marketing_benefits_list->has() ) : ?>
-                            <ul class="text--white">
+                            <ul class="benefits__list text--white">
                                 <?php foreach( $marketing_benefits_list as $benefit ) : ?>
-                                    <li><?= $benefit->get('benefit_item')->escape('html'); ?></li>
+                                    <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
