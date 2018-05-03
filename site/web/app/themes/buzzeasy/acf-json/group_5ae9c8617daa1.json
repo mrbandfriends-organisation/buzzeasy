@@ -5,7 +5,7 @@
         {
             "key": "field_5ae9c86ea29d0",
             "label": "Heading",
-            "name": "heading",
+            "name": "journey_heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,7 +24,7 @@
         {
             "key": "field_5ae9c89da29d1",
             "label": "Steps",
-            "name": "steps",
+            "name": "journey_steps",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -98,5 +98,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525270925
+    "modified": 1525341270
 }
