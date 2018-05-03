@@ -37,12 +37,12 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
             <div class="grid grid--half-gutter">
 
                     <div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--blue">
-                        <h2 class="heading--bravo heading--green">
+                        <h2 class="heading--bravo heading--white">
                             <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
                         </h2>
 
                         <?php if( $contact_centre_benefits_list->has() ) : ?>
-                            <ul class="text--green">
+                            <ul class="text--white">
                                 <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
                                     <li>
                                         <?= $benefit->get('benefit_item')->escape('html'); ?>
@@ -54,12 +54,12 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
 
                     <div class="gc s1-1 l1-2 benefits__marketing band band--100 band--green">
-                        <h2 class="heading--bravo heading--blue">
+                        <h2 class="heading--bravo heading--white">
                             <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
                         </h2>
 
                         <?php if( $contact_centre_benefits_list->has() ) : ?>
-                            <ul class="text--blue">
+                            <ul class="text--white">
                                 <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
                                     <li>
                                         <?= $benefit->get('benefit_item')->escape('html'); ?>

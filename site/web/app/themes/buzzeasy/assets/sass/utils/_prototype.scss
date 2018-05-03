@@ -117,7 +117,7 @@ section.benefits {
                 display:inline-block; 
                 height:1em; 
                 width:1em; 
-                background-image: url("../svg/standalone/output/tick--green.svg");
+                background-image: url("../svg/standalone/output/tick--white.svg");
                 background-size:contain; 
                 background-repeat:no-repeat; 
                 padding-left: 2em;
@@ -136,7 +136,7 @@ section.benefits {
         padding-right: 1.5em;
 
         li:before {
-            background-image: url("../svg/standalone/output/tick--blue.svg");
+            background-image: url("../svg/standalone/output/tick--white.svg");
         }
     }
 }
