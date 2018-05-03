@@ -12,7 +12,7 @@ use Roots\Sage\Utils;
 
 $post = new Post;
 
-$services = $properties = Service::orderBy('post_title', 'ASC')->get();
+$services = Service::orderBy('post_title', 'ASC')->get();
 
 ?>
 
