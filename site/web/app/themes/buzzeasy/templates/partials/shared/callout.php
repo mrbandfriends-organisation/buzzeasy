@@ -40,13 +40,15 @@ $modifiers = $modifiers ?? new ValueCollection();
                 <div class="grid">
                     <div class="gc s1-1 l3-4">
 
-                        <h2 class="heading--alpha landmark--half <?= esc_attr($modifiers->get('heading')->escape('attr')); ?>">
-                            <?= nl2br($fields->get('callout_heading')->escape('textarea')); ?>
-                        </h2> <br> <br>
+                        <div class="band band--half band--no-top">
+                            <h2 class="heading--alpha landmark--half <?= $modifiers->get('heading')->escape('attr'); ?>">
+                                <?= nl2br($fields->get('callout_heading')->escape('textarea')); ?>
+                            </h2>
+                        </div>
 
                         <?php if ( $fields->get('callout_button_text')->has() && $fields->get('callout_button_link')->has() ) : ?>
 
-                            <a href="<?= $fields->get('callout_button_link')->escape('html'); ?>" class="btn <?= esc_attr($modifiers->get('button')->escape('attr')); ?>">
+                            <a href="<?= $fields->get('callout_button_link')->escape('html'); ?>" class="btn <?= $modifiers->get('button')->escape('attr'); ?>">
                                 <?= $fields->get('callout_button_text')->escape('html'); ?>
                             </a>
 

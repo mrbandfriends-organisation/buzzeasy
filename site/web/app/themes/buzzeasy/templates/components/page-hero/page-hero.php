@@ -56,7 +56,7 @@ $modifiers = $modifiers ?? new ValueCollection();
                     <?php else : ?>
 
                         <?php if ($fields->get('heading')->has()) : ?>
-                                <h1 class="page-hero__heading heading--uppercase heading--alpha <?= esc_attr($modifiers->get('heading')->escape('attr')); ?>">
+                                <h1 class="page-hero__heading heading--uppercase heading--alpha <?= $modifiers->get('heading')->escape('attr'); ?>">
                                     <?= $fields->get('heading')->escape('html'); ?>
                                 </h1>
                         <?php endif; ?>
@@ -64,7 +64,7 @@ $modifiers = $modifiers ?? new ValueCollection();
                     <?php endif; ?>
 
                     <?php if ($fields->get('subheading')->has()) : ?>
-                            <h2 class="page-hero__heading heading--uppercase heading--bravo <?= esc_attr($modifiers->get('subheading')->escape('attr')); ?>">
+                            <h2 class="page-hero__heading heading--uppercase heading--bravo <?= $modifiers->get('subheading')->escape('attr'); ?>">
                                 <?= $fields->get('subheading')->escape('html'); ?>
                             </h2>
                     <?php endif; ?>

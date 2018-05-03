@@ -34,7 +34,7 @@ $steps = $fields->get('journey_steps');
         <div class="container">
 
             <?php if ($fields->get('journey_heading')->has()) : ?>
-                    <h2 class="heading--bravo heading--white text-center landmark <?= esc_attr($modifiers->get('heading')->escape('attr')); ?>">
+                    <h2 class="heading--bravo heading--white text-center landmark <?= $modifiers->get('heading')->escape('attr'); ?>">
                         <?= $fields->get('journey_heading')->escape('html'); ?>
                     </h2>
             <?php endif; ?>
@@ -56,10 +56,10 @@ $steps = $fields->get('journey_steps');
                 <?php foreach( $steps as $step ) : ?>
 
                     <div class="gc m1-2 l1-4 text-center">
-                        <h3 class="heading--bravo journey__step__heading <?= esc_attr($modifiers->get('step_number')->escape('attr')); ?>">
+                        <h3 class="heading--bravo journey__step__heading <?= $modifiers->get('step_number')->escape('attr'); ?>">
                             <?= $step->get('step_number')->escape('html'); ?>
                         </h3>
-                        <p class="journey__step__copy <?= esc_attr($modifiers->get('step_text')->escape('attr')); ?>">
+                        <p class="journey__step__copy <?= $modifiers->get('step_text')->escape('attr'); ?>">
                             <?= $step->get('step_text')->escape('html'); ?>
                         </p>
                     </div>
