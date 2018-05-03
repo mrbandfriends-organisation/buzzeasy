@@ -34,7 +34,7 @@ $steps = $fields->get('journey_steps');
         <div class="container">
 
             <?php if ($fields->get('journey_heading')->has()) : ?>
-                    <h2 class="heading--bravo heading--white text-center landmark <?= esc_attr($modifiers->get('journey_heading')->escape('attr')); ?>">
+                    <h2 class="heading--bravo heading--white text-center landmark <?= esc_attr($modifiers->get('heading')->escape('attr')); ?>">
                         <?= $fields->get('journey_heading')->escape('html'); ?>
                     </h2>
             <?php endif; ?>
