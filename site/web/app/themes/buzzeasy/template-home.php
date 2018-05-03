@@ -16,6 +16,7 @@ $post = new Post;
     <?= Utils\ob_load_template_part('templates/components/page-hero/page-hero', [
         'fields'                        => $post->field('page_hero'),
         'modifiers'                     => new ValueCollection([
+			'hero'						=> 'page-hero--cover-center',
             'heading'                   => 'heading--white',
             'subheading'                => 'heading--white',
             'copy'               		=> 'text--white',
@@ -76,34 +77,18 @@ $post = new Post;
     <?= Utils\ob_load_template_part('templates/partials/shared/callout', [
         'fields'                        => $post->field('callout'),
         'modifiers'                     => new ValueCollection([
+			'background'				=> 'page-hero--cover-bottom',
             'heading'                   => 'heading--red heading--highlight--white',
-            'buttons'               	=> 'btn--red',
+            'button'                 	=> 'btn--red',
         ]),
     ]); ?>
 <?php endif ?>
 
-<section class="benefits">
-	<div class="container container--extend">
-		<div class="grid grid--half-gutter">
-			<div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--blue">
-				<h2 class="heading--bravo heading--green">Contact Centre Benefits</h2>
-				<ul class="text--green">
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-					<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-				</ul>
-			</div>
-			<div class="gc s1-1 l1-2 benefits__marketing band band--100 band--green">
-				<h2 class="heading--bravo heading--blue">Marketing Benefits</h2>
-				<ul class="text--blue">
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-					<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-					<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
+<?php if ($post->get('benefits')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/partials/shared/benefits', [
+        'fields'                        => $post->field('benefits'),
+    ]); ?>
+<?php endif ?>
 
 <section class="endorsements band band--100">
 	<div class="container container--reduced landmark">

@@ -5,7 +5,7 @@
         {
             "key": "field_5ae9d3a7110b6",
             "label": "Heading",
-            "name": "heading",
+            "name": "callout_heading",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -19,33 +19,12 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "br"
-        },
-        {
-            "key": "field_5ae9d3ab110b7",
-            "label": "Buttons",
-            "name": "buttons",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_5ae9d3fe6de8c"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
+            "new_lines": ""
         },
         {
             "key": "field_5ae9d496b19be",
             "label": "Background Image",
-            "name": "background_image",
+            "name": "callout_background_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -65,6 +44,41 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5ae9d3ab110b7",
+            "label": "Button Text",
+            "name": "callout_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aeac5a677ad6",
+            "label": "Button Link",
+            "name": "callout_button_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -84,5 +98,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525275868
+    "modified": 1525335482
 }

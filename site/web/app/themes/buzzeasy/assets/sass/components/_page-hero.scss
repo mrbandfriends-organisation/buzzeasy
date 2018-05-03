@@ -15,10 +15,6 @@
     @include billboard(70vh);
     @include flex-col(flex-start, center);
 
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
     .page-hero__inner {
         max-width: 600px;
     }
@@ -39,4 +35,24 @@
 
 .page-hero--image {
     @include billboard(56.25vw); // This keeps the section as 16:9 ratio
+}
+
+
+
+
+
+// ==========================================================================
+// # MODIFIERS: COVER AND POSITION
+// ==========================================================================
+
+.page-hero--cover-center {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-hero--cover-bottom {
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
