@@ -29,12 +29,11 @@ section.services {
             margin-bottom: (3 * $quarter-spacing-unit);
         }
 
-        .service-icon {
+        .service-logo {
             display: block;
             margin: auto;
             height: 70px;
             width: auto;
-            fill: color-get(blue);
             margin-bottom: $half-spacing-unit;
         }
     }
