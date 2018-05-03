@@ -15,21 +15,25 @@ $content = $service->get('excerpt_content');
 <?php if ( $service->title->has() && $content->get('service_cta_text')->has() && $content->get('service_icon')->has() ) : ?>
 
     <div class="gc m1-3 l1-5">
+        <div class="service-content">
 
-        <?= wp_get_attachment_image($content->get('service_icon')->get('id')->raw(), null, null, ['class' => 'service-logo']); ?>
+            <div>
+                <?= wp_get_attachment_image($content->get('service_icon')->get('id')->raw(), null, null, ['class' => 'service-logo']); ?>
 
-        <h3 class="heading--charlie heading--green">
-            <?= $service->title->escape('html'); ?>
-        </h3>
+                <h3 class="heading--charlie heading--green">
+                    <?= $service->title->escape('html'); ?>
+                </h3>
 
-        <p>
-            <?= $content->get('service_excerpt_copy')->escape('html'); ?>
-        </p>
+                <p>
+                    <?= $content->get('service_excerpt_copy')->escape('html'); ?>
+                </p>
+            </div>
 
-        <a href="/services/#message" class="btn btn--blue">
-            <?= $content->get('service_cta_text')->escape('html'); ?>
-        </a>
+            <a href="/services/#message" class="btn btn--blue">
+                <?= $content->get('service_cta_text')->escape('html'); ?>
+            </a>
 
+        </div>
     </div>
 
 <? endif; ?>
