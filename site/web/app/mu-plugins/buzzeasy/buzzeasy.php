@@ -26,8 +26,8 @@ require_once __DIR__.'/autoloader.php';
 $core = Core::class;
 
 // Register Plugin Activation / Deactivation
-register_activation_hook(__FILE__, [$core, 'activate']);
-register_deactivation_hook(__FILE__, [$core, 'deactivate']);
+// register_activation_hook(__FILE__, [$core, 'activate']);
+// register_deactivation_hook(__FILE__, [$core, 'deactivate']);
 
 //  Initialise
 add_action('plugins_loaded', [$core, 'initialise']);
