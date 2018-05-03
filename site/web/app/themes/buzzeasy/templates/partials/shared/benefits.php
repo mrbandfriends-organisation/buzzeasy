@@ -44,9 +44,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                         <?php if( $contact_centre_benefits_list->has() ) : ?>
                             <ul class="text--white">
                                 <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
-                                    <li>
-                                        <?= $benefit->get('benefit_item')->escape('html'); ?>
-                                    </li>
+                                    <li><?= $benefit->get('benefit_item')->escape('html'); ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
@@ -61,9 +59,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                         <?php if( $contact_centre_benefits_list->has() ) : ?>
                             <ul class="text--white">
                                 <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
-                                    <li>
-                                        <?= $benefit->get('benefit_item')->escape('html'); ?>
-                                    </li>
+                                    <li><?= $benefit->get('benefit_item')->escape('html'); ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
