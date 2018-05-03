@@ -9,10 +9,11 @@ $service   = $service ?? new ValueCollection();
 $modifiers = $modifiers ?? new ValueCollection();
 
 $content = $service->get('excerpt_content');
+$title   = $service->title;
 
 ?>
 
-<?php if ( $service->title->has() && $content->get('service_cta_text')->has() && $content->get('service_icon')->has() ) : ?>
+<?php if ( $title->has() && $content->get('service_cta_text')->has() && $content->get('service_icon')->has() ) : ?>
 
     <div class="gc m1-3 l1-5">
         <div class="service-content">
@@ -21,7 +22,7 @@ $content = $service->get('excerpt_content');
                 <?= wp_get_attachment_image($content->get('service_icon')->get('id')->raw(), null, null, ['class' => 'service-logo']); ?>
 
                 <h3 class="heading--charlie heading--green">
-                    <?= $service->title->escape('html'); ?>
+                    <?= $title->escape('html'); ?>
                 </h3>
 
                 <p>
@@ -29,7 +30,7 @@ $content = $service->get('excerpt_content');
                 </p>
             </div>
 
-            <a href="/services/#message" class="btn btn--blue">
+            <a href="/services/#<?= sanitize_title($title->escape('html')); ?>" class="btn btn--blue">
                 <?= $content->get('service_cta_text')->escape('html'); ?>
             </a>
 
