@@ -1,6 +1,6 @@
 {
     "key": "group_5aeae2eb0fa99",
-    "title": "Service",
+    "title": "[Post Type] - Service",
     "fields": [
         {
             "key": "field_5aeae323b487b",
@@ -117,5 +117,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1525343148
+    "modified": 1525344799
 }
