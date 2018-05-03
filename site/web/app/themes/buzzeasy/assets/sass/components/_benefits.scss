@@ -1,0 +1,58 @@
+// ==========================================================================
+//
+// BENEFITS SECTION
+//
+//
+// ==========================================================================
+
+// ==========================================================================
+// # BASE
+// ==========================================================================
+
+section.benefits {
+
+    h2 {
+        padding-left: 2 * $base-font-size;
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 1em;
+        text-indent: -2em;
+
+        li {
+            margin-bottom: $quarter-spacing-unit;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                content:''; 
+                display:inline-block; 
+                height:1em; 
+                width:1em; 
+                background-image: url("../svg/standalone/output/tick--white.svg");
+                background-size:contain; 
+                background-repeat:no-repeat; 
+                padding-left: 2em;
+                vertical-align: text-top;
+            }
+        }
+    }
+
+    .benefits__contact-centre {
+        @include side-extension( color-get(blue), 'before' );
+        padding-right: 1.5em;
+    }
+
+    .benefits__marketing {
+        @include side-extension( color-get(green), 'after' );
+        padding-right: 1.5em;
+
+        li:before {
+            background-image: url("../svg/standalone/output/tick--white.svg");
+        }
+    }
+}
