@@ -19,7 +19,12 @@ $title   = $service->title;
         <div class="service-overview__content">
 
             <div>
-                <?= wp_get_attachment_image($content->get('service_icon')->get('id')->raw(), null, null, ['class' => 'service-overview__logo']); ?>
+
+                <img class="service-overview__logo lazyload" data-src="<?= $content->get('service_icon')->get('url'); ?>" alt="<?= $title->escape('html'); ?>">
+
+                <noscript>
+                    <img class="service-overview__logo" src="<?= $content->get('service_icon')->get('url'); ?>" alt="<?= $title->escape('html'); ?>">
+                </noscript>
 
                 <h3 class="heading--charlie heading--green">
                     <?= $title->escape('html'); ?>
