@@ -42,7 +42,10 @@ $logos      = $fields->get('wwww_logos');
                     <div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
                         <?php if ($logo->get('wwww_logo')->has()) : ?>
 
-                            <?= wp_get_attachment_image($logo->get('wwww_logo')->get('id')->raw(), null, null, ['class' => 'client-logo']); ?>
+                            <?= Assets\lazyload_image($logo->get('wwww_logo')->get('id')->raw(), [
+                                'aspect_ratio' => 1/1,
+                                'class'   => 'endorsements__logo',
+                            ]) ?>
 
                         <?php endif ?>
                     </div>
