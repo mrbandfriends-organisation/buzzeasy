@@ -13,7 +13,7 @@ $title   = $service->title;
 
 ?>
 
-<?php if ( $title->has() && $content->get('service_cta_text')->has() && $content->get('service_icon')->has() ) : ?>
+<?php if ( $title->has() && $content->has('service_cta_text') && $content->has('service_icon') ) : ?>
 
     <div class="gc m1-3 l1-5">
         <div class="service-overview__content">
