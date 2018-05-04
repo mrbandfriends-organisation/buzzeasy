@@ -26,26 +26,6 @@
     margin-bottom: $quarter-spacing-unit;
 }
 
-section.team {
-    background: color-get(blue) url("../images/team.jpg") center center / cover no-repeat;
-    height: 70vh;    
-    display: flex;
-    align-items: flex-end;
-
-    .grid {
-        margin-left: 0;
-    }
-
-    .gc:last-of-type {
-        background-color: color-get(blue);
-        padding: $half-spacing-unit $spacing-unit;
-
-        h2, p, ul {
-            color: color-get(white);
-        }
-    }
-}
-
 .service {
     .service-icon {
         display: block;

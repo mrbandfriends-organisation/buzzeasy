@@ -42,7 +42,7 @@ $modifiers = $modifiers ?? new ValueCollection();
             <div class="grid">
                 <div class="gc s1-1 l1-2">
                 </div>
-                <div class="gc s1-1 l1-2">
+                <div class="gc s1-1 l1-2 team__copy-container">
                     <h2 class="<?= $modifiers->get('heading')->escape('attr'); ?>">
                         <?= $fields->get('heading')->escape('html'); ?>
                     </h2>

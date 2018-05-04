@@ -1,0 +1,17 @@
+
+
+.team {
+    background: color-get(blue) url("../images/team.jpg") center center / cover no-repeat;
+    height: 70vh;    
+    display: flex;
+    align-items: flex-end;
+
+    .grid {
+        margin-left: 0;
+    }
+
+    .team__copy-container {
+        background-color: color-get(blue);
+        padding: $half-spacing-unit $spacing-unit;
+    }
+}
