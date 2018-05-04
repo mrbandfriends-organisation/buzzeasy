@@ -56,7 +56,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
         'fields'                        => $post->field('callout'),
         'modifiers'                     => new ValueCollection([
 			'background'				=> 'page-hero--cover-bottom',
-            'heading'                   => 'heading--red heading--highlight--white',
+            'heading'                   => 'heading--yellow heading--highlight--red',
             'button'                 	=> 'btn--red',
         ]),
     ]); ?>
