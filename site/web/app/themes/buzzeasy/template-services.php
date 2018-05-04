@@ -29,7 +29,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
 <?php endif ?>
 
 <?= Utils\ob_load_template_part('templates/components/services/listing', [
-	'services'						=> $services,
+	'services'						    => $services,
 ]); ?>
 
 <section class="integration band">
