@@ -32,24 +32,14 @@ $services = Service::orderBy('post_title', 'ASC')->get();
 	'services'						    => $services,
 ]); ?>
 
-<section class="integration band">
-	<div class="container">
-		<div class="grid">
-			<div class="gc s1-1 l1-2">
-				<h2 class="heading--bravo">Integrations</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="gc s1-1 l1-2"></div>
-		</div>
-		<div class="grid">
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-			<div class="gc m1-3 l1-5 text-center"><img src="https://via.placeholder.com/150x50" alt="" class="endorsement-icon"></div>
-		</div>
-	</div>
-</section>
+<?php if ($post->field('integrations_group')->has()) : ?>
+	<?= Utils\ob_load_template_part('templates/partials/integrations', [
+		'fields'						    => $post->field('integrations_group'),
+		'modifiers'							=> new ValueCollection([
+			'heading'						=> 'heading--bravo',
+		]),
+	]); ?>
+<?php endif; ?>
 
 <section class="case-studies band band--blue">
 	<div class="container">
@@ -98,4 +88,13 @@ $services = Service::orderBy('post_title', 'ASC')->get();
 	</div>
 </section>
 
-<?= Utils\ob_load_template_part('templates/partials/shared/callout'); ?>
+<?php if ($post->field('callout')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/partials/shared/callout', [
+        'fields'                        => $post->field('callout'),
+        'modifiers'                     => new ValueCollection([
+			'background'				=> 'page-hero--cover-bottom',
+            'heading'                   => 'heading--yellow heading--highlight--red',
+            'button'                 	=> 'btn--red',
+        ]),
+    ]); ?>
+<?php endif ?>

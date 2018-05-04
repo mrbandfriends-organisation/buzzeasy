@@ -34,3 +34,9 @@
         }
     }
 }
+
+.integrations__logo {
+    @include mq($from: medium){
+        margin-bottom: $quarter-spacing-unit;
+    }
+}
