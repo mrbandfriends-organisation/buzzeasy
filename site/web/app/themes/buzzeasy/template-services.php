@@ -4,25 +4,29 @@
  * Template Name: Services Template
  */
 
+use Buzzeasy\App\Utilities\Post;
+use Buzzeasy\App\PostTypes\Service;
+use Buzzeasy\App\Utilities\ValueCollection;
+
 use Roots\Sage\Utils;
+
+$post = new Post;
+
+$services = Service::orderBy('post_title', 'ASC')->get();
 
 ?>
 
-<section class="page-hero lazyload">
-	<div class="container">
-		<div class="page-hero__inner">
-			<header>
-				<h1 class="page-hero__heading heading--alpha heading--white heading--highlight--blue">
-					Lorem ipsum dolor sit amet, consectetur adipiscing.
-				</h1>
-			</header>
-			
-			<p class="text--large text--white">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			</p>
-		</div>
-	</div>
-</section>
+<?php if ($post->field('page_hero')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/components/page-hero/page-hero', [
+        'fields'                        => $post->field('page_hero'),
+        'modifiers'                     => new ValueCollection([
+			'hero'						=> 'page-hero--cover-center',
+            'heading'                   => 'heading--blue heading--highlight--white',
+            'subheading'                => 'heading--white',
+            'copy'               		=> 'text--white',
+        ]),
+    ]); ?>
+<?php endif ?>
 
 <section class="service band band--light-grey" id="message">
 	<div class="container">
