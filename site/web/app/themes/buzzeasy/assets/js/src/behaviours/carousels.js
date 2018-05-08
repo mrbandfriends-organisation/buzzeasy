@@ -29,10 +29,17 @@ $('.logo-carousel').slick({
 
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 600,
             settings: {
                 slidesToScroll: 3,
                 slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToScroll: 4,
+                slidesToShow: 4,
             }
         },
         {
