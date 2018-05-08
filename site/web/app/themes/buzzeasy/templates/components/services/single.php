@@ -15,7 +15,7 @@ $title   = $service->title;
 
 <?php if ( $title->has() && $content->has('service_copy') && $content->has('service_icon') ) : ?>
 
-    <div class="service-listing__service band band--light-grey" id="<?= sanitize_title($title->escape('html')); ?>">
+    <div class="service-listing__service band" id="<?= sanitize_title($title->escape('html')); ?>">
         <div class="container">
             <div class="grid">
             
