@@ -36,22 +36,27 @@ $logos      = $fields->get('wwww_logos');
                 <?= $fields->get('wwww_heading')->escape('html'); ?>
             </h2>
 
-            <div class="grid grid--landmark-double">
+            <?php if ( $logos->has() ) : ?>
+                <div class="carousel-container">
+                    <div class="carousel logo-carousel">
 
-                <?php foreach($logos as $logo) : ?>
-                    <div class="gc t1-2 m1-3 l1-5 gc-vmiddle text-center">
-                        <?php if ($logo->get('wwww_logo')->has()) : ?>
+                        <?php foreach($logos as $logo) : ?>
+                            <?php if ($logo->get('wwww_logo')->has()) : ?>
+                                <div class="carousel__slide text-center">
 
-                            <?= Assets\lazyload_image($logo->get('wwww_logo')->get('id')->raw(), [
-                                'aspect_ratio' => 1/1,
-                                'class'   => 'endorsements__logo',
-                            ]) ?>
+                                    <?= Assets\lazyload_image($logo->get('wwww_logo')->get('id')->raw(), [
+                                        'aspect_ratio' => 1/1,
+                                        'class'   => 'endorsements__logo',
+                                    ]) ?>
 
-                        <?php endif ?>
+                                </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+
                     </div>
-                <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
 
-            </div>
         </div>
         
         <div class="container text-center">
