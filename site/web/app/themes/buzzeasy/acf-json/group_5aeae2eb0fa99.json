@@ -110,6 +110,25 @@
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_5afaaddece4ff",
+                    "label": "Brochure",
+                    "name": "service_brochure",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": 40,
+                    "mime_types": "pdf"
                 }
             ]
         },
@@ -228,5 +247,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1525443883
+    "modified": 1526378047
 }
