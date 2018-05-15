@@ -30,11 +30,19 @@ $logos      = $fields->get('wwww_logos');
 <?php if ( $fields->get('wwww_heading')->has() ) : ?>
 
     <section class="endorsements band band--100">
-        <div class="container container--reduced landmark">
+        <div class="container container--reduced landmark text-center">
 
-            <h2 class="heading--bravo landmark text-center <?= $modifiers->get('heading')->escape('attr'); ?>">
+            <h2 class="heading--bravo landmark <?= $modifiers->get('heading')->escape('attr'); ?>">
                 <?= $fields->get('wwww_heading')->escape('html'); ?>
             </h2>
+
+            <?php if ( $fields->get('wwww_subheading')->has() ) : ?>
+
+                <p class="landmark <?= $modifiers->get('subheading')->escape('attr'); ?>">
+                    <?= $fields->get('wwww_subheading')->escape('html'); ?>
+                </p>
+
+            <?php endif; ?>
 
             <?php if ( $logos->has() ) : ?>
                 <div class="carousel-container">
@@ -60,31 +68,15 @@ $logos      = $fields->get('wwww_logos');
         </div>
         
         <div class="container text-center">
-            <div class="grid">
-                <div class="gc m1-5 text-center"></div>
 
-                <div class="gc m3-5 text-center">
+            <?php if ( $fields->get('wwww_button_link')->has() && $fields->get('wwww_button_text')->has() ) : ?>
 
-                    <?php if ( $fields->get('wwww_subheading')->has() ) : ?>
+                <a href="<?= $fields->get('wwww_button_link')->escape('html'); ?>" class="btn <?= $modifiers->get('button')->escape('attr'); ?>">
+                    <?= $fields->get('wwww_button_text')->escape('html'); ?>
+                </a>
 
-                        <p class="<?= $modifiers->get('subheading')->escape('attr'); ?>">
-                            <?= $fields->get('wwww_subheading')->escape('html'); ?>
-                        </p>
-
-                    <?php endif; ?>
-
-                    <?php if ( $fields->get('wwww_button_link')->has() && $fields->get('wwww_button_text')->has() ) : ?>
-
-                        <a href="<?= $fields->get('wwww_button_link')->escape('html'); ?>" class="btn <?= $modifiers->get('button')->escape('attr'); ?>">
-                            <?= $fields->get('wwww_button_text')->escape('html'); ?>
-                        </a>
-
-                    <?php endif; ?>
-
-                </div>
-
-                <div class="gc m1-5 text-center"></div>
-            </div>
+            <?php endif; ?>
+                
         </div>
     </section>
 
