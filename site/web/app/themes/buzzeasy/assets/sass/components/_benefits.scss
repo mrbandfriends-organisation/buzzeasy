@@ -21,14 +21,9 @@
     .benefits__header-container {
         background-size: cover;
         background-position: center center;
-        padding-top: $spacing-unit;
+        padding-top: $half-spacing-unit;
         padding-bottom: $double-spacing-unit;
     }
-}
-
-
-.benefits__heading {
-    padding-left: $quarter-spacing-unit;
 }
 
 .benefits__list {
