@@ -9,58 +9,42 @@
 // # BASE
 // ==========================================================================
 
-.benefits {
+.benefits__container .gc {
+    padding: $double-spacing-unit $spacing-unit;
+}
 
-    .benefits__heading {
-        padding-left: 40px;
-    }
+.benefits__header-container {
+    background-size: cover;
+    background-position: center center;
+}
 
-    .benefits__list {
-        list-style: none;
-        margin-bottom: 0;
-        padding-left: 16px;
-        text-indent: -32px;
+.benefits__heading {
+    padding-left: $quarter-spacing-unit;
+}
 
-        .benefits__list-item {
-            margin-bottom: $quarter-spacing-unit;
+.benefits__list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 16px;
+    text-indent: -32px;
 
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+    .benefits__list-item {
+        margin-bottom: $quarter-spacing-unit;
 
-            &:before {
-                content:''; 
-                display:inline-block; 
-                height: 16px; 
-                width: 16px; 
-                background-image: url("../svg/standalone/output/tick--white.svg");
-                background-size:contain; 
-                background-repeat:no-repeat; 
-                padding-left: 32px;
-                vertical-align: text-top;
-            }
+        &:last-of-type {
+            margin-bottom: 0;
         }
-    }
 
-    .benefits__contact-centre {
-        @include side-extension( color-get(blue), 'before' );
-        padding-left: $half-spacing-unit;
-        padding-right: $half-spacing-unit;
-
-        @include mq ($from: medium) {
-            padding-left: 1.25 * $spacing-unit;
-            padding-right: 1.25 * $spacing-unit;
-        }
-    }
-
-    .benefits__marketing {
-        @include side-extension( color-get(green), 'after' );
-        padding-left: $half-spacing-unit;
-        padding-right: $half-spacing-unit;
-
-        @include mq ($from: medium) {
-            padding-left: 1.25 * $spacing-unit;
-            padding-right: 1.25 * $spacing-unit;
+        &:before {
+            content:''; 
+            display:inline-block; 
+            height: 16px; 
+            width: 16px; 
+            background-image: url("../svg/standalone/output/tick--white.svg");
+            background-size:contain; 
+            background-repeat:no-repeat; 
+            padding-left: 32px;
+            vertical-align: text-top;
         }
     }
 }

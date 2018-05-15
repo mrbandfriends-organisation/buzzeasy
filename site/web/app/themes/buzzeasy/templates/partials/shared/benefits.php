@@ -30,43 +30,80 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
 ?>
 
-<?php if ( $contact_centre_benefits->get('benefits_heading')->has() && $marketing_benefits->get('benefits_heading')->has() ) : ?>
+<section class="benefits band band--100 band--light-grey">
 
-    <section class="benefits">
-        <div class="container container--extend">
-            <div class="grid grid--half-gutter">
+<?php if ( $contact_centre_benefits->get('benefits_heading')->has()
+        && $contact_centre_benefits->get('benefits_image')->has()
+        && $contact_centre_benefits_list->has()
+      ) : ?>
 
-                    <div class="gc s1-1 l1-2 benefits__contact-centre band band--100 band--blue">
-                        <h2 class="benefits__heading heading--bravo heading--white">
-                            <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
-                        </h2>
+        <?php 
+        $bg_image_data = Assets\bg_image_data($contact_centre_benefits->get('benefits_image')->get('id')->raw());
+        ?>
 
-                        <?php if( $contact_centre_benefits_list->has() ) : ?>
-                            <ul class="benefits__list text--white">
-                                <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
-                                    <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        <?php endif; ?>
-                    </div>
+        <div class="container benefits__container band--green landmark">
+            <div class="grid grid--no-gutter">
 
+                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 320px) 600px, 100vw">
 
-                    <div class="gc s1-1 l1-2 benefits__marketing band band--100 band--green">
-                        <h2 class="benefits__heading heading--bravo heading--white">
-                            <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
-                        </h2>
+                    <h2 class="benefits__heading heading--bravo heading--white heading--highlight--green">
+                        <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
+                    </h2>
 
-                        <?php if( $marketing_benefits_list->has() ) : ?>
-                            <ul class="benefits__list text--white">
-                                <?php foreach( $marketing_benefits_list as $benefit ) : ?>
-                                    <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        <?php endif; ?>
-                    </div>
-            
+                </div>
+
+                <div class="gc s1-1 l1-2">
+
+                    <?php if( $contact_centre_benefits_list->has() ) : ?>
+                        <ul class="benefits__list text--white">
+                            <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
+                                <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+
+                </div>
+
             </div>
         </div>
+
+<?php endif; ?>
+
+<?php if ( $marketing_benefits->get('benefits_heading')->has()
+        && $marketing_benefits->get('benefits_image')->has()
+        && $marketing_benefits_list->has()
+      ) : ?>
+
+        <?php 
+        $bg_image_data = Assets\bg_image_data($marketing_benefits->get('benefits_image')->get('id')->raw());
+        ?>
+
+        <div class="container benefits__container band--blue">
+            <div class="grid grid--no-gutter grid--reversed--medium">
+
+                <div class="gc s1-1 l1-2">
+
+                    <?php if( $marketing_benefits_list->has() ) : ?>
+                        <ul class="benefits__list text--white">
+                            <?php foreach( $marketing_benefits_list as $benefit ) : ?>
+                                <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+
+                </div>
+
+                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 320px) 600px, 100vw">
+
+                    <h2 class="benefits__heading heading--bravo heading--white heading--highlight--blue">
+                        <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
+                    </h2>
+
+                </div>
+                
+            </div>
+        </div>
+
     </section>
 
 <?php endif; ?>
