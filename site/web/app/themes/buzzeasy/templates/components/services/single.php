@@ -39,9 +39,11 @@ $title   = $service->title;
                         <?= $content->get('service_copy')->escape('wysiwyg'); ?>
                     </p>
 
-                    <button class="btn btn--primary" href="<?= $content->get('service_button_link')->escape('html'); ?>">
-                        <?= $content->get('service_button_text')->escape('html'); ?>
-                    </button>
+                    <?php if ( $content->has('service_brochure') ) : ?>
+                        <a class="btn btn--primary" href="<?= $content->get('service_brochure')->get('url')->escape('attr'); ?>" target="_blank">
+                            Download Brochure
+                        </a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
