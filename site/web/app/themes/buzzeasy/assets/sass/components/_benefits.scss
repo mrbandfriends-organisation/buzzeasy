@@ -9,14 +9,23 @@
 // # BASE
 // ==========================================================================
 
-.benefits__container .gc {
-    padding: $double-spacing-unit $spacing-unit;
+.benefits__container {
+    .gc {
+        padding: $spacing-unit $half-spacing-unit;
+
+        @include mq($from: medium){ 
+            padding: $double-spacing-unit $spacing-unit;
+        }
+    }
+
+    .benefits__header-container {
+        background-size: cover;
+        background-position: center center;
+        padding-top: $spacing-unit;
+        padding-bottom: $double-spacing-unit;
+    }
 }
 
-.benefits__header-container {
-    background-size: cover;
-    background-position: center center;
-}
 
 .benefits__heading {
     padding-left: $quarter-spacing-unit;
