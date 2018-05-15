@@ -51,17 +51,6 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     ]); ?>
 <?php endif ?>
 
-<?php if ($post->field('callout')->has()) : ?>
-    <?= Utils\ob_load_template_part('templates/partials/shared/callout', [
-        'fields'                        => $post->field('callout'),
-        'modifiers'                     => new ValueCollection([
-			'background'				=> 'page-hero--cover-bottom',
-            'heading'                   => 'heading--yellow heading--highlight--red',
-            'button'                 	=> 'btn--red',
-        ]),
-    ]); ?>
-<?php endif ?>
-
 <?php if ($post->field('benefits')->has()) : ?>
     <?= Utils\ob_load_template_part('templates/partials/shared/benefits', [
         'fields'                        => $post->field('benefits'),
