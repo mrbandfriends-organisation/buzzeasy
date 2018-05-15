@@ -45,15 +45,8 @@ $modifiers = $modifiers ?? new ValueCollection();
             <?php if ($fields->get('heading')->has() || $fields->get('copy')->has()) : ?>
                 <div class="page-hero__inner">
 
-                    <?php if ( $fields->get('use_logo')->has() ) : ?>
-                    <!-- If the option is checked, use the Buzzeasy logo in place of a h1 tag. A visually hidden h1 is used instead. -->
-
-                        <h1 class="vh">
-                            Buzzeasy 
-                        </h1>
-                        <?= Utils\ob_load_template_part('templates/partials/site-logo-primary.php'); ?>
-
-                    <?php else : ?>
+                    <?php if ( !( $fields->get('use_logo')->has() ) ) : ?>
+                    <!-- If we aren't using the logo (i.e. for the homepage) print the h1 instead. -->
 
                         <?php if ($fields->get('heading')->has()) : ?>
                                 <h1 class="page-hero__heading heading--uppercase heading--alpha <?= $modifiers->get('heading')->escape('attr'); ?>">
@@ -67,6 +60,16 @@ $modifiers = $modifiers ?? new ValueCollection();
                             <h2 class="page-hero__heading heading--uppercase heading--bravo <?= $modifiers->get('subheading')->escape('attr'); ?>">
                                 <?= $fields->get('subheading')->escape('html'); ?>
                             </h2>
+                    <?php endif; ?>
+
+                    <?php if ( $fields->get('use_logo')->has() ) : ?>
+                    <!-- If the option is checked, use the Buzzeasy logo in place of a h1 tag. A visually hidden h1 is used instead. -->
+
+                        <h1 class="vh">
+                            Buzzeasy 
+                        </h1>
+                        <?= Utils\ob_load_template_part('templates/partials/site-logo-primary.php'); ?>
+
                     <?php endif; ?>
 
                     <?php if ($fields->get('copy')->has()) : ?>
