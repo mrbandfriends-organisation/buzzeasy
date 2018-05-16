@@ -42,7 +42,7 @@ $integrations = $fields->get('integrations');
                 </div>
                 <div class="gc s1-1 l1-2"></div>
             </div>
-            <div class="grid">
+            <div class="grid grid--landmark-double">
 
                 <?php foreach( $integrations as $integration ) : ?>
 
