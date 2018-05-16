@@ -220,9 +220,6 @@ $alt-body-type: (
 
     .wf-active-1 & {
         font-family: 'Montserrat', $base-font-family;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-smoothing: antialiased;
     }
 }
 
@@ -243,9 +240,6 @@ $alt-body-type: (
 
     .wf-active-2 & {
         font-family: 'Montserrat', $base-font-family;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-smoothing: antialiased;
         font-weight: 600;    // Overriding fallback faux-bold
     }
 }
