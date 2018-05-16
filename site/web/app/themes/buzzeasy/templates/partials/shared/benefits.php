@@ -32,10 +32,12 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
 <section class="benefits band band--100 band--light-grey">
 
-<?php if ( $contact_centre_benefits->get('benefits_heading')->has()
-        && $contact_centre_benefits->get('benefits_image')->has()
-        && $contact_centre_benefits_list->has()
-      ) : ?>
+    <?php
+    if ( $contact_centre_benefits->get('benefits_heading')->has()
+    && $contact_centre_benefits->get('benefits_image')->has()
+    && $contact_centre_benefits_list->has()
+    ) :
+    ?>
 
         <?php 
         $bg_image_data = Assets\bg_image_data($contact_centre_benefits->get('benefits_image')->get('id')->raw());
@@ -67,12 +69,14 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
             </div>
         </div>
 
-<?php endif; ?>
+    <?php endif; ?>
 
-<?php if ( $marketing_benefits->get('benefits_heading')->has()
-        && $marketing_benefits->get('benefits_image')->has()
-        && $marketing_benefits_list->has()
-      ) : ?>
+    <?php
+    if ( $marketing_benefits->get('benefits_heading')->has()
+    && $marketing_benefits->get('benefits_image')->has()
+    && $marketing_benefits_list->has()
+    ) :
+    ?>
 
         <?php 
         $bg_image_data = Assets\bg_image_data($marketing_benefits->get('benefits_image')->get('id')->raw());
@@ -104,7 +108,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
             </div>
         </div>
 
-    </section>
+    <?php endif; ?>
 
-<?php endif; ?>
+</section>
 
