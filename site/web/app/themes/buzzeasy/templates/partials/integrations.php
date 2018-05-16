@@ -48,7 +48,7 @@ $integrations = $fields->get('integrations');
 
                         <?php if ($integration->get('integration_logo')->has()) : ?>
 
-                            <div class="gc m1-3 l1-5 text-center">
+                            <div class="gc gc--vmiddle m1-3 l1-5 text-center">
 
                                 <?= Assets\lazyload_image($integration->get('integration_logo')->get('id')->raw(), [
                                     'class'   => 'integrations__logo',
