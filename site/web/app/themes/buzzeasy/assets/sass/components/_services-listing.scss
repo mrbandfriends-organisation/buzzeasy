@@ -9,6 +9,15 @@
 // ==========================================================================
 
 .service-listing__service {
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+
     .service-listing__icon {
         display: block;
         margin-left: 0;
@@ -26,7 +35,7 @@
         }
     }
 
-    button {
+    .btn {
         display: block;
         margin: auto;
         @include mq($from: medium){
