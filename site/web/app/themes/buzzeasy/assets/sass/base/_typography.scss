@@ -20,6 +20,16 @@ body {
     font-size: 1rem;
 }
 
+::-moz-selection {
+    background: color-get(primary);
+    color: color-get(white);
+}
+
+::selection {
+    background: color-get(primary);
+    color: color-get(white);
+}
+
 @mixin text-color($color: false, $color-modifier: default) {
     @if($color) {
         $color-modifier-modifier: "";
