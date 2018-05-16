@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ae9c55522f66",
-            "label": "Use Logo",
+            "label": "Use the Buzzeasy logo?",
             "name": "use_logo",
             "type": "true_false",
             "instructions": "",
@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Tick this to use the Buzzeasy logo in place of a top-level heading. Used on the homepage, but can be used elsewhere.",
+            "message": "Enable this to use the Buzzeasy logo in place of a primary heading.",
             "default_value": 0,
             "ui": 0,
             "ui_on_text": "",
@@ -104,5 +104,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1525269905
+    "modified": 1526464043
 }
