@@ -10,10 +10,10 @@
 // ==========================================================================
 
 .benefits__container {
-    .gc {
+    .benefits__list-container {
         padding: $spacing-unit $half-spacing-unit;
 
-        @include mq($from: medium){ 
+        @include mq(medium){ 
             padding: $double-spacing-unit $spacing-unit;
         }
     }

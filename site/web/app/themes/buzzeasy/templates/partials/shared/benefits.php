@@ -55,15 +55,17 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                 </div>
 
                 <div class="gc s1-1 l1-2">
+                    <div class="benefits__list-container">
 
-                    <?php if( $contact_centre_benefits_list->has() ) : ?>
-                        <ul class="benefits__list text--white">
-                            <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
-                                <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php endif; ?>
+                        <?php if( $contact_centre_benefits_list->has() ) : ?>
+                            <ul class="benefits__list text--white">
+                                <?php foreach( $contact_centre_benefits_list as $benefit ) : ?>
+                                    <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
 
+                    </div>
                 </div>
 
             </div>
@@ -86,15 +88,17 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
             <div class="grid grid--no-gutter grid--reversed--medium">
 
                 <div class="gc s1-1 l1-2">
+                    <div class="benefits__list-container">
 
-                    <?php if( $marketing_benefits_list->has() ) : ?>
-                        <ul class="benefits__list text--white">
-                            <?php foreach( $marketing_benefits_list as $benefit ) : ?>
-                                <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php endif; ?>
+                        <?php if( $marketing_benefits_list->has() ) : ?>
+                            <ul class="benefits__list text--white">
+                                <?php foreach( $marketing_benefits_list as $benefit ) : ?>
+                                    <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
 
+                    </div>
                 </div>
 
                 <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
