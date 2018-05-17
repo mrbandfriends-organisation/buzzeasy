@@ -236,6 +236,15 @@
     flex-direction: row-reverse;
 }
 
+// REVERSE FOR <= MEDIUM (Flexbox only)
+// ==========================================================================
+
+.grid--reversed--medium {
+    @include mq($until: large){
+        flex-direction: column-reverse;
+    }
+}
+
 // # SEPARATED content
 // ==========================================================================
 .grid--separated {
