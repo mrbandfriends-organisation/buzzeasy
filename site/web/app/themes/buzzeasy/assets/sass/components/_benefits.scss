@@ -26,10 +26,12 @@
 }
 
 .benefits__list {
+    $list-size: 1rem;
     list-style: none;
     margin-bottom: 0;
-    padding-left: 16px;
-    text-indent: -32px;
+    margin-left: $list-size;
+    padding-left: $list-size;
+    text-indent: -2 * $list-size;
 
     .benefits__list-item {
         margin-bottom: $quarter-spacing-unit;
@@ -41,12 +43,12 @@
         &:before {
             content:''; 
             display:inline-block; 
-            height: 16px; 
-            width: 16px; 
+            height: $list-size; 
+            width: $list-size; 
             background-image: url("../svg/standalone/output/tick--white.svg");
             background-size:contain; 
             background-repeat:no-repeat; 
-            padding-left: 32px;
+            padding-left: 2 * $list-size;
             vertical-align: text-top;
         }
     }
