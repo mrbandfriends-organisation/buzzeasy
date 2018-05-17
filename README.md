@@ -27,7 +27,12 @@ The following items represent quirks of this particular project.
   * If you encounter an error regarding the SSL certificate for Github, try using Ansible 2.5.0.0 (or MAMP!)
 * Currently you need to build CSS & JS before deploying. Run `npm run build` in the theme root and commit/push the minified files.
 
-* The client-side hosting of the site is handled via Axure. As such the server requires some additional configuration:-
+* There are two staging sites for this project:- 
+  * One is Mr B only and is for internal snagging and collaboration - https://buzzeasy.mrbandfriends-staging.co.uk
+  * The other is client-hosted and is used for sharing sprint updates - http://buzzeasy-dev.westeurope.cloudapp.azure.com
+    * Is is important that only code for the current sprint is uploaded to the Client Staging site.
+
+* The client-side hosting of the site is handled via Axure. As such the production & client staging servers require some additional configuration:-
   * In the Apache config file - `/etc/apache2/apache2.conf` - AllowOverride has been set to 'all' to allow for .htaccess rewrites.
   * Deployments are made to the home directory of the ssh user we use to deploy (details in LastPass) - which is symlinked to var/www/html.
     * The command used to achieve this was `ln -s /home/SSH-USER/site/web /var/www/html`

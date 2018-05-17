@@ -18,10 +18,16 @@ body {
     color: $base-font-color;
     font-family: $base-font-family;
     font-size: 1rem;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
+}
+
+::-moz-selection {
+    background: color-get(primary);
+    color: color-get(white);
+}
+
+::selection {
+    background: color-get(primary);
+    color: color-get(white);
 }
 
 @mixin text-color($color: false, $color-modifier: default) {

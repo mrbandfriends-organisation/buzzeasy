@@ -7,7 +7,7 @@
             "label": "Heading",
             "name": "services_heading",
             "type": "text",
-            "instructions": "",
+            "instructions": "This section automatically pulls Service content from the individual posts.\r\nTo edit Service content, select 'Services' from the left-hand menu.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1525343486
+    "modified": 1526464249
 }
