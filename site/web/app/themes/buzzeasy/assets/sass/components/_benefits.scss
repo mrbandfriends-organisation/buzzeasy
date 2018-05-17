@@ -21,8 +21,7 @@
     .benefits__header-container {
         background-size: cover;
         background-position: center center;
-        padding-top: $half-spacing-unit;
-        padding-bottom: 2 * $double-spacing-unit;
+        padding: $half-spacing-unit $half-spacing-unit 2 * $double-spacing-unit;
     }
 }
 
