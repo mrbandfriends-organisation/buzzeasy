@@ -46,7 +46,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
         <div class="container benefits__container band--green landmark">
             <div class="grid grid--no-gutter">
 
-                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 320px) 600px, 100vw">
+                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
 
                     <h2 class="benefits__heading heading--bravo heading--white heading--highlight--green">
                         <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
@@ -97,7 +97,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
                 </div>
 
-                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 320px) 600px, 100vw">
+                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
 
                     <h2 class="benefits__heading heading--bravo heading--white heading--highlight--blue">
                         <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
