@@ -66,3 +66,12 @@ $services = Service::orderBy('post_title', 'ASC')->get();
         ]),
     ]); ?>
 <?php endif ?>
+
+<?php if ($post->field('testimonials_slider')->has()) : ?>
+    <?= Utils\ob_load_template_part('templates/components/carousel/testimonials-slider',[
+            'fields'                        => $post->field('testimonials_slider'),
+            'modifiers'                     => new ValueCollection([
+                'section'                   => 'band--blue',
+            ]),
+    ]); ?>
+<?php endif; ?>

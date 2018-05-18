@@ -68,3 +68,27 @@
         .carousel__slide:first-of-type { height: 100vh; }
     }
 }
+
+
+
+
+
+// ==========================================================================
+// # MODIFIER: Testimonials
+// ==========================================================================
+
+.testimonial-carousel {
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel__slide {
+        padding: 0 $double-spacing-unit;
+    }
+
+    .testimonial__logo {
+        // Temporarily restrict the height until logos are artworked.
+        max-height: 200px;
+    }
+}
