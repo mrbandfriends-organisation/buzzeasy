@@ -30,7 +30,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
 ?>
 
-<section class="benefits band band--100 band--light-grey">
+<section class="benefits band band--100 band--off-white">
 
     <?php
     if ( $contact_centre_benefits->get('benefits_heading')->has()
