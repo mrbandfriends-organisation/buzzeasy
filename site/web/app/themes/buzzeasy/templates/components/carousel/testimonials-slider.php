@@ -62,7 +62,7 @@ $testimonials = $fields->get('testimonials');
                                         <?php endif; ?>
 
                                         <p class="text--white">
-                                            <?= $testimonial->get('testimonial_copy')->escape('html'); ?>
+                                            <?= $testimonial->get('testimonial_copy')->escape('textarea'); ?>
                                         </p>
 
                                     </div>
