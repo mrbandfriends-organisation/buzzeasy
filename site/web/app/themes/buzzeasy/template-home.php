@@ -66,3 +66,5 @@ $services = Service::orderBy('post_title', 'ASC')->get();
         ]),
     ]); ?>
 <?php endif ?>
+
+<?= Utils\ob_load_template_part('templates/components/carousel/testimonials-slider'); ?>
