@@ -67,4 +67,9 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     ]); ?>
 <?php endif ?>
 
-<?= Utils\ob_load_template_part('templates/components/carousel/testimonials-slider'); ?>
+<?= Utils\ob_load_template_part('templates/components/carousel/testimonials-slider',[
+        'fields'                        => $post->field('testimonials_slider'),
+        'modifiers'                     => new ValueCollection([
+			'section'                   => 'band--blue',
+        ]),
+]); ?>
