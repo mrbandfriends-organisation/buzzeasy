@@ -74,13 +74,27 @@ $steps = $fields->get('journey_steps');
                         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-1.svg'); ?>" alt="" class="flourish" id="flourish-1">
                     </div>
                 </div>
-                <div class="gc m1-2 l1-3"></div>
+
+                <div class="gc m1-2 l1-3 text-center">
+                </div>
+
                 <div class="gc m1-2 l1-3 text-right">
                     <div class="flourish-container">
                         <img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-3.svg'); ?>" alt="" class="flourish" id="flourish-3">
                     </div>
                 </div>
             </div>
+
+            <?php if ( $fields->get('journey_button_link')->has() && $fields->get('journey_button_text')->has() ) : ?>
+
+                <div class="text-center">
+                    <a href="<?= $fields->get('journey_button_link')->escape('html'); ?>" class="btn btn--white">
+                        <?= $fields->get('journey_button_text')->escape('html'); ?>
+                    </a>
+                </div>
+
+            <?php endif; ?>
+
         </div>
     </section>
 
