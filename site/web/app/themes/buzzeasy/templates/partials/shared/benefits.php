@@ -34,6 +34,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
     <?php
     if ( $contact_centre_benefits->get('benefits_heading')->has()
+    && $contact_centre_benefits->get('benefits_tagline')->has()
     && $contact_centre_benefits->get('benefits_image')->has()
     && $contact_centre_benefits_list->has()
     ) :
@@ -46,16 +47,18 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
         <div class="container benefits__container band--green landmark">
             <div class="grid grid--no-gutter">
 
-                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
-
-                    <h2 class="benefits__heading heading--bravo heading--white heading--highlight--green">
-                        <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
+                <div class="gc s1-1 l1-2 benefits__tagline-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
+                    <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--green">
+                        <?= nl2br($contact_centre_benefits->get('benefits_tagline')->escape('textarea')); ?>
                     </h2>
-
                 </div>
 
                 <div class="gc s1-1 l1-2">
                     <div class="benefits__list-container">
+
+                        <h2 class="benefits__header heading--charlie heading--white">
+                            <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
+                        </h2>
 
                         <?php if( $contact_centre_benefits_list->has() ) : ?>
                             <ul class="benefits__list text--white">
@@ -75,6 +78,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
     <?php
     if ( $marketing_benefits->get('benefits_heading')->has()
+    && $marketing_benefits->get('benefits_tagline')->has()
     && $marketing_benefits->get('benefits_image')->has()
     && $marketing_benefits_list->has()
     ) :
@@ -90,6 +94,10 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                 <div class="gc s1-1 l1-2">
                     <div class="benefits__list-container">
 
+                        <h2 class="benefits__header heading--charlie heading--white heading--highlight--blue">
+                            <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
+                        </h2>
+
                         <?php if( $marketing_benefits_list->has() ) : ?>
                             <ul class="benefits__list text--white">
                                 <?php foreach( $marketing_benefits_list as $benefit ) : ?>
@@ -101,12 +109,10 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                     </div>
                 </div>
 
-                <div class="gc s1-1 l1-2 benefits__header-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
-
-                    <h2 class="benefits__heading heading--bravo heading--white heading--highlight--blue">
-                        <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
+                <div class="gc s1-1 l1-2 benefits__tagline-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
+                    <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--blue">
+                        <?= nl2br($marketing_benefits->get('benefits_tagline')->escape('textarea')); ?>
                     </h2>
-
                 </div>
                 
             </div>

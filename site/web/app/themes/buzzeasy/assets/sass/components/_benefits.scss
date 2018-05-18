@@ -9,24 +9,31 @@
 // # BASE
 // ==========================================================================
 
+$list-size: 1rem;
+
 .benefits__container {
     .benefits__list-container {
-        padding: $spacing-unit $half-spacing-unit;
+        padding: $half-spacing-unit;
 
         @include mq(medium){ 
-            padding: $double-spacing-unit $spacing-unit;
+            padding: $spacing-unit;
         }
     }
 
-    .benefits__header-container {
+    .benefits__tagline-container {
         background-size: cover;
         background-position: center center;
         padding: $half-spacing-unit $half-spacing-unit 2 * $double-spacing-unit;
     }
 }
 
+@include mq(medium) {
+    .benefits__header {
+        padding-left: 2 * $list-size;
+    }
+}
+
 .benefits__list {
-    $list-size: 1rem;
     list-style: none;
     margin-bottom: 0;
     margin-left: $list-size;

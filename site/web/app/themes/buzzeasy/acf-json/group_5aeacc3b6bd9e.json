@@ -18,10 +18,10 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5aeacf4490631",
-                    "label": "Heading",
-                    "name": "benefits_heading",
-                    "type": "text",
+                    "key": "field_5afed24db5d61",
+                    "label": "Tagline",
+                    "name": "benefits_tagline",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -32,12 +32,12 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
                 },
                 {
-                    "key": "field_5afab09ce96c2",
+                    "key": "field_5afed4df68a77",
                     "label": "Image",
                     "name": "benefits_image",
                     "type": "image",
@@ -59,6 +59,25 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5aeacf4490631",
+                    "label": "Heading",
+                    "name": "benefits_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5aeacf5290632",
@@ -118,10 +137,10 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5aeacf7690635",
-                    "label": "Heading",
-                    "name": "benefits_heading",
-                    "type": "text",
+                    "key": "field_5afed25eb5d62",
+                    "label": "Tagline",
+                    "name": "benefits_tagline",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -132,12 +151,12 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
                 },
                 {
-                    "key": "field_5afab0aee96c3",
+                    "key": "field_5afed4ee68a78",
                     "label": "Image",
                     "name": "benefits_image",
                     "type": "image",
@@ -159,6 +178,25 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5aeacf7690635",
+                    "label": "Heading",
+                    "name": "benefits_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5aeacf7690636",
@@ -220,5 +258,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1526378683
+    "modified": 1526650110
 }
