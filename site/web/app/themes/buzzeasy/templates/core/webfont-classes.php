@@ -4,7 +4,7 @@
     Once the webfont script loaded preload will be replaced by stylesheet. Boom, fonts loaded!  -->
 
 <!-- If browser has no JS script enabled, use standard call as fallback  -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,600">
 
 <!-- Some browsers still don't support rel="preload" therefore we must provide a poilyfill  -->
 <script>
@@ -25,10 +25,6 @@
 
         if( sessionStorage.foutFontsLoadedStage2 ) {
             document.documentElement.className += ' wf-active-2';
-        }
-
-        if( sessionStorage.foutFontsLoadedStage3 ) {
-            document.documentElement.className += ' wf-active-3';
         }
     }());
 </script>

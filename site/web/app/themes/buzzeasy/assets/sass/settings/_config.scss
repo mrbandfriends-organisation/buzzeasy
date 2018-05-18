@@ -215,7 +215,7 @@ $alt-body-type: (
 // scss-lint:disable DuplicateProperty
 @mixin wf-primary {
     font-family: $base-font-family;
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 
     .wf-active-1 & {

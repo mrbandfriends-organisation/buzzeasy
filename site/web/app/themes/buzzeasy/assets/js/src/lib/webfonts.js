@@ -36,15 +36,11 @@ function webfonts() {
     //    both font familes have very different names. Eg;
 
     let primaryFont = new FontFaceObserver('Montserrat', {
-        weight: 400
+        weight: 500
     });
 
     let secondaryFont = new FontFaceObserver('Montserrat', {
         weight: 600
-    });
-
-    let tertiaryFont = new FontFaceObserver('Montserrat', {
-        weight: 300
     });
 
     // 3. Race the Font load against the timeout
@@ -69,15 +65,13 @@ function webfonts() {
              */
 
             Promise.all([
-                secondaryFont.load(),
-                tertiaryFont.load()
+                secondaryFont.load()
             ]).then(function() {
                 document.documentElement.className +=
-                    ' wf-active-2 wf-active-3';
+                    ' wf-active-2';
 
                 // Optimization for Repeat Views
                 sessionStorage.foutFontsLoaded2 = true;
-                sessionStorage.foutFontsLoaded3 = true;
             });
 
             // Optimise for repeat view - https://www.zachleat.com/web-fonts/demos/fout-with-class.html
@@ -87,7 +81,6 @@ function webfonts() {
 
             sessionStorage.foutFontsLoaded1 = false;
             sessionStorage.foutFontsLoaded2 = false;
-            sessionStorage.foutFontsLoaded3 = false;
         });
 }
 
