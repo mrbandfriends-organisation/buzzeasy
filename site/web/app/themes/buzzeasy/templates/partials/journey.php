@@ -87,7 +87,7 @@ $steps = $fields->get('journey_steps');
 
             <?php if ( $fields->get('journey_button_link')->has() && $fields->get('journey_button_text')->has() ) : ?>
 
-                <div class="text-center">
+                <div class="text-center band band--no-bottom">
                     <a href="<?= $fields->get('journey_button_link')->escape('html'); ?>" class="btn btn--white">
                         <?= $fields->get('journey_button_text')->escape('html'); ?>
                     </a>
