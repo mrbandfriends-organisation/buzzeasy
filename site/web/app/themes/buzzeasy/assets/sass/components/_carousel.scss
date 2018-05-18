@@ -82,12 +82,13 @@
         display: flex;
         align-items: center;
     }
-    
+
     .carousel__slide {
         padding: 0 $double-spacing-unit;
     }
 
     .testimonial__logo {
+        // Temporarily restrict the height until logos are artworked.
         max-height: 200px;
     }
 }
