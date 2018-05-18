@@ -24,18 +24,20 @@ $testimonials = $fields->get('testimonials');
 ?>
 
 <?php if( $testimonials->has() ) : ?>
-
     <section class="case-studies band <?= $modifiers->get('section')->escape('attr'); ?>">
         <div class="container">
             <div class="carousel-container">
                 <div class="carousel js-carousel testimonial-carousel">
 
                     <?php foreach($testimonials as $testimonial) : ?>
-
-                        <?php if(  $testimonial->get('testimonial_logo')->has() && $testimonial->get('testimonial_name')->has() && $testimonial->get('testimonial_copy')->has()  ) : ?>
+                        <?php
+                        // Check for logo, name and copy. The statistic field is optional, so we can continue without it.
+                        if(  $testimonial->get('testimonial_logo')->has() && $testimonial->get('testimonial_name')->has() && $testimonial->get('testimonial_copy')->has()  ) :
+                        ?>
 
                             <div class="carousel__slide">
                                 <div class="grid grid--vmiddle">
+
                                     <div class="gc s1-1 m1-3 gc--vmiddle text-center">
 
                                         <?php
@@ -46,6 +48,7 @@ $testimonials = $fields->get('testimonials');
                                         ?>
 
                                     </div>
+
                                     <div class="gc s1-1 m2-3">
 
                                         <h3 class="heading--bravo heading--white">
@@ -63,16 +66,13 @@ $testimonials = $fields->get('testimonials');
                                         </p>
 
                                     </div>
+
                                 </div>
                             </div>
-
                         <?php endif; ?>
-
                     <?php endforeach; ?>
-
                 </div>
             </div>
         </div>
     </section>
-
 <?php endif; ?>
