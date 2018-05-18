@@ -54,22 +54,19 @@ $modifiers = $modifiers ?? new ValueCollection();
                                 </h1>
                         <?php endif; ?>
 
-                    <?php endif; ?>
-
-                    <?php if ($fields->get('subheading')->has()) : ?>
-                            <h2 class="page-hero__heading heading--uppercase heading--bravo <?= $modifiers->get('subheading')->escape('attr'); ?>">
-                                <?= $fields->get('subheading')->escape('html'); ?>
-                            </h2>
-                    <?php endif; ?>
-
-                    <?php if ( $fields->get('use_logo')->has() ) : ?>
-                    <!-- If the option is checked, use the Buzzeasy logo in place of a h1 tag. A visually hidden h1 is used instead. -->
+                    <?php else : ?>
 
                         <h1 class="vh">
                             Buzzeasy 
                         </h1>
                         <?= Utils\ob_load_template_part('templates/partials/site-logo-primary.php'); ?>
 
+                    <?php endif; ?>
+
+                    <?php if ($fields->get('subheading')->has()) : ?>
+                            <h2 class="page-hero__heading heading--uppercase heading--bravo <?= $modifiers->get('subheading')->escape('attr'); ?>">
+                                <?= $fields->get('subheading')->escape('html'); ?>
+                            </h2>
                     <?php endif; ?>
 
                     <?php if ($fields->get('copy')->has()) : ?>
