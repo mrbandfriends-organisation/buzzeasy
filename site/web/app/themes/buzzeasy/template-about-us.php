@@ -70,5 +70,3 @@ use Roots\Sage\Utils;
 		</div>
 	</div>
 </section>
-
-<?= Utils\ob_load_template_part('templates/components/cta-banner'); ?>
