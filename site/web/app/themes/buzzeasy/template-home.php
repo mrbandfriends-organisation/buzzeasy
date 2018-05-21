@@ -61,7 +61,8 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     <?= Utils\ob_load_template_part('templates/partials/shared/who-weve-worked-with', [
         'fields'                        => $post->field('who_weve_worked_with'),
         'modifiers'                     => new ValueCollection([
-			'subheading'                => 'text--large',
+			'heading'                   => 'heading--green',
+			'subheading'                => 'heading--green text--large',
 			'button'					=> 'btn--primary',
         ]),
     ]); ?>
