@@ -24,10 +24,10 @@ $list-size: 1rem;
         background-size: cover;
         background-position: center center;
         position: relative;
-        padding: 0 0 62.5% 0;
+        padding: 0 0 75% 0;
 
         @include mq(large) {
-            padding: 0 0 50% 0;
+            padding: 0 0 37.5% 0;
         }
 
         .benefits__tagline__wrapper {
@@ -40,7 +40,7 @@ $list-size: 1rem;
 }
 
 .benefits__header {
-    padding-left: 2 * $list-size;
+    padding: 0 2 * $list-size;
 }
 
 .benefits__list {
