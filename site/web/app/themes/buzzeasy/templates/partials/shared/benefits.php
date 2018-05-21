@@ -100,7 +100,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
         $bg_image_data = Assets\bg_image_data($marketing_benefits->get('benefits_image')->get('id')->raw());
         ?>
 
-        <div class="container benefits__container band--blue">
+        <div class="container benefits__container band--red">
             <div class="grid grid--no-gutter grid--reversed--medium">
 
                 <div class="gc gc--vmiddle s1-1 l1-2">
@@ -133,7 +133,7 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
                 <div class="gc s1-1 l1-2 benefits__tagline__container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
                     <div class="benefits__tagline__wrapper">
-                        <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--blue">
+                        <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--red">
                             <?= nl2br($marketing_benefits->get('benefits_tagline')->escape('textarea')); ?>
                         </h2>
                     </div>
