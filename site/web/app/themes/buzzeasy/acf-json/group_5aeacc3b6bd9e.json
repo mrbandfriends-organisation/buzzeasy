@@ -118,6 +118,41 @@
                             "maxlength": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_5afef1ea7079d",
+                    "label": "Button Text",
+                    "name": "benefits_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5afef1fa7079e",
+                    "label": "Button Link",
+                    "name": "benefits_button_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         },
@@ -237,6 +272,41 @@
                             "maxlength": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_5afef2057079f",
+                    "label": "Button Text",
+                    "name": "benefits_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5afef20a707a0",
+                    "label": "Button Link",
+                    "name": "benefits_button_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -258,5 +328,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1526650110
+    "modified": 1526657555
 }

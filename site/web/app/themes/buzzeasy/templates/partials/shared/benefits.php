@@ -47,16 +47,18 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
         <div class="container benefits__container band--green landmark">
             <div class="grid grid--no-gutter">
 
-                <div class="gc s1-1 l1-2 benefits__tagline-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
-                    <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--green">
-                        <?= nl2br($contact_centre_benefits->get('benefits_tagline')->escape('textarea')); ?>
-                    </h2>
+                <div class="gc s1-1 l1-2 benefits__tagline__container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
+                    <div class="benefits__tagline__wrapper">
+                        <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--green">
+                            <?= nl2br($contact_centre_benefits->get('benefits_tagline')->escape('textarea')); ?>
+                        </h2>
+                    </div>
                 </div>
 
-                <div class="gc s1-1 l1-2">
+                <div class="gc gc--vmiddle s1-1 l1-2">
                     <div class="benefits__list-container">
 
-                        <h2 class="benefits__header heading--charlie heading--white">
+                        <h2 class="benefits__header heading--charlie heading--white landmark--half">
                             <?= $contact_centre_benefits->get('benefits_heading')->escape('html'); ?>
                         </h2>
 
@@ -66,6 +68,16 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                                     <li class="benefits__list-item"><?= $benefit->get('benefit_item')->escape('html'); ?></li>
                                 <?php endforeach; ?>
                             </ul>
+                        <?php endif; ?>
+
+                        <?php if ( $contact_centre_benefits->get('benefits_button_link')->has() && $contact_centre_benefits->get('benefits_button_text')->has() ) : ?>
+
+                            <div class="text-center">
+                                <a href="<?= $contact_centre_benefits->get('benefits_button_link')->escape('html'); ?>" class="btn btn--white">
+                                    <?= $contact_centre_benefits->get('benefits_button_text')->escape('html'); ?>
+                                </a>
+                            </div>
+
                         <?php endif; ?>
 
                     </div>
@@ -91,10 +103,10 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
         <div class="container benefits__container band--blue">
             <div class="grid grid--no-gutter grid--reversed--medium">
 
-                <div class="gc s1-1 l1-2">
+                <div class="gc gc--vmiddle s1-1 l1-2">
                     <div class="benefits__list-container">
 
-                        <h2 class="benefits__header heading--charlie heading--white heading--highlight--blue">
+                        <h2 class="benefits__header heading--charlie heading--white landmark--half">
                             <?= $marketing_benefits->get('benefits_heading')->escape('html'); ?>
                         </h2>
 
@@ -106,13 +118,25 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
                             </ul>
                         <?php endif; ?>
 
+                        <?php if ( $marketing_benefits->get('benefits_button_link')->has() && $marketing_benefits->get('benefits_button_text')->has() ) : ?>
+
+                            <div class="text-center">
+                                <a href="<?= $marketing_benefits->get('benefits_button_link')->escape('html'); ?>" class="btn btn--white">
+                                    <?= $marketing_benefits->get('benefits_button_text')->escape('html'); ?>
+                                </a>
+                            </div>
+
+                        <?php endif; ?>
+
                     </div>
                 </div>
 
-                <div class="gc s1-1 l1-2 benefits__tagline-container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
-                    <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--blue">
-                        <?= nl2br($marketing_benefits->get('benefits_tagline')->escape('textarea')); ?>
-                    </h2>
+                <div class="gc s1-1 l1-2 benefits__tagline__container lazyload" data-bgset="<?= $bg_image_data ?>" data-sizes="(min-width: 400px) 600px, 100vw">
+                    <div class="benefits__tagline__wrapper">
+                        <h2 class="benefits__tagline heading--bravo heading--white heading--highlight--blue">
+                            <?= nl2br($marketing_benefits->get('benefits_tagline')->escape('textarea')); ?>
+                        </h2>
+                    </div>
                 </div>
                 
             </div>

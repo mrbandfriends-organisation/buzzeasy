@@ -20,22 +20,31 @@ $list-size: 1rem;
         }
     }
 
-    .benefits__tagline-container {
+    .benefits__tagline__container {
         background-size: cover;
         background-position: center center;
-        padding: $half-spacing-unit $half-spacing-unit 2 * $double-spacing-unit;
+        position: relative;
+        padding: 0 0 62.5% 0;
+
+        @include mq(large) {
+            padding: 0 0 50% 0;
+        }
+
+        .benefits__tagline__wrapper {
+            position: absolute;
+            top: $half-spacing-unit;
+            left: $half-spacing-unit;
+            padding-right: $half-spacing-unit;
+        }
     }
 }
 
-@include mq(medium) {
-    .benefits__header {
-        padding-left: 2 * $list-size;
-    }
+.benefits__header {
+    padding-left: 2 * $list-size;
 }
 
 .benefits__list {
     list-style: none;
-    margin-bottom: 0;
     margin-left: $list-size;
     padding-left: $list-size;
     text-indent: -2 * $list-size;
