@@ -22,7 +22,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
         'modifiers'                     => new ValueCollection([
 			'hero'						=> 'page-hero--cover-center',
             'heading'                   => 'heading--white',
-            'subheading'                => 'heading--white',
+            'subheading'                => 'heading--yellow',
             'copy'               		=> 'text--white',
         ]),
     ]); ?>
