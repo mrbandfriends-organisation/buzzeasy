@@ -44,4 +44,4 @@ $title   = $service->title;
         </div>
     </div>
 
-<? endif; ?>
+<?php endif; ?>
