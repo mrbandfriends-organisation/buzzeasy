@@ -22,7 +22,7 @@ $services = Service::orderBy('post_title', 'ASC')->get();
         'modifiers'                     => new ValueCollection([
 			'hero'						=> 'page-hero--cover-center',
             'heading'                   => 'heading--white',
-            'subheading'                => 'heading--white',
+            'subheading'                => 'heading--yellow',
             'copy'               		=> 'text--white',
         ]),
     ]); ?>
@@ -44,8 +44,8 @@ $services = Service::orderBy('post_title', 'ASC')->get();
 		'fields'                        => $post->field('services_overview'),
 		'services'						=> $services,
         'modifiers'                     => new ValueCollection([
-			'heading'                   => 'heading--green',
-			'subheading'				=> 'heading--green',
+			'heading'                   => 'heading--red',
+			'subheading'				=> 'heading--red',
             'button'    	           	=> 'btn--blue',
         ]),
     ]); ?>
@@ -61,7 +61,8 @@ $services = Service::orderBy('post_title', 'ASC')->get();
     <?= Utils\ob_load_template_part('templates/partials/shared/who-weve-worked-with', [
         'fields'                        => $post->field('who_weve_worked_with'),
         'modifiers'                     => new ValueCollection([
-			'subheading'                => 'text--large',
+			'heading'                   => 'heading--green',
+			'subheading'                => 'heading--green text--large',
 			'button'					=> 'btn--primary',
         ]),
     ]); ?>

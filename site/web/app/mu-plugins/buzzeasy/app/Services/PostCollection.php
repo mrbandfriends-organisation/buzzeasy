@@ -73,7 +73,7 @@ class PostCollection implements Hasable, IteratorAggregate, Countable
      *
      * @return null|Post
      */
-    public function first() : ?Post
+    public function first()
     {
         return $this->posts[0] ?? null;
     }

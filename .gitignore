@@ -2,3 +2,4 @@
 .DS_Store
 /site/web/app/themes/buzzeasy/assets/css/main.css
 /site/web/app/themes/buzzeasy/assets/js/dist
+/site/composer.lock

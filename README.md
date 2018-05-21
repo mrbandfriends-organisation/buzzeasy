@@ -38,6 +38,7 @@ The following items represent quirks of this particular project.
     * The command used to achieve this was `ln -s /home/SSH-USER/site/web /var/www/html`
   * Some PHP extensions had to be installed - php-curl, php-simplexml and php-zip
   * `chown www-data: .htaccess` was run in `~/site/web` to allow WordPress to modify the .htaccess file.
+  * `sudo chown -R www-data:www-data uploads` was run in `~/site/web/app/` to allow access to the Uploads folder.
 
 ## Installation
 

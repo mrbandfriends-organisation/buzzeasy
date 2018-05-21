@@ -26,7 +26,7 @@ $title   = $service->title;
                     <img class="service-overview__logo" src="<?= $content->get('service_icon')->get('url'); ?>" alt="<?= $title->escape('html'); ?>">
                 </noscript>
 
-                <h3 class="heading--charlie heading--green">
+                <h3 class="heading--charlie <?= $modifiers->get('subheading')->escape('attr'); ?>">
                     <?= $title->escape('html'); ?>
                 </h3>
 
@@ -44,4 +44,4 @@ $title   = $service->title;
         </div>
     </div>
 
-<? endif; ?>
+<?php endif; ?>

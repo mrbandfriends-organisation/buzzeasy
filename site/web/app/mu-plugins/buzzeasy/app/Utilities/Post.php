@@ -199,7 +199,7 @@ class Post implements Hasable
      *
      * @return void
      */
-    public function getTaxonomies($type) : ?array
+    public function getTaxonomies($type)
     {
         $taxonomies = wp_get_post_terms($this->id, [$type]);
 
