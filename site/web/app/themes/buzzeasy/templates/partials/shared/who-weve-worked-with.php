@@ -45,23 +45,21 @@ $logos      = $fields->get('wwww_logos');
             <?php endif; ?>
 
             <?php if ( $logos->has() ) : ?>
-                <div class="carousel-container">
-                    <div class="carousel logo-carousel">
+                <div class="grid grid--landmark grid--center">
 
-                        <?php foreach($logos as $logo) : ?>
-                            <?php if ($logo->get('wwww_logo')->has()) : ?>
-                                <div class="carousel__slide text-center">
+                    <?php foreach($logos as $logo) : ?>
+                        <?php if ($logo->get('wwww_logo')->has()) : ?>
+                            <div class="gc t1-3 m1-5">
 
-                                    <?= Assets\lazyload_image($logo->get('wwww_logo')->get('id')->raw(), [
-                                        'aspect_ratio' => 1/1,
-                                        'class'   => 'endorsements__logo',
-                                    ]) ?>
+                                <?= Assets\lazyload_image($logo->get('wwww_logo')->get('id')->raw(), [
+                                    'aspect_ratio' => 1/1,
+                                    'class'   => 'endorsements__logo',
+                                ]) ?>
 
-                                </div>
-                            <?php endif; ?>
-                        <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
 
-                    </div>
                 </div>
             <?php endif; ?>
 
