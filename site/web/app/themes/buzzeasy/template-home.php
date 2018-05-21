@@ -44,8 +44,8 @@ $services = Service::orderBy('post_title', 'ASC')->get();
 		'fields'                        => $post->field('services_overview'),
 		'services'						=> $services,
         'modifiers'                     => new ValueCollection([
-			'heading'                   => 'heading--green',
-			'subheading'				=> 'heading--green',
+			'heading'                   => 'heading--red',
+			'subheading'				=> 'heading--red',
             'button'    	           	=> 'btn--blue',
         ]),
     ]); ?>

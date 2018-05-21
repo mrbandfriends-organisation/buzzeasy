@@ -33,7 +33,7 @@ $heading = $fields->get('services_heading');
     <section class="services-overview band band--100 band--white">
         <div class="container text-center">
 
-            <h2 class="heading--bravo heading--green landmark">
+            <h2 class="heading--bravo landmark <?= $modifiers->get('heading')->escape('attr'); ?>">
                 <?= $heading->escape('html'); ?>
             </h2>
 
