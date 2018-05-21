@@ -32,14 +32,14 @@ $core = Core::class;
 //  Rollbar
 use \Rollbar\Rollbar;
 use \Rollbar\Payload\Level;
-if( env('WP_ENV') !== 'development' ) :
+if( env('WP_ENV') !== 'development' ){
     Rollbar::init(
         array(
             'access_token' => 'a5ac436df1f7427f9bf17734dbc42883',
             'environment' => env('WP_ENV')
         )
     );
-endif;
+}
 
 //  Initialise
 add_action('plugins_loaded', [$core, 'initialise']);

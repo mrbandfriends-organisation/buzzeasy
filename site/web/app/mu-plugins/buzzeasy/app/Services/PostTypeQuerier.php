@@ -183,7 +183,7 @@ class PostTypeQuerier
      *
      * @return Post
      */
-    public function first() : ?Post
+    public function first()
     {
         $this->limit = 1;
 
@@ -196,7 +196,7 @@ class PostTypeQuerier
      * @param  int    $id
      * @return Post
      */
-    public function find(int $id) : ?Post
+    public function find(int $id)
     {
         $this->limit        = 1;
         $this->params['p']  = $id;
