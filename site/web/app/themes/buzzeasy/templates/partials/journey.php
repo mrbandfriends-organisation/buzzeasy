@@ -44,7 +44,7 @@ $steps = $fields->get('journey_steps');
                 </div>
                 <div class="gc m1-2 l1-3 text-center">
                     <div class="flourish-container">
-                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-2.svg'); ?>" alt="" class="flourish" id="flourish-2">
+                        <svg id="flourish-2" data-name="flourish 2" class="flourish" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.72 58.05"><defs><style>.cls-1{fill:none;stroke:gold;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4.72px;}</style></defs><title>Icons and flourishes</title><path class="cls-1" d="M148.36,54.69C129.92,29.58,107.58,10,107.58,10c-4-3.2-11.31-7.7-20.85-7.61a31.16,31.16,0,0,0-14,3.57,59.42,59.42,0,0,0-7.22,4.89,27.41,27.41,0,0,0-2.74,2.68,11.63,11.63,0,1,0,16.61-.11h0S69.88,2.52,55.12,2.66h0c-9.48.09-16.45,5.12-20.64,8,0,0-15.45,9.08-32.12,45.08"/></svg>
                     </div>
                 </div>
                 <div class="gc m1-2 l1-3">
@@ -71,7 +71,7 @@ $steps = $fields->get('journey_steps');
             <div class="grid grid--flourishes grid--flourishes--top">
                 <div class="gc m1-2 l1-3 text-left">
                     <div class="flourish-container">
-                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-1.svg'); ?>" alt="" class="flourish" id="flourish-1">
+                        <svg id="flourish-1" data-name="flourish 1" class="flourish" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.82 35.56"><defs><style>.cls-1{fill:none;stroke:gold;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4.72px;}</style></defs><title>Icons and flourishes</title><path class="cls-1" d="M2.36,25.59c4,3.2,11.31,7.7,20.85,7.61a31.16,31.16,0,0,0,14-3.57,59.42,59.42,0,0,0,7.22-4.89,27.41,27.41,0,0,0,2.74-2.68,11.63,11.63,0,1,0-16.61.11h0S40.06,33,54.82,32.9h0c9.48-.09,16.7-4.68,20.64-8"/></svg>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@ $steps = $fields->get('journey_steps');
 
                 <div class="gc m1-2 l1-3 text-right">
                     <div class="flourish-container">
-                        <img src="<?php echo esc_attr(get_stylesheet_directory_uri() .'/assets/svg/standalone/output/flourish-3.svg'); ?>" alt="" class="flourish" id="flourish-3">
+                        <svg id="flourish-3" data-name="flourish 3" class="flourish" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.23 40.91"><defs><style>.cls-1{fill:none;stroke:gold;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4.91px;}</style></defs><title>Icons and flourishes</title><path class="cls-1" d="M2.46,2.46s71.53,81,137.32,0"/></svg>
                     </div>
                 </div>
             </div>
