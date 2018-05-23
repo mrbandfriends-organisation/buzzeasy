@@ -72,8 +72,8 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
                         <?php if ( $contact_centre_benefits->get('benefits_button_link')->has() && $contact_centre_benefits->get('benefits_button_text')->has() ) : ?>
 
-                            <div class="text-center">
-                                <a href="<?= $contact_centre_benefits->get('benefits_button_link')->escape('html'); ?>" class="btn btn--white">
+                            <div class="benefits__cta__container">
+                                <a href="<?= esc_url( $contact_centre_benefits->get('benefits_button_link') ); ?>" class="btn btn--white">
                                     <?= $contact_centre_benefits->get('benefits_button_text')->escape('html'); ?>
                                 </a>
                             </div>
@@ -120,8 +120,8 @@ $marketing_benefits_list      = $marketing_benefits->get('benefits_list');
 
                         <?php if ( $marketing_benefits->get('benefits_button_link')->has() && $marketing_benefits->get('benefits_button_text')->has() ) : ?>
 
-                            <div class="text-center">
-                                <a href="<?= $marketing_benefits->get('benefits_button_link')->escape('html'); ?>" class="btn btn--white">
+                            <div class="benefits__cta__container">
+                                <a href="<?= esc_url( $marketing_benefits->get('benefits_button_link') ); ?>" class="btn btn--white">
                                     <?= $marketing_benefits->get('benefits_button_text')->escape('html'); ?>
                                 </a>
                             </div>

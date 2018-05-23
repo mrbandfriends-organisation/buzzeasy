@@ -37,6 +37,15 @@ $list-size: 1rem;
             padding-right: $half-spacing-unit;
         }
     }
+
+    .benefits__cta__container {
+        text-align: center;
+
+        @include mq(small) {
+            padding-left: 2 * $list-size;
+            text-align: left;
+        }
+    }
 }
 
 .benefits__header {
