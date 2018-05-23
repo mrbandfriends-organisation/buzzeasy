@@ -45,8 +45,10 @@ import 'behaviours/carousels';
  * GREENSOCK
  * load Greensock and related libraries
  */
-import TweenLite from 'gsap';
+import TweenLite from 'gsap/TweenLite';
+import TimeLineLite from 'gsap/TimeLineLite';
 import DrawSVGPlugin from 'third-party/greensock/DrawSVGPlugin';
+import 'animations/flourishes';
 
 // Conditional Behaviours
 // https://webpack.js.org/guides/code-splitting-async/
