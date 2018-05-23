@@ -33,16 +33,6 @@
         -ms-user-select: none;
         pointer-events: none;
 
-            stroke-dasharray: 270;
-            stroke-dashoffset: 270;
-            animation: dash 2s linear forwards;
-          
-          @keyframes dash {
-            to {
-              stroke-dashoffset: 0;
-            }
-          }
-
         &#flourish-1 {
             height: 48PX;
             right: -205PX;
