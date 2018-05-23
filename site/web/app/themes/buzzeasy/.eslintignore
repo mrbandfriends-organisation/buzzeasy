@@ -1,1 +1,2 @@
+# Ignore Greensock plugins as they don't follow our linting rules.
 assets/js/src/third-party/greensock/*.js
