@@ -46,8 +46,8 @@ class MrbAccordion {
         );
         this.toggleEl = this.settings.toggleEl !== undefined
             ? Array.from(
-                  this.container.querySelectorAll(this.settings.toggleEl)
-              )
+                this.container.querySelectorAll(this.settings.toggleEl)
+            )
             : this.headers;
 
         // This is for managing state of the accordion. It by default sets
