@@ -69,7 +69,7 @@ $logos      = $fields->get('wwww_logos');
 
             <?php if ( $fields->get('wwww_button_link')->has() && $fields->get('wwww_button_text')->has() ) : ?>
 
-                <button class="btn <?= $modifiers->get('button')->escape('attr'); ?>" data-micromodal-trigger="modal-1">
+                <button class="btn <?= $modifiers->get('button')->escape('attr'); ?>" data-micromodal-trigger="modal-callback">
                     <?= $fields->get('wwww_button_text')->escape('html'); ?>
                 </button>
 
