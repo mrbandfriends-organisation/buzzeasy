@@ -38,6 +38,7 @@ import 'behaviours/offcanvases';
 import 'behaviours/carousels';
 // import 'behaviours/default-tabs';
 // import 'behaviours/inview';
+import 'behaviours/modal';
 // import 'behaviours/smooth-scroll';
 // import 'behaviours/toggler';
 

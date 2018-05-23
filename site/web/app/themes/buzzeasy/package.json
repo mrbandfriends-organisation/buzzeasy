@@ -33,6 +33,7 @@
     "gulp-rev": "^7.1.2",
     "gulp-rev-delete-original": "^0.2.3",
     "gulp-rimraf": "^0.2.1",
+    "micromodal": "^0.3.2",
     "run-sequence": "^1.2.2",
     "tablesaw": "^3.0.1",
     "uuid": "^3.1.0"

@@ -69,9 +69,9 @@ $logos      = $fields->get('wwww_logos');
 
             <?php if ( $fields->get('wwww_button_link')->has() && $fields->get('wwww_button_text')->has() ) : ?>
 
-                <a href="<?= $fields->get('wwww_button_link')->escape('html'); ?>" class="btn <?= $modifiers->get('button')->escape('attr'); ?>">
+                <button class="btn <?= $modifiers->get('button')->escape('attr'); ?>" data-micromodal-trigger="modal-1">
                     <?= $fields->get('wwww_button_text')->escape('html'); ?>
-                </a>
+                </button>
 
             <?php endif; ?>
                 
