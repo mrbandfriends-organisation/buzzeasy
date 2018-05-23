@@ -42,12 +42,9 @@ import 'behaviours/carousels';
 // import 'behaviours/toggler';
 
 /**
- * GREENSOCK
- * load Greensock and related libraries
+ * ANIMATIONS
+ * load Greensock animations
  */
-import TweenLite from 'gsap/TweenLite';
-import TimeLineLite from 'gsap/TimeLineLite';
-import DrawSVGPlugin from 'third-party/greensock/DrawSVGPlugin';
 import 'animations/flourishes';
 
 // Conditional Behaviours
