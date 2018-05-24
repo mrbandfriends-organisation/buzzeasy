@@ -46,6 +46,7 @@ import 'behaviours/carousels';
  * load Greensock animations
  */
 import 'animations/flourishes';
+import 'animations/services-overview';
 
 // Conditional Behaviours
 // https://webpack.js.org/guides/code-splitting-async/
