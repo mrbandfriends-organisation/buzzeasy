@@ -1,4 +1,4 @@
-import TweenLite from 'gsap/TweenLite';
+import TimelineLite from 'gsap/TimelineLite';
 import CSSPlugin from 'gsap/CSSPlugin';
 
 import inView from 'in-view';
