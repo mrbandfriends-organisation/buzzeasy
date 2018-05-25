@@ -12,10 +12,10 @@ import inView from 'in-view';
 
 let servicesTimeline = new TimelineLite({paused:true});
 
-servicesTimeline.staggerFrom( '.service-overview__logo', 0.5, {opacity:0}, 0.25 );
+servicesTimeline.staggerFrom( '.service-overview__logo', 0.5, { opacity:0, top:15, ease:Power1.easeIn }, 0.25 );
 
 // Trigger the timeline when 30% of the Services Overview section is in the viewport.
-inView.threshold(0.2);
+inView.threshold(0.3);
 inView('.services-overview').on('enter', function(e){
     servicesTimeline.play();
 });
