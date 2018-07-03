@@ -1,0 +1,127 @@
+/* -------------------------------------- */
+/* INSIGHTS
+/* -------------------------------------- */
+
+.gdlr-core-blog-grid {
+	position: relative;
+}
+
+.gdlr-core-blog-grid-content-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.gdlr-core-blog-info-date {
+	position: absolute;
+	top: 155px;
+    left: 50%;
+	background-color: #2f7de1;
+	padding: 25px 10px;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+
+.gdlr-core-blog-info-date a {
+	font-size: 12px;
+	color: white !important;
+}
+
+.gdlr-core-blog-info-sep {
+	display: none;
+}
+
+.gdlr-core-blog-title {
+	order: -1;
+	margin-bottom: 0 !important;
+	margin-top: 20px;
+}
+
+.gdlr-core-blog-content {
+	position: relative;
+	min-height: 175px;
+}
+
+.gdlr-core-excerpt-read-more {
+	position: absolute;
+	bottom: 0;
+}
+
+.gdlr-core-page-builder-body [data-skin="Blog"] .gdlr-core-button-color.gdlr-core-active {
+	color: #2f7de1 !important;
+	text-decoration: underline;
+}
+
+.gdlr-core-page-builder-body [data-skin="Blog"] .gdlr-core-button-color:hover {
+	color: #2f7de1 !important;
+	text-decoration: underline;
+}
+
+.gdlr-core-excerpt-read-more {
+  border: 3px solid #2f7de1;
+}
+
+.gdlr-core-blog-thumbnail .gdlr-core-blog-info {
+    display: none;
+}
+
+.blog-overlaid {
+    margin-top: -100px;
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.gdlr-core-load-more {
+	color: #f42534 !important;
+	border: 3px solid #f42534 !important;
+	background: transparent !important;
+	text-decoration: none !important;
+}
+
+.gdlr-core-page-builder-body [data-skin="Blog"] .gdlr-core-button-color:hover{
+	color: white !important;
+	background: #f42534 !important;
+}
+
+/* -------------------------------------- */
+/* HEADER
+/* -------------------------------------- */
+
+.buzzeasy-logo__header {
+	padding-left: 60px;
+}
+
+/* -------------------------------------- */
+/* NAV
+/* -------------------------------------- */
+
+.sf-menu > li > a:hover {
+	color: #2f7de1 !important;
+}
+
+.infinite-navigation-slide-bar:before {
+	content: " ";
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0px;
+    border-width: 0 !important; 
+    border-style: none !important; 
+    border-color: transparent;
+}
+
+.infinite-navigation .sf-menu > li > a {
+	/*padding-bottom: 5px !important;	*/
+}
+
+.sf-menu > li > a:hover, .sf-menu > li.current-menu-item > a {
+	color: #2f7de1 !important;
+}
+
+.infinite-mobile-button-hamburger:before,
+.infinite-mobile-button-hamburger:after,
+.infinite-mobile-button-hamburger span {
+	background: #2f7de1 !important;
+}
